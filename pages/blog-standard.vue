@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Blog Standard'" />
     <!-- Blog Standard Page Area start -->
     <section class="blog-standard-page py-130 rpy-100 rel z-1">

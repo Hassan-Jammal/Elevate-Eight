@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency" :header="1" :footer="1" :singlePage="true">
+  <NuxtLayout name="elevate8" :header="1" :footer="1" :singlePage="true">
     <!-- Hero Section Start -->
     <section class="hero-area pt-185 rpt-150 rel z-1">
       <div class="container">
@@ -810,12 +810,12 @@
 </template>
 
 <script>
-import { ygencyUtilits } from "~/utilits";
+import { e8Utilits } from "~/utilits";
 
 export default {
   name: "index",
   mounted() {
-    ygencyUtilits.counterUp();
+    e8Utilits.counterUp();
   },
 };
 </script>

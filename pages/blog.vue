@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Blog Grid'" />
     <!-- Blog Page Area start -->
     <section class="blog-page-area py-130 rpy-100 rel z-1">

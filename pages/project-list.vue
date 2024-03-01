@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Project List'" />
     <!-- Project List Area start -->
     <section class="project-list-area pt-130 rpt-100 pb-10 rpb-25">

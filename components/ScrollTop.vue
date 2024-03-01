@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import { ygencyUtilits } from "~/utilits";
+import { e8Utilits } from "~/utilits";
 
 export default {
   name: "ScrollTop",
   mounted() {
-    ygencyUtilits.scrollTop();
+    e8Utilits.scrollTop();
   },
   methods: {
     scrollTop() {

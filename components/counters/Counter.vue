@@ -32,11 +32,11 @@
 </template>
 
 <script>
-import { ygencyUtilits } from "~/utilits";
+import { e8Utilits } from "~/utilits";
 export default {
   name: "Counter",
   mounted() {
-    ygencyUtilits.counterUp();
+    e8Utilits.counterUp();
   },
 };
 </script>

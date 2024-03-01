@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Faqs'" />
     <!-- FAQ's Area start -->
     <section class="faq-area pt-130 rpt-100 pb-130 rpb-75 rel z-1">

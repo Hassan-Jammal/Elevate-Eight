@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Contact'" />
     <!-- Contact Form Area start -->
     <section class="contact-page-area py-130 rpy-100 rel z-1">

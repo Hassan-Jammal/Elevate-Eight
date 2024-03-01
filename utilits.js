@@ -1,6 +1,6 @@
 import WOW from "wow.js";
 
-export const ygencyUtilits = {
+export const e8Utilits = {
   wowjs() {
     // Create a new instance of WOW.js
     var wow = new WOW({
@@ -37,9 +37,9 @@ export const ygencyUtilits = {
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
+        (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <=
-          (window.innerWidth || document.documentElement.clientWidth)
+        (window.innerWidth || document.documentElement.clientWidth)
       );
     }
 

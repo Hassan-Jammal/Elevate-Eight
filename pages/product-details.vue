@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Single Product'" />
     <!-- Product Details Start -->
     <section class="product-details pt-130 rpt-100">

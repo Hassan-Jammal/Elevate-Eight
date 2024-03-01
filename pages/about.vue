@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <!-- Page Banner Section Start -->
     <section
       class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"

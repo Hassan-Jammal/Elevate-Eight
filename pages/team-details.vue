@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <!-- Team Profile Area start -->
     <section
       class="team-profile-area pt-220 rpt-150 pb-130 rpb-100 rel"

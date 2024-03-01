@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency" :header="3" :footer="5" :singlePage="true">
+  <NuxtLayout name="elevate8" :header="3" :footer="5" :singlePage="true">
     <!-- Slider Section Start -->
     <SlidersHero5 />
     <!-- Slider Section End -->
@@ -604,12 +604,12 @@
 </template>
 
 <script>
-import { ygencyUtilits } from "~/utilits";
+import { e8Utilits } from "~/utilits";
 
 export default {
   name: "index5",
   mounted() {
-    ygencyUtilits.counterUp();
+    e8Utilits.counterUp();
   },
 };
 </script>

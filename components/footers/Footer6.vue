@@ -88,7 +88,7 @@
             <div class="footer-copyright-text wow fadeInUp delay-0-2s">
               <p>
                 Copyright @{{ new Date().getFullYear() }},
-                <a href="index.html">Ygency</a> All Rights Reserved
+                <a href="index.html">Elevate 8</a> All Rights Reserved
               </p>
             </div>
           </div>

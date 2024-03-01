@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Shop'" />
     <section class="product-area py-130 rpy-100 rel z-1">
       <div class="container container-1290">

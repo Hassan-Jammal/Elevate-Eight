@@ -11,11 +11,11 @@
 <script>
 import niceSelect from "react-nice-select";
 import Footer from "~/components/footers/Footer.vue";
-import { ygencyUtilits } from "~/utilits";
+import { e8Utilits } from "~/utilits";
 import Header from "../components/headers/Header";
 
 export default {
-  name: "YgencyLayout",
+  name: "e8Layout",
   props: {
     header: {
       type: Number,
@@ -35,7 +35,7 @@ export default {
     Footer,
   },
   mounted() {
-    ygencyUtilits.wowjs();
+    e8Utilits.wowjs();
     niceSelect();
   },
 };

@@ -57,7 +57,7 @@
             <div class="footer-copyright-text wow fadeInUp delay-0-2s">
               <p>
                 Copyright @{{ new Date().getFullYear() }},
-                <NuxtLink href="/">Ygency</NuxtLink> All Rights Reserved
+                <NuxtLink href="/">Elevate 8</NuxtLink> All Rights Reserved
               </p>
             </div>
           </div>

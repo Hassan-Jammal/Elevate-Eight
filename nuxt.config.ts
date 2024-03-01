@@ -4,9 +4,12 @@ export default defineNuxtConfig({
   ssr: false,
   modules: ["nuxt-swiper"],
   devtools: { enabled: true },
+  // css: [
+  //   '~/assets/sass/style.sass', 
+  // ],
   app: {
     head: {
-      title: "Ygency - Web Agency Vue NuxtJS Template",
+      title: "Elevate8 - ",
       htmlAttrs: {
         lang: "en",
       },

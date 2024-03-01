@@ -13,6 +13,7 @@
     "@nuxt/devtools": "latest",
     "@types/bootstrap": "^5.2.10",
     "nuxt": "^3.8.2",
+    "sass": "^1.71.1",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
   },

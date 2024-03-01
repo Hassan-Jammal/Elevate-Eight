@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Web Development'" />
     <!-- Services Page About Area start -->
     <section class="service-page-about py-130 rpy-100 rel z-1">

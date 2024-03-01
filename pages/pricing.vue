@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Pricing Plan'" />
     <!-- Why Choose start -->
     <section class="why-choose-area pt-130 rpt-100 pb-100 rpb-70">

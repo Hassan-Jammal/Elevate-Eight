@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="ygency">
+  <NuxtLayout name="elevate8">
     <PageBanner :pageName="'Expert Team'" />
     <!-- Skill Area start -->
     <section class="skill-area py-130 rpt-100 rpb-60 rel z-1">

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { ygencyUtilits } from "~/utilits";
+import { e8Utilits } from "~/utilits";
 import Header1Vue from "./Header1.vue";
 import Header2Vue from "./Header2.vue";
 import Header3Vue from "./Header3.vue";
@@ -31,7 +31,7 @@ export default {
     },
   },
   mounted() {
-    ygencyUtilits.stickyNav();
+    e8Utilits.stickyNav();
   },
 };
 </script>
