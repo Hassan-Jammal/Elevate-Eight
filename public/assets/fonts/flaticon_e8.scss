@@ -1,16 +1,16 @@
-$flaticon_ygency-font: "flaticon_ygency";
+$flaticon_e8-font: "flaticon_e8";
 
 @font-face {
-    font-family: $flaticon_ygency-font;
-    src: url("./flaticon_ygency.ttf?a4bbcc93120497bb608e4b35faceaf9b") format("truetype"),
-url("./flaticon_ygency.woff?a4bbcc93120497bb608e4b35faceaf9b") format("woff"),
-url("./flaticon_ygency.woff2?a4bbcc93120497bb608e4b35faceaf9b") format("woff2"),
-url("./flaticon_ygency.eot?a4bbcc93120497bb608e4b35faceaf9b#iefix") format("embedded-opentype"),
-url("./flaticon_ygency.svg?a4bbcc93120497bb608e4b35faceaf9b#flaticon_ygency") format("svg");
+    font-family: $flaticon_e8-font;
+    src: url("./flaticon_e8bcc93120497bb608e4b35faceaf9b") format("truetype"),
+url("./flaticon_e8.woff?a4bbcc93120497bb608e4b35faceaf9b") format("woff"),
+url("./flaticon_e8.woff2?a4bbcc93120497bb608e4b35faceaf9b") format("woff2"),
+url("./flaticon_e8.eot?a4bbcc93120497bb608e4b35faceaf9b#iefix") format("embedded-opentype"),
+url("./flaticon_e8.svg?a4bbcc93120497bb608e4b35faceaf9b#flaticon_e8") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon_ygency !important;
+    font-family: flaticon_e8 !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -20,7 +20,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-$flaticon_ygency-map: (
+$flaticon_e8-map: (
     "star": "\f101",
     "right-quote": "\f102",
     "quote": "\f103",
@@ -45,65 +45,65 @@ $flaticon_ygency-map: (
 );
 
 .flaticon-star:before {
-    content: map-get($flaticon_ygency-map, "star");
+    content: map-get($flaticon_e8-map, "star");
 }
 .flaticon-right-quote:before {
-    content: map-get($flaticon_ygency-map, "right-quote");
+    content: map-get($flaticon_e8-map, "right-quote");
 }
 .flaticon-quote:before {
-    content: map-get($flaticon_ygency-map, "quote");
+    content: map-get($flaticon_e8-map, "quote");
 }
 .flaticon-robot-arm:before {
-    content: map-get($flaticon_ygency-map, "robot-arm");
+    content: map-get($flaticon_e8-map, "robot-arm");
 }
 .flaticon-engineering:before {
-    content: map-get($flaticon_ygency-map, "engineering");
+    content: map-get($flaticon_e8-map, "engineering");
 }
 .flaticon-ai:before {
-    content: map-get($flaticon_ygency-map, "ai");
+    content: map-get($flaticon_e8-map, "ai");
 }
 .flaticon-star-symbol:before {
-    content: map-get($flaticon_ygency-map, "star-symbol");
+    content: map-get($flaticon_e8-map, "star-symbol");
 }
 .flaticon-development:before {
-    content: map-get($flaticon_ygency-map, "development");
+    content: map-get($flaticon_e8nt");
 }
 .flaticon-mobile-development:before {
-    content: map-get($flaticon_ygency-map, "mobile-development");
+    content: map-get($flaticon_e8-map, "mobile-development");
 }
 .flaticon-branding:before {
-    content: map-get($flaticon_ygency-map, "branding");
+    content: map-get($flaticon_e8-map, "branding");
 }
 .flaticon-brainstorming:before {
-    content: map-get($flaticon_ygency-map, "brainstorming");
+    content: map-get($flaticon_e8-map, "brainstorming");
 }
 .flaticon-ux:before {
-    content: map-get($flaticon_ygency-map, "ux");
+    content: map-get($flaticon_e8-map, "ux");
 }
 .flaticon-optimization:before {
-    content: map-get($flaticon_ygency-map, "optimization");
+    content: map-get($flaticon_e8-map, "optimization");
 }
 .flaticon-goal:before {
-    content: map-get($flaticon_ygency-map, "goal");
+    content: map-get($flaticon_e8-map, "goal");
 }
 .flaticon-abstract:before {
-    content: map-get($flaticon_ygency-map, "abstract");
+    content: map-get($flaticon_e8-map, "abstract");
 }
 .flaticon-liquid:before {
-    content: map-get($flaticon_ygency-map, "liquid");
+    content: map-get($flaticon_e8-map, "liquid");
 }
 .flaticon-petals:before {
-    content: map-get($flaticon_ygency-map, "petals");
+    content: map-get($flaticon_e8-map, "petals");
 }
 .flaticon-creativity:before {
-    content: map-get($flaticon_ygency-map, "creativity");
+    content: map-get($flaticon_e8-map, "creativity");
 }
 .flaticon-mobile-banking:before {
-    content: map-get($flaticon_ygency-map, "mobile-banking");
+    content: map-get($flaticon_e8-map, "mobile-banking");
 }
 .flaticon-optimization-1:before {
-    content: map-get($flaticon_ygency-map, "optimization-1");
+    content: map-get($flaticon_e8-map, "optimization-1");
 }
 .flaticon-software-development:before {
-    content: map-get($flaticon_ygency-map, "software-development");
+    content: map-get($flaticon_e8-map, "software-development");
 }
