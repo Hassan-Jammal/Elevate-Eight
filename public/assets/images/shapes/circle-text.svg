@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) rotate(151.863deg) scale(2, 2);">
+    <defs>
+        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+    </defs>
+    <circle cx="150" cy="100" r="75" fill="none"></circle>
+    <g>
+        <use xlink:href="#circlePath" fill="none"></use>
+        <text style="letter-spacing: 9.7px;">
+            <!-- circle text -->
+            <textPath fill="white" xlink:href="#circlePath">Elevate 8 - Elevate 8 -</textPath>
+        </text>
+    </g>
+</svg>

@@ -31,12 +31,10 @@
   </div>
 </template>
 
-<script>
-import { e8Utilits } from "~/utilits";
-export default {
-  name: "Counter",
-  mounted() {
+<script setup>
+  import { e8Utilits } from "~/utilits";
+
+  onMounted(() => {
     e8Utilits.counterUp();
-  },
-};
+  });
 </script>
