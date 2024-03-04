@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "assets/images/favicon.png"},
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"},
+        // { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"},
         { rel: "stylesheet", href: "/assets/css/flaticon.min.css" },
         { rel: "stylesheet", href: "/assets/css/fontawesome-5.14.0.min.css" },
         { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
@@ -33,5 +33,9 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/custom.css" },
       ],
     },
+  },
+  devServer: {
+    host: '0.0.0.0',
+    https: false,
   },
 });

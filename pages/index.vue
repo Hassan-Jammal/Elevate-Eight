@@ -10,7 +10,7 @@
 					<img src="/assets/images/hero/hero-right.png" alt="Hero" />
 				</div> -->
 			</div>
-				<div class="hero-bottom-image position-relative">
+				<div class="hero-bottom-image">
 					<img src="/assets/images/hero/hero1.png" alt="Hero" />
 					<div class="position-absolute top-0 left-0 w-100 h-100 d-flex align-items-center justify-content-center">
 						<a href="#" class="theme-btn"><!-- <img src="/assets/images/icons/toggler.svg" alt="Toggler" /> --> Get a Quote </a>
@@ -33,7 +33,7 @@
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-xl-5 col-lg-3">
-						<div class="about-image rmb-45 wow fadeInUp delay-0-2s">
+						<div class="about-image text-center rmb-45 wow fadeInUp delay-0-2s">
 							<img src="/assets/images/about/circle-text.svg" alt="Circle Text" />
 						</div>
 					</div>
@@ -41,15 +41,13 @@
 						<div class="about-content wow fadeInUp delay-0-4s">
 							<div class="section-title mb-40">
 								<span class="sub-title mb-15">About Company</span>
-								<h2>Our Main Goal to Satisficed Local & Global Clients</h2>
+								<h2>Turning Ideas into Digital Reality</h2>
 							</div>
 							<div class="content">
-								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-									accusantium doloremque laudantium totam aperiam eaque quae
-									abillo inventore veritatisey et quasi architecto beatae vitae
-									dictasunt explicabo voluptatem.
-								</p>
+								<p>Elevate8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
+									With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
+									From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with.<br />
+									If you're seeking a digital partner that can transform your online presence and drive meaningful results, look no further than Elevate8.</p>
 								<NuxtLink class="read-more mt-10" href="about">Read More <i
 										class="far fa-arrow-right"></i>
 								</NuxtLink>
@@ -65,14 +63,14 @@
 		<div class="headline-area pt-90 rpt-85 rel z-1">
 			<div class="container-fluid">
 				<div class="headline-text marquee">
-					<span>Creative <span>Digital</span> Agency</span>
+					<span>Elevate <span>Eight</span></span>
 				</div>
 			</div>
 		</div>
 		<!-- Headline Area end -->
 
 		<!-- What We Do start -->
-		<section class="what-we-do-area pt-90 rpt-80 rel z-1">
+		<!-- <section class="what-we-do-area pt-90 rpt-80 rel z-1">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-xl-5 col-lg-8">
@@ -132,7 +130,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- What We Do end -->
 
 		<!-- Statistics Area start -->
@@ -149,8 +147,8 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-7">
 						<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-							<span class="sub-title mb-20">Popular Services</span>
-							<h2>We Provide Amazing Web Design Solutions</h2>
+							<span class="sub-title mb-20">Creative Services</span>
+							<h2>Digital Marketing Sevices</h2>
 						</div>
 					</div>
 				</div>
@@ -159,14 +157,13 @@
 						<div class="service-three-item wow fadeInUp delay-0-2s">
 							<div class="title-icon">
 								<h5>
-									<NuxtLink href="service-details">Web Design From Figma</NuxtLink>
+									<NuxtLink href="service-details">Social Media Marketing</NuxtLink>
 								</h5>
-								<img src="/assets/images/services/icon1.png" alt="Icon" />
+								<img src="/assets/images/services/social-media-marketing.svg" alt="Icon" width="50" class="w-auto" />
 							</div>
 							<div class="content">
-								<p>We denounce with righteous indignation dislike beguile</p>
-								<NuxtLink class="read-more style-two" href="service-details"><span>Read More</span> <i
-										class="far fa-arrow-right"></i></NuxtLink>
+								<p>Amplify your online presence with Elevate Eight's Social Media Marketing expertise.</p>
+								<NuxtLink class="read-more style-two" href="service-details"><span>Read More</span> <i class="far fa-arrow-right"></i></NuxtLink>
 							</div>
 						</div>
 					</div>
@@ -174,12 +171,12 @@
 						<div class="service-three-item wow fadeInDown delay-0-2s">
 							<div class="title-icon">
 								<h5>
-									<NuxtLink href="service-details">PSD, Figma, XD to HTML Convert</NuxtLink>
+									<NuxtLink href="service-details">UX/UI Design</NuxtLink>
 								</h5>
-								<img src="/assets/images/services/icon2.png" alt="Icon" />
+								<img src="/assets/images/services/ux-ui.svg" alt="Icon" width="50" class="w-auto"/>
 							</div>
 							<div class="content">
-								<p>At vero eos et accusamus et dignissim ducimbl ditiis</p>
+								<p>Elevate user experiences with Elevate Eight's tailored UX/UI designsditiis</p>
 								<NuxtLink class="read-more style-two" href="service-details"><span>Read More</span> <i
 										class="far fa-arrow-right"></i></NuxtLink>
 							</div>
@@ -189,12 +186,12 @@
 						<div class="service-three-item wow fadeInUp delay-0-2s">
 							<div class="title-icon">
 								<h5>
-									<NuxtLink href="service-details">WordPress Development</NuxtLink>
+									<NuxtLink href="service-details">Search Engine Optimization</NuxtLink>
 								</h5>
-								<img src="/assets/images/services/icon3.png" alt="Icon" />
+								<img src="/assets/images/services/seo.svg" alt="Icon" width="50" class="w-auto" />
 							</div>
 							<div class="content">
-								<p>To take trivial example which ever undertakes laborious</p>
+								<p>Optimize your online visibility with Elevate Eight's SEO solutions.</p>
 								<NuxtLink class="read-more style-two" href="service-details"><span>Read More</span> <i
 										class="far fa-arrow-right"></i></NuxtLink>
 							</div>
@@ -204,18 +201,19 @@
 						<div class="service-three-item wow fadeInDown delay-0-2s">
 							<div class="title-icon">
 								<h5>
-									<NuxtLink href="service-details">React Development</NuxtLink>
+									<NuxtLink href="service-details">Branding</NuxtLink>
 								</h5>
-								<img src="/assets/images/services/icon4.png" alt="Icon" />
+								<img src="/assets/images/services/branding.svg" alt="Icon" width="50" class="w-auto" />
 							</div>
 							<div class="content">
-								<p>Sed persiciatis unde omnisey natus error voluptatem</p>
+								<p>Build a distinctive brand identity with Elevate Eight's branding services</p>
 								<NuxtLink class="read-more style-two" href="service-details"><span>Read More</span> <i
 										class="far fa-arrow-right"></i></NuxtLink>
 							</div>
 						</div>
 					</div>
 				</div>
+				<NuxtLink class="read-more" href="/services"><span>All Services</span> <i class="far fa-arrow-right"></i></NuxtLink>
 			</div>
 		</section>
 		<!-- Service Style Three end -->

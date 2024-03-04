@@ -61,7 +61,7 @@
 			<NuxtLink href="/services">Services</NuxtLink>
 		</li>
 		<li>
-			<NuxtLink href="/projects">Projects</NuxtLink>
+			<NuxtLink href="/projects">Work</NuxtLink>
 		</li>
 		<li>
 			<NuxtLink href="/team">Team</NuxtLink>

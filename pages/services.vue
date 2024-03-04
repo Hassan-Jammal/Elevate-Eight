@@ -2,7 +2,7 @@
 	<NuxtLayout name="elevate8">
 		<!-- Page Banner Section Start -->
 		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
-			style="background-image: url(assets/images/hero/hero-two-bg.png)">
+			style="background: url(assets/images/hero/hero-two-bg1.png) center no-repeat; background-position: left;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -337,7 +337,7 @@ const services = [
 	},
 	{
 		id: 9,
-		name: 'Social Media Management',
+		name: 'Social Media Marketing',
 		description: 'Amplify your online presence with Elevate Eight\'s Social Media Marketing expertise. Elevate engagement, drive brand awareness, and foster meaningful connections as we craft compelling strategies tailored to your unique brand identity',
 	},
 	{
