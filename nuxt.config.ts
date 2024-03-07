@@ -34,8 +34,8 @@ export default defineNuxtConfig({
       ],
     },
   },
-  devServer: {
-    host: '0.0.0.0',
-    https: false,
-  },
+  // devServer: {
+  //   host: '0.0.0.0',
+  //   https: false,
+  // },
 });
