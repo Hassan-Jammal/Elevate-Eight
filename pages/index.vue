@@ -22,9 +22,9 @@
 						<a href="#"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
 					</div>
 				</div>
-			<div class="hero-bg">
+			<!-- <div class="hero-bg">
 				<img src="/assets/images/hero/hero-bg.png" alt="lines" />
-			</div>
+			</div> -->
 		</section>
 		<!-- Hero Section End -->
 
@@ -259,7 +259,7 @@
 		<div class="headline-area pt-130 rpt-100 rel z-1">
 			<div class="container-fluid">
 				<h2 class="headline-text marquee">
-					<span><span>Digital</span> solutions</span>
+					<span><span>Dare</span><span> to </span> Elevate</span>
 				</h2>
 			</div>
 		</div>
@@ -579,9 +579,9 @@
 					</div>
 					<div class="col-xl-5">
 						<div class="why-choose-two-wrap">
-							<div class="section-title mb-55 wow fadeInUp delay-0-2s">
+							<div class="section-title text-center text-lg-start mb-55 wow fadeInUp delay-0-2s">
 								<span class="sub-title mb-15">Why Choose Us</span>
-								<h2>We Provide Services In One Places</h2>
+								<h2>Your complete service destination, provided by us.</h2>
 							</div>
 							<div class="why-choose-item-two wow fadeInUp delay-0-3s">
 								<div class="icon">
@@ -590,11 +590,10 @@
 								</div>
 								<div class="content">
 									<h4>
-										<NuxtLink href="service-details">Competitive Rates</NuxtLink>
+										<NuxtLink href="service-details">High-Quality Services</NuxtLink>
 									</h4>
 									<p>
-										We denounce with righteous indignation and dislike beguiled
-										demoralized charms
+										We guarantee unparalleled quality through rigorous testing before delivering services, ensuring they meet and exceed our clients' expectations.
 									</p>
 								</div>
 							</div>
@@ -605,11 +604,10 @@
 								</div>
 								<div class="content">
 									<h4>
-										<NuxtLink href="service-details">No Contracts Needed</NuxtLink>
+										<NuxtLink href="service-details">Innovative and Passionate</NuxtLink>
 									</h4>
 									<p>
-										To take trivial example, which eundertakes laborious
-										physical exercise except
+										Our passion for innovation and creativity makes us an outstanding partner in digital marketing and web/app development. We consistently explore new ways to boost our clients' revenue.
 									</p>
 								</div>
 							</div>
@@ -620,11 +618,10 @@
 								</div>
 								<div class="content">
 									<h4>
-										<NuxtLink href="service-details">Powerful Terminal Lines</NuxtLink>
+										<NuxtLink href="service-details">We Write Code That Works</NuxtLink>
 									</h4>
 									<p>
-										At vero eos et accusamus eto dignissimos duc blanditiis
-										praesentium volupta
+										We meticulously hand-code each site using cutting-edge technology, ensuring seamless loading across all devices. Our testing spans major browsers, guaranteeing a consistent experience for all users.
 									</p>
 								</div>
 							</div>

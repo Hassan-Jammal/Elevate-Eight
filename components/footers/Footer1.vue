@@ -1,5 +1,5 @@
 <template>
-	<footer class="main-footer footer-one rel z-1" style="background-image: url(assets/images/footer/footer-bg-shape.png)">
+	<footer class="main-footer footer-one rel z-1" style="background-image: url(assets/images/shapes/Grou1.svg)">
 		<div class="container container-1290">
 			<!-- <div class="footer-top pt-80 pb-60">
 				<div class="row align-items-center">

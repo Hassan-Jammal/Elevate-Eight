@@ -2,7 +2,7 @@
 	<NuxtLayout name="elevate8">
 		<!-- Page Banner Section Start -->
 		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
-			style="background: url(assets/images/hero/hero-two-bg1.png) center no-repeat; background-position: left;">
+			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -313,7 +313,7 @@ const services = [
 	{
 		id: 4,
 		name: 'Search Engine Optimization',
-		description: 'Optimize your online visibility with Elevate Eight\'s technical SEO solutions. From site audits to strategic optimizations, we enhance your website\'s performance and search engine rankings',
+		description: 'Optimize your online visibility with Elevate Eight\'s technical SEO solutions. From site audits to strategic optimizations, we enhance your website\'s performance and search engine rankings.',
 	},
 	{
 		id: 5,
@@ -338,7 +338,7 @@ const services = [
 	{
 		id: 9,
 		name: 'Social Media Marketing',
-		description: 'Amplify your online presence with Elevate Eight\'s Social Media Marketing expertise. Elevate engagement, drive brand awareness, and foster meaningful connections as we craft compelling strategies tailored to your unique brand identity',
+		description: 'Amplify your online presence with Elevate Eight\'s Social Media Marketing expertise. Elevate engagement, drive brand awareness, and foster meaningful connections as we craft compelling strategies tailored to your unique brand identity.',
 	},
 	{
 		id: 10,
