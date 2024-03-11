@@ -10,14 +10,14 @@
 					<span class="fa fa-times"></span>
 				</div>
 				<div class="title">
-					<h4>Get a Quote</h4>
+					<h4>Experience Real Results</h4>
 				</div>
 
 				<!--Appointment Form-->
 				<div class="appointment-form">
 					<form method="post" @submit.prevent="toggleSidebar()">
 						<div class="form-group">
-							<input type="text" name="full_name" value="" placeholder="Name" />
+							<input type="text" name="full_name" value="" placeholder="Full Name" />
 						</div>
 						<div class="form-group">
 							<input type="text" name="email" value="" placeholder="Email Address" />
@@ -63,10 +63,10 @@
 							</VaSelect>
 						</div>
 						<div class="form-group">
-							<textarea placeholder="Message" rows="5"></textarea>
+							<textarea placeholder="Tell us about your business" rows="5"></textarea>
 						</div>
 						<div class="form-group">
-							<button type="submit" class="theme-btn">Submit now</button>
+							<button type="submit" class="theme-btn">Send My Free Proposal</button>
 						</div>
 					</form>
 				</div>
