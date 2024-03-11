@@ -61,37 +61,37 @@
 						<div class="footer-widget widget_nav_menu gap-3 mb-0">
 							<ul class="list-style-two wow fadeInUp delay-0-3s">
 								<li>
-									Web Development
+									<NuxtLink to="/about">Web Development</NuxtLink>
 								</li>
 								<li>
-									Mobile App Development
+									<NuxtLink to="/about">Mobile App Development</NuxtLink>
 								</li>
 								<li>
-									E-commerce Websites
+									<NuxtLink to="/about">E-commerce Websites</NuxtLink>
 								</li>
 								<li>
-									SEO
+									<NuxtLink to="/about">SEO</NuxtLink>
 								</li>
 								<li>
-									Branding
+									<NuxtLink to="/about">Branding</NuxtLink>
 								</li>
 								
 							</ul>
 							<ul class="list-style-two wow fadeInUp delay-0-3s">
 								<li>
-									UX/UI
+									<NuxtLink to="/about">UX/UI</NuxtLink>
 								</li>
 								<li>
-									Hosing Plans
+									<NuxtLink to="/about">Hosing Plans</NuxtLink>
 								</li>
 								<li>
-									Logo Design
+									<NuxtLink to="/about">Logo Design</NuxtLink>
 								</li>
 								<li>
-									Social Media Management
+									<NuxtLink to="/about">Social Media Management</NuxtLink>
 								</li>
 								<li>
-									Maintenance & Support
+									<NuxtLink to="/about">Maintenance & Support</NuxtLink>
 								</li>
 							</ul>
 						</div>
@@ -113,8 +113,7 @@
 					<div class="col-xl-5 col-lg-6">
 						<div class="copyright-text text-lg-end pt-40 pb-35 rpt-10 wow fadeInLeft delay-0-2s">
 							<p>
-								Copyright @{{ new Date().getFullYear() }},
-								<NuxtLink href="/">Elevate 8</NuxtLink> All Rights Reserved
+								Copyright @{{ new Date().getFullYear() }}, <span>Elevate 8</span> All Rights Reserved
 							</p>
 						</div>
 					</div>

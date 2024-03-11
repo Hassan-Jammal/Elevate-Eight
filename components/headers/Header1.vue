@@ -21,7 +21,7 @@
 								</div>
 
 								<!-- Toggle Button -->
-								<button type="button" class="navbar-toggle" data-bs-toggle="collapse"
+								<button type="button" class="navbar-toggle" data-bs-toggle="collapse" @click="toggleSidebar2()"
 									data-bs-target=".navbar-collapse">
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
@@ -30,7 +30,7 @@
 							</div>
 
 							<div class="navbar-collapse collapse clearfix">
-								<ul class="navigation onepage clearfix" v-if="singlePage == true">
+								<!-- <ul class="navigation onepage clearfix" v-if="singlePage == true">
 									<li><a href="#home">Home</a></li>
 									<li><a href="#about">about</a></li>
 									<li><a href="#services">services</a></li>
@@ -38,8 +38,8 @@
 									<li><a href="#team">team</a></li>
 									<li><a href="#pricing">pricing</a></li>
 									<li><a href="#news">news</a></li>
-								</ul>
-								<Nav v-else />
+								</ul> -->
+								<Nav /> <!-- v-else -->
 							</div>
 						</nav>
 						<!-- Main Menu End-->
@@ -63,26 +63,24 @@
 		</div>
 		<!--End Header Upper-->
 	</header>
+
 	<HeadersSidebar />
+
+	<HeadersMenuSidebars />
+
 </template>
 
-<script>
-import Nav from "./Nav.vue";
-import Search from "./Search.vue";
+<script setup>
+	import Nav from './Nav.vue';
+	const props = defineProps(["singlePage"]);
 
-export default {
-	name: "Header1",
-	components: { Nav, Search },
-	props: {
-		singlePage: {
-			type: Boolean,
-			default: false,
-		},
-	},
-	methods: {
-		toggleSidebar() {
-			document.querySelector("body").classList.add("side-content-visible");
-		},
-	},
-};
+	const toggleSidebar = () => {
+	document.querySelector("body").classList.add("side-content-visible");
+	};
+
+	const toggleSidebar2 = () => {
+	document.querySelector("body").classList.add("side-content-visible-nav");
+	};
 </script>
+
+

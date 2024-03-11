@@ -2,7 +2,14 @@
 
 export default defineNuxtConfig({
   ssr: false,
-  modules: ["nuxt-swiper"],
+  modules: ["nuxt-swiper", "@vuestic/nuxt"],
+  vuestic: {
+    config: {
+      // Config here
+    },
+
+    css: false,
+  },
   devtools: { enabled: true },
   // css: [
   //   '~/assets/sass/style.sass', 
@@ -24,6 +31,7 @@ export default defineNuxtConfig({
         // { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"},
         { rel: "stylesheet", href: "/assets/css/flaticon.min.css" },
         { rel: "stylesheet", href: "/assets/css/fontawesome-5.14.0.min.css" },
+        { rel: "stylesheet", href: "/assets/css/select-dpd.css" },
         { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
         { rel: "stylesheet", href: "/assets/css/magnific-popup.min.css" },
         { rel: "stylesheet", href: "/assets/css/nice-select.min.css" },
@@ -33,9 +41,5 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/custom.css" },
       ],
     },
-  },
-  // devServer: {
-  //   host: '0.0.0.0',
-  //   https: false,
-  // },
+  }
 });

@@ -77,14 +77,13 @@
 					<div class="col-xl-7 col-lg-8 order-0 order-lg-1">
 						<div class="about-content wow fadeInUp delay-0-4s">
 							<div class="section-title mb-40 text-center text-lg-start">
-								<span class="sub-title mb-15">About Company</span>
+								<span class="sub-title mb-15">About Elevate Eight</span>
 								<h2>Turning Ideas into Digital Reality</h2>
 							</div>
 							<div class="content">
-								<p>Elevate8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
+								<p>Elevate 8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
 									With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
-									From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with.<br />
-									If you're seeking a digital partner that can transform your online presence and drive meaningful results, look no further than Elevate8.</p>
+									From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with.</p>
 								<NuxtLink class="read-more mt-10" href="about">Read More <i
 										class="far fa-arrow-right"></i>
 								</NuxtLink>
@@ -569,7 +568,7 @@
 		<!-- Pricing style three end -->
 
 		<!-- Why Choose Us Area start -->
-		<section class="why-choose-area pt-90 rpt-60 rel z-1">
+		<section class="why-choose-area pt-90 rpt-60 pb-75 rpb-45 rel z-1">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xl-7">

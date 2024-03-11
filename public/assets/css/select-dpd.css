@@ -1,0 +1,26 @@
+.va-input-wrapper__field{
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+	border-radius: 5px !important;
+	color: white !important;
+	padding:0 !important;
+	opacity: 1 !important;
+}
+.va-input-wrapper__text {
+	padding: 10px 25px !important;
+}
+.va-input-wrapper__text input {
+	opacity: 1 !important;
+	padding: 0 !important;
+	line-height: 23px !important;
+	/* min-height: 45px !important; */
+}
+.va-select-content{
+	gap: 8px !important;
+}
+.va-select-dropdown__options-wrapper{
+	background-color: #0a1019 !important;
+	color: var(--e8-headline-color) !important;
+}
+.va-select-option{
+	font-family: var(--e8-secondary-font) !important;
+}

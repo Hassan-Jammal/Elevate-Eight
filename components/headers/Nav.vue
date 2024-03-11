@@ -54,20 +54,25 @@
 			</ul>
 			<div v-html="dropdown"></div>
 		</li> -->
-		<li>
-			<NuxtLink href="/about">About Us</NuxtLink>
+		<li class="wow fadeInUp delay-0-4s">
+			<NuxtLink href="/about" @click="closeSidebar()">About Us</NuxtLink>
 		</li>
-		<li>
-			<NuxtLink href="/services">Services</NuxtLink>
+		<li class="wow fadeInUp delay-0-5s">
+			<NuxtLink href="/services" @click="closeSidebar()">Services</NuxtLink>
 		</li>
-		<li>
-			<NuxtLink href="/projects">Work</NuxtLink>
+		<li class="wow fadeInUp delay-0-6s">
+			<NuxtLink href="/projects" @click="closeSidebar()">Work</NuxtLink>
 		</li>
-		<li>
-			<NuxtLink href="/team">Team</NuxtLink>
+		<li class="wow fadeInUp delay-0-7s">
+			<NuxtLink href="/team" @click="closeSidebar()">Team</NuxtLink>
 		</li>
-		<li>
-			<NuxtLink href="/contact">Contact Us</NuxtLink>
+		<li class="wow fadeInUp delay-0-8s">
+			<NuxtLink href="/contact" @click="closeSidebar()">Contact Us</NuxtLink>
+		</li>
+		<li class="d-lg-none d-block wow fadeInUp delay-0-9s">
+			<a href="#" class="theme-btn" @click="toggleSidebar()">
+				Get a Quote
+			</a>
 		</li>
 		<!-- <li class="dropdown">
 			<a href="#">pages</a>
@@ -159,14 +164,15 @@
 	</ul>
 </template>
 
-<script>
-export default {
-	name: "Nav",
-	data() {
-		return {
-			dropdown:
-				'<div class="dropdown-btn"><span class="far fa-plus"></span></div>',
-		};
-	},
-};
+<script setup>
+	const dropdown = ref('<div class="dropdown-btn"><span class="far fa-plus"></span></div>');
+
+	const toggleSidebar = () => {
+		document.querySelector("body").classList.add("side-content-visible");
+		document.querySelector("body").classList.remove("side-content-visible-nav");
+	};
+
+	const closeSidebar = () => {
+		document.querySelector("body").classList.remove("side-content-visible-nav");
+	};
 </script>
