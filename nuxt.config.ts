@@ -41,9 +41,5 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/custom.css" },
       ],
     },
-  },
-  // devServer: {
-  //   host: '0.0.0.0',
-  //   https: false,
-  // },
+  }
 });

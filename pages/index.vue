@@ -1,7 +1,7 @@
 <template>
 	<NuxtLayout name="elevate8" :header="1" :footer="1">
 		<!-- Hero Section Start -->
-		<section class="hero-area pt-185 rpt-150 rel z-1">
+		<section class="hero-area pt-250 rpt-150 rel z-1">
 			<div class="container container-1620">
 				<div class="hero-content text-center wow fadeInLeft delay-0-2s">
 					<h1>Elevate <span>Your Online</span> Presence</h1>

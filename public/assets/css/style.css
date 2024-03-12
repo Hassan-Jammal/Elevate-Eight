@@ -104,7 +104,7 @@
 }
 body {
 	color: var(--e8-body-color);
-	background: black;
+	background: #03010d;
 	line-height: 32px;
 	font-size: 16px;
 	font-family: var(--e8-primary-font);
@@ -1122,7 +1122,11 @@ a.theme-btn.style-three {
 	font-weight: 600;
 	width: 60px;
 	height: 60px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
+	
 	line-height: 60px;
 	border-radius: 50%;
 	text-align: center;
@@ -1130,7 +1134,10 @@ a.theme-btn.style-three {
 
 .pagination li.disabled .page-link,
 .pagination li:last-child .page-link {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	border-radius: 50%;
 }
 
@@ -4717,14 +4724,14 @@ h6,
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: #0A0A0A;
+	/* background: #0A0A0A; */
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	background: #00000099;
 	-webkit-animation: sticky 1s;
 	animation: sticky 1s;
 	/* -webkit-box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, 0.1);
 	box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, 0.1); */
-	backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background: #000000cc;
 }
 
 @media only screen and (min-width: 992px) {
@@ -4778,7 +4785,10 @@ h6,
 	.main-menu .navbar-collapse>ul {
 		display: block;
 		padding: 25px 0;
-		background: #0A0A0A;
+		/* background: #0A0A0A; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;
 	}
 
 	.main-menu .navbar-collapse>ul>li:last-child {
@@ -5206,7 +5216,10 @@ h6,
 	z-index: 99999;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #0A0A0A;
+	/* background-color: #0A0A0A; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;
 	border-left: 1px solid #231b26;
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -5223,7 +5236,10 @@ h6,
 	z-index: 99999;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #0A0A0A;
+	/* background-color: #0A0A0A; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;
 	/* border-left: 1px solid #231b26; */
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -5618,7 +5634,10 @@ h6,
 
 .main-header.header-two .menu-sidebar>button {
 	border-radius: 0;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 /*******************************************************/
@@ -7339,7 +7358,10 @@ h6,
 
 /* About Four */
 .about-four-wrap {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 .about-four-content .list-style-three {
@@ -7449,7 +7471,10 @@ h6,
 	height: 65px;
 	border: none;
 	line-height: 65px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 .awards-tabs .nav-link .details-btn:hover {
@@ -7478,7 +7503,10 @@ h6,
 	position: absolute;
 	left: 70px;
 	top: 0;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	width: calc(100% - 140px);
 	height: 100%;
 }
@@ -7584,7 +7612,10 @@ h6,
 	z-index: -1;
 	width: 100%;
 	height: 140px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 .work-with-content {
@@ -7797,7 +7828,10 @@ h6,
 }
 
 .service-item.style-three:hover {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	border-color: var(--e8-primary-purple);
 }
 
@@ -7822,7 +7856,13 @@ h6,
 	-o-transition: 0.3s;
 	transition: 0.3s;
 	margin-bottom: 30px;
-	background: #0a1019;
+	/* /* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;; */
+	backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background: #00000099;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -7890,7 +7930,10 @@ h6,
 	-o-transition: 0.3s;
 	transition: 0.3s;
 	position: relative;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	margin-bottom: 30px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -8168,7 +8211,10 @@ h6,
 
 .service-six-item {
 	margin-bottom: 30px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	padding: 30px 30px 30px 40px;
 	border: 1px solid var(--e8-border-color);
 	-webkit-box-shadow: 0px 4px 60px 30px rgba(0, 0, 0, 0.05);
@@ -8660,7 +8706,10 @@ h6,
 }
 
 .blog-item.style-three {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	margin-bottom: 30px;
 }
 
@@ -8730,7 +8779,10 @@ h6,
 	-ms-flex-align: center;
 	align-items: center;
 	margin-bottom: 30px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	border: 4px solid #0a1019;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
@@ -8832,7 +8884,10 @@ h6,
 	-o-transition: 0.3s;
 	transition: 0.3s;
 	position: relative;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	padding: 25px 40px 15px;
 	margin: -60px 20px 0 0;
 	border: 1px solid var(--e8-border-color);
@@ -9378,7 +9433,10 @@ blockquote .blockquote-footer:before {
 }
 
 .form-style-one .nice-select .list {
-	background: #0A0A0A;
+	/* background: #0A0A0A; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;
 }
 
 .form-style-one .nice-select .list .selected,
@@ -9387,7 +9445,10 @@ blockquote .blockquote-footer:before {
 }
 
 .form-style-two {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	padding: 40px 50px;
 }
 
@@ -9437,7 +9498,10 @@ blockquote .blockquote-footer:before {
 }
 
 .form-style-two .nice-select .list {
-	background: #0A0A0A;
+	/* background: #0A0A0A; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;
 }
 
 .form-style-two .nice-select .list .selected,
@@ -9452,7 +9516,10 @@ blockquote .blockquote-footer:before {
 	position: absolute;
 	left: 50%;
 	bottom: -8%;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	padding-bottom: 115%;
 	border-radius: 50%;
 	-webkit-transform: translate(-50%);
@@ -9652,7 +9719,10 @@ blockquote .blockquote-footer:before {
 
 .contact-page-form {
 	padding: 60px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 @media only screen and (max-width: 479px) {
@@ -9812,7 +9882,10 @@ blockquote .blockquote-footer:before {
 
 /* Counter Three */
 .counter-section-three {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 .counter-item-three {
@@ -10506,7 +10579,10 @@ blockquote .blockquote-footer:before {
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	width: 100%;
 	height: calc(100% + 22px);
 	-webkit-clip-path: polygon(0 0, 100% 22px, 100% 100%, 0% 100%);
@@ -10603,7 +10679,10 @@ blockquote .blockquote-footer:before {
 	position: relative;
 	padding: 40px 50px;
 	margin-bottom: 40px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 @media only screen and (max-width: 375px) {
@@ -12036,7 +12115,10 @@ blockquote .blockquote-footer:before {
 .why-choose-item.style-three {
 	padding: 20px 30px;
 	margin-bottom: 30px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	border: 1px solid var(--e8-border-color);
 }
 
@@ -12140,7 +12222,10 @@ blockquote .blockquote-footer:before {
 .feature-item-three .top-part .details-btn {
 	width: 85px;
 	height: 85px;
-	background: #0b111a;
+	/* background: #0b111a; */
+	backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	color: var(--e8-primary-purple);
 	border: none;
 	line-height: 85px;
@@ -12285,7 +12370,10 @@ blockquote .blockquote-footer:before {
 /******************** ## Shop Area *********************/
 /*******************************************************/
 .product-item {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	margin-bottom: 30px;
 }
 
@@ -12373,7 +12461,10 @@ blockquote .blockquote-footer:before {
 }
 
 .shop-shorter .products-dropdown .nice-select .list {
-	background: #0A0A0A;
+	/* background: #0A0A0A; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;
 }
 
 .shop-shorter .products-dropdown .nice-select .list .selected,
@@ -12610,7 +12701,10 @@ blockquote .blockquote-footer:before {
 /*******************************************************/
 .work-step-item {
 	padding: 32px 32px 16px;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	text-align: center;
 	margin-bottom: 30px;
 	position: relative;
@@ -12897,7 +12991,10 @@ blockquote .blockquote-footer:before {
 	position: absolute;
 	left: 70px;
 	top: 0;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	width: calc(100% - 140px);
 	height: 100%;
 }
@@ -13529,7 +13626,10 @@ blockquote .blockquote-footer:before {
 
 /* Testimonial Five */
 .testimonial-section-five {
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 }
 
 .testimonial-five-image {
@@ -13652,7 +13752,10 @@ blockquote .blockquote-footer:before {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	background: #0a1019;
+	/* background: #0a1019; */
+backdrop-filter: saturate(180%) blur(20px);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+background: #00000099;;
 	margin-left: 15px;
 	margin-right: 15px;
 	width: calc(20% - 30px);
@@ -13994,10 +14097,14 @@ blockquote .blockquote-footer:before {
 /******************* ## Main Footer *******************/
 /*******************************************************/
 .main-footer {
-	background-color: #0a1019;
+	backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background: #00000099;
+	border-top: 1px solid var(--e8-border-color);
+	/* background-color: #0a1019;
 	background-size: cover;
 	background-position: center center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 
 .footer-top {
