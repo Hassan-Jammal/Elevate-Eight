@@ -5758,7 +5758,7 @@ background: #00000099;;
 .hero-social {
 	position: absolute;
 	top: 0;
-	right: 20px;
+	right: 10px;
 	height: 100%;
 	margin-left: 40px;
 	/* padding-top: 40px;
@@ -5777,7 +5777,8 @@ background: #00000099;;
 	-ms-flex-align: center;
 	align-items: center;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 50px;
 	z-index: 999999;
 }
 

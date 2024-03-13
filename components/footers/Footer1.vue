@@ -26,8 +26,8 @@
 							<span>Let’s Work Together</span>
 						</div>
 						<div class="footer-contact-info wow fadeInUp delay-0-3s">
-							<a class="theme-btn" href="mailto:support@gmail.com">info@elevate8.co <i class="far fa-arrow-right"></i></a>
-							<a class="theme-btn" href="tel:+96171102066">+961 71 102 066 <i class="far fa-arrow-right"></i></a>
+							<a class="theme-btn" href="mailto:support@gmail.com">Email Us <i class="far fa-arrow-right"></i></a>
+							<a class="theme-btn" href="tel:+96171102066">Call Us <i class="far fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>

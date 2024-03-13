@@ -11,7 +11,7 @@
 				</div> -->
 			</div>
 				<div class="hero-bottom-image">
-					<img src="/assets/images/hero/hero1.png" alt="Hero" />
+					<img src="/assets/images/hero/hero1111.png" alt="Hero" />
 					<!-- <div class="position-absolute top-0 left-0 w-100 h-100 d-flex align-items-center justify-content-center">
 						<a href="#" class="theme-btn"><img src="/assets/images/icons/toggler.svg" alt="Toggler" /> Get a Quote </a>
 					</div> -->
@@ -606,7 +606,7 @@
 										<NuxtLink href="service-details">Innovative and Passionate</NuxtLink>
 									</h4>
 									<p>
-										Our passion for innovation and creativity makes us an outstanding partner in digital marketing and web/app development. We consistently explore new ways to boost our clients' revenue.
+										With our continual dedication to bringing innovative and imaginative solutions, we excel as a strategic partner for digital marketing, web and app projects. Through our ongoing efforts to explore novel approaches, we reliably help clients strengthen their revenue generation.
 									</p>
 								</div>
 							</div>
@@ -620,7 +620,7 @@
 										<NuxtLink href="service-details">We Write Code That Works</NuxtLink>
 									</h4>
 									<p>
-										We meticulously hand-code each site using cutting-edge technology, ensuring seamless loading across all devices. Our testing spans major browsers, guaranteeing a consistent experience for all users.
+										We create websites and mobile apps through careful coding then extensively test them. This ensures smooth loading on any device or browser. Our process guarantees customers' sites provide a seamless user experience whether accessed from a phone, tablet, computer or varying browsers. Users enjoy consistent and trouble-free access no matter how they connect online.
 									</p>
 								</div>
 							</div>

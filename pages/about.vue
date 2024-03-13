@@ -3,7 +3,7 @@
     <!-- Page Banner Section Start -->
     <section
       class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
-      style="background: url(assets/images/shapes/Group2.svg) left center no-repeat"
+      style="background: url(assets/images/shapes/Group22.svg) left center no-repeat"
     >
       <div class="container">
         <div class="row">
@@ -57,7 +57,16 @@
 							</div>
               
               <p>
-                Passionate about transforming ideas into reality, our team comprises talented individuals with diverse backgrounds and skill sets. United in our commitment to surpassing expectations, our creative team is dedicated to delivering impactful work that resonates with excellence for our clients. With strategic locations in Beirut, Lebanon, and Doha, Qatar, if you're seeking a digital partner that can transform your online presence and drive meaningful results, look no further than Elevate 8.
+                <!-- Passionate about transforming ideas into reality, our team comprises talented individuals with diverse backgrounds and skill sets. United in our commitment to surpassing expectations, our creative team is dedicated to delivering impactful work that resonates with excellence for our clients. With strategic locations in Beirut, Lebanon, and Doha, Qatar, if you're seeking a digital partner that can transform your online presence and drive meaningful results, look no further than Elevate 8. -->
+
+                Elevate 8 is a full-service web and application development agency with offices in Beirut, Lebanon and Doha, Qatar. We were founded with the goal of creating elegant, user-focused digital solutions that elevate businesses to new heights. <br /><br />
+                <!-- Over the past years, we've grown to be a dedicated team of talented developers, designers and project managers. Our diverse experience across multiple industries means we understand the unique challenges different businesses face. We bring this insight along with our creativity and technical expertise to every project.<br /><br /> -->
+                What sets us apart is our collaborative, client-centered approach. We start by listening to understand your specific goals and priorities. Then we work closely with you throughout the entire process to ensure the final product is perfectly tailored. User experience and thoughtful design are just as important to us as strong development.<br /><br />
+                We specialize in building custom web applications, mobile apps, responsive websites and scaling existing platforms. 
+                <!-- Our portfolio features work for clients of all sizes, from nimble startups to large corporations.  -->
+                Technologies we leverage include [LIST OF TECH STACK].<br /><br />
+                When you partner with Elevate 8, you gain so much more than just a project - you gain a team dedicated to advocating for your success. Our mission is to level up your business through user-centric digital solutions crafted by our dedicated team of professionals. <br />
+                Let's get started on elevating your vision to new heights.
               </p>
             </div>
             <!-- <div class="row">
@@ -88,7 +97,7 @@
           <div class="col-lg-5 wow fadeInRight delay-0-2s position-relative">
             <div class="ratio ratio-1x1">
               <img
-                src="/assets/images/about/about-4.jpg"
+                src="/assets/images/about/about-42.png"
                 alt="Client Logo"
                 class="object-fit-cover"
               />
