@@ -57,7 +57,7 @@
 			transform-origin: center
 
 	button:hover svg .will-change-rotate
-		transform: rotate(720deg)
+		transform: rotate(720deg) scale(0.8)
 
 	button:hover svg path.will-change-opacity
 		fill-opacity: 1

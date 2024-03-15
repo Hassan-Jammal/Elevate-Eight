@@ -766,9 +766,9 @@ a.theme-btn.style-three {
 
 .read-more i {
 	float: right;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+	-webkit-transition: margin 0.3s ease-in-out;
+	-o-transition: margin 0.3s ease-in-out;
+	transition: margin 0.3s ease-in-out;
 	margin-left: 8px;
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
