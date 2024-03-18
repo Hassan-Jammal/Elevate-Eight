@@ -189,7 +189,7 @@
             </div>
           </div>
           <div class="col-lg-7">
-            <div class="my-skill-images wow fadeInRight delay-0-2s">
+            <!-- <div class="my-skill-images wow fadeInRight delay-0-2s">
               <div class="skill-item">
                 <img src="/assets/images/skills/skill9.png" alt="Skill Icon" />
                 <span class="text">Sass</span>
@@ -237,7 +237,7 @@
               <div class="skill-item">
                 <img src="/assets/images/skills/skill13.png" alt="Skill Icon" />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

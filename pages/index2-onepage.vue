@@ -117,7 +117,7 @@
             </div>
           </div>
         </div>
-        <div class="skills-wrap">
+        <!-- <div class="skills-wrap">
           <div class="skill-item">
             <img src="/assets/images/skills/skill1.png" alt="Skill Icon" />
             <span class="text">Bootstrap</span>
@@ -170,7 +170,7 @@
             <img src="/assets/images/skills/skill13.png" alt="Skill Icon" />
             <span class="text">Vue.js</span>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- Skills Area End -->
