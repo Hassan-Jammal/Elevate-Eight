@@ -1,7 +1,35 @@
 <template>
 	<NuxtLayout name="elevate8">
-		<!-- Page Banner Section Start -->
+
+    <!-- Page Banner Section Start -->
 		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
+			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center text-md-start">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb wow fadeInUp delay-0-4s">
+								<li class="breadcrumb-item">
+									<NuxtLink href="/">Home</NuxtLink>
+								</li>
+								<li class="breadcrumb-item active">About Us</li>
+							</ol>
+						</nav>
+						<!-- <h2 class="section-title">
+							<span class="sub-title mb-15">Our Work</span>
+						</h2> -->
+						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
+							We are Elevate Eight
+							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Page Banner Section End -->
+
+		<!-- Page Banner Section Start -->
+		<!-- <section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
 			style="background: url(assets/images/shapes/Group22.svg) left center no-repeat">
 			<div class="container">
 				<div class="row">
@@ -17,7 +45,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="container-fluid">
+			<div class="container-fluid">
         <div class="video-part style-two mb-40 wow fadeInUp delay-0-2s">
           <img src="/assets/images/video/video-two-bg.jpg" alt="Video" />
           <a
@@ -26,8 +54,8 @@
             ><i class="fas fa-play"></i
           ></a>
         </div>
-      </div> -->
-		</section>
+      </div>
+		</section> -->
 		<!-- Page Banner Section End -->
 
 		
@@ -129,62 +157,14 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6">
 						<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-							<h2>Here are Numerous Topics That Will Enhance Your Skills</h2>
+							<h2>Explore our Tech Stack Catalog</h2>
 						</div>
 					</div>
 				</div>
 				<div class="skills-wrap">
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill1.png" alt="Skill Icon" />
-						<span class="text">Bootstrap</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill2.png" alt="Skill Icon" />
-						<span class="text">HTML</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill3.png" alt="Skill Icon" />
-						<span class="text">CSS</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill4.png" alt="Skill Icon" />
-						<span class="text">javascript</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill5.png" alt="Skill Icon" />
-						<span class="text">React</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill6.png" alt="Skill Icon" />
-						<span class="text">WordPress</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill7.png" alt="Skill Icon" />
-						<span class="text">php</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill8.png" alt="Skill Icon" />
-						<span class="text">node.js</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill9.png" alt="Skill Icon" />
-						<span class="text">Sass</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill10.png" alt="Skill Icon" />
-						<span class="text">Angular</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill11.png" alt="Skill Icon" />
-						<span class="text">Shopify</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill12.png" alt="Skill Icon" />
-						<span class="text">Elementor</span>
-					</div>
-					<div class="skill-item">
-						<img src="/assets/images/skills/skill13.png" alt="Skill Icon" />
-						<span class="text">Vue.js</span>
+					<div class="skill-item" v-for="(technology, index) in technologies" :key="index">
+						<img :src="`/assets/images/skills/${ technology.icon }.svg`" alt="Skill Icon" />
+						<span class="text">{{ technology.name }}</span>
 					</div>
 				</div>
 			</div>
@@ -591,4 +571,180 @@
 
 <script setup>
 
+	const technologies = [
+		{
+			id: 1,
+			name: 'Vue.js',
+			icon: 'vuejs',
+			link: 'https://vuejs.org/'
+		},
+		{
+			id: 2,
+			name: 'React',
+			icon: 'reactjs',
+			link: 'https://react.dev/'
+		},
+		{
+			id: 3,
+			name: 'HTML',
+			icon: 'html5',
+			link: ''
+		},
+		{
+			id: 4,
+			name: 'CSS',
+			icon: 'css3',
+			link: ''
+		},
+		{
+			id: 5,
+			name: 'JavaScript',
+			icon: 'js',
+			link: ''
+		},
+		{
+			id: 6,
+			name: 'Laravel',
+			icon: 'laravel',
+			link: 'https://laravel.com/'
+		},
+		{
+			id: 7,
+			name: 'Flutter',
+			icon: 'flutter',
+			link: 'https://flutter.dev/'
+		},
+		{
+			id: 8,
+			name: 'Bootstrap',
+			icon: 'bootstrap5',
+			link: 'https://getbootstrap.com/'
+		},
+		{
+			id: 9,
+			name: 'PHP',
+			icon: 'php',
+			link: 'https://www.php.net/'
+		},
+		{
+			id: 10,
+			name: 'Kotlin',
+			icon: 'kotlin',
+			link: 'https://kotlinlang.org/'
+		},
+		{
+			id: 11,
+			name: 'MongoDB',
+			icon: 'mongodb',
+			link: 'https://www.mongodb.com/'
+		},
+		{
+			id: 12,
+			name: 'Firebase',
+			icon: 'firebase',
+			link: 'https://firebase.google.com/'
+		},
+		{
+			id: 13,
+			name: 'Ionic',
+			icon: 'ionic',
+			link: 'https://ionicframework.com/'
+		},
+		{
+			id: 14,
+			name: 'Nuxt.js',
+			icon: 'nuxtjs',
+			link: 'https://nuxt.com/'
+		},
+		{
+			id: 15,
+			name: 'Wordpress',
+			icon: 'wordpress',
+			link: 'https://wordpress.com/'
+		},
+		{
+			id: 16,
+			name: 'Shopify',
+			icon: 'shopify',
+			link: 'https://www.shopify.com/'
+		},
+		{
+			id: 17,
+			name: 'Node.js',
+			icon: 'nodejs',
+			link: 'https://nodejs.org/en'
+		},
+		{
+			id: 18,
+			name: 'Next.js',
+			icon: 'nextjs',
+			link: 'https://nextjs.org/'
+		},
+		{
+			id: 19,
+			name: 'Analytics',
+			icon: 'analytics',
+			link: 'https://analytics.google.com/analytics/'
+		},
+		{
+			id: 20,
+			name: 'SASS',
+			icon: 'sass',
+			link: 'https://sass-lang.com/'
+		},
+		{
+			id: 21,
+			name: 'TailwindCSS',
+			icon: 'tailwindcss',
+			link: 'https://tailwindcss.com/'
+		},
+		{
+			id: 22,
+			name: 'Figma',
+			icon: 'figma',
+			link: 'https://www.figma.com/'
+		},
+		{
+			id: 23,
+			name: 'AdobeAI',
+			icon: 'adobeai',
+			link: 'https://www.adobe.com/products/illustrator.html'
+		},
+		{
+			id: 24,
+			name: 'AdobeXD',
+			icon: 'adobexd',
+			link: 'https://www.adobe.com/products/xd.html'
+		},
+		{
+			id: 25,
+			name: 'MySQL',
+			icon: 'mysql',
+			link: 'https://www.mysql.com/'
+		},
+		{
+			id: 26,
+			name: 'GSAP',
+			icon: 'gsap',
+			link: 'https://gsap.com/'
+		},
+		{
+			id: 27,
+			name: 'MaterialDesign',
+			icon: 'materialui',
+			link: 'https://mui.com/'
+		},
+		{
+			id: 28,
+			name: 'Docker',
+			icon: 'docker',
+			link: 'https://www.docker.com/'
+		},
+		{
+			id: 29,
+			name: 'Github',
+			icon: 'git',
+			link: 'https://github.com/'
+		},
+	]
 </script>

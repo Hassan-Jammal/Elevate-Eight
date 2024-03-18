@@ -1,6 +1,34 @@
 <template>
 	<NuxtLayout name="elevate8">
-		<PageBanner :pageName="'Contact'" />
+		<!-- <PageBanner :pageName="'Contact'" /> -->
+
+		<!-- Page Banner Section Start -->
+		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
+			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center text-md-start">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb wow fadeInUp delay-0-4s">
+								<li class="breadcrumb-item">
+									<NuxtLink href="/">Home</NuxtLink>
+								</li>
+								<li class="breadcrumb-item active">Countact Us</li>
+							</ol>
+						</nav>
+						<!-- <h2 class="section-title">
+							<span class="sub-title mb-15">Our Work</span>
+						</h2> -->
+						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
+							Hire Us
+							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Page Banner Section End -->
+
 		<!-- Contact Form Area start -->
 		<section class="contact-page-area py-130 rpy-100 rel z-1">
 			<div class="container">
@@ -103,7 +131,7 @@
 		<!-- Contact Form Area end -->
 
 		<!-- Location Map Area Start -->
-		<div class="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
+		<!-- <div class="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
 			<div class="container-fluid">
 				<div class="our-location">
 					<iframe
@@ -112,7 +140,7 @@
 						referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- Location Map Area End -->
 	</NuxtLayout>
 </template>

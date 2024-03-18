@@ -12198,6 +12198,7 @@ background: #00000099;;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
+	min-height: 350px;
 }
 
 .feature-item-three .top-part {
@@ -14635,4 +14636,7 @@ background: #00000099;;
 		line-height: 60px;
 		left: calc(50% - 30px);
 	}
+
+
 }
+

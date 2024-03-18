@@ -1,9 +1,42 @@
 <template>
 	<NuxtLayout name="elevate8">
-		<PageBanner :pageName="'Project Grid'" />
+		<!-- <PageBanner :pageName="'Project Grid'" /> -->
+
+		<!-- Page Banner Section Start -->
+		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
+			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center text-md-start">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb wow fadeInUp delay-0-4s">
+								<li class="breadcrumb-item">
+									<NuxtLink href="/">Home</NuxtLink>
+								</li>
+								<li class="breadcrumb-item active">Our Work</li>
+							</ol>
+						</nav>
+						<!-- <h2 class="section-title">
+							<span class="sub-title mb-15">Our Work</span>
+						</h2> -->
+						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
+							Turning Ideas into Digital Reality
+							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Page Banner Section End -->
+		
 		<!-- Project Grid Area start -->
 		<section class="project-grid-area pt-130 rpt-100 pb-10 rpb-25">
 			<div class="container container-1210">
+
+				<h2 class="section-title mb-60">
+					<span class="sub-title">Our Work</span>
+				</h2>
+				
 				<div class="row gap-110">
 					<div v-for="(project, index) in projects" :key="index" class="col-lg-6">
 						<div class="project-item">

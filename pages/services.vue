@@ -5,14 +5,20 @@
 			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
-						<h2 class="section-title">
-							<span class="sub-title mb-15">What We Offer</span>
-						</h2>
-						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
+					<div class="col-lg-12 text-center text-md-start">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb wow fadeInUp delay-0-4s">
+								<li class="breadcrumb-item">
+									<NuxtLink href="/">Home</NuxtLink>
+								</li>
+								<li class="breadcrumb-item active">Our Services</li>
+							</ol>
+						</nav>
+						
+						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
 							This Is What 
-							<img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" />
 							We Do Best
+							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
 						</h1>
 					</div>
 				</div>
@@ -23,6 +29,11 @@
 		<!-- Feature Three Area start -->
 		<section class="feature-three-area pb-50 rpb-20 rel z-1">
 			<div class="container container-1290">
+
+				<h2 class="section-title mb-60">
+					<span class="sub-title">What We Offer</span>
+				</h2>
+				
 				<div class="row gap-130">
 					<div v-for="(service, index) in services" :key="index" class="col-md-6">
 						<div class="feature-item-three wow fadeInUp delay-0-2s">
@@ -351,14 +362,14 @@
 	const serviceRef = ref([]);
 
 	onMounted(() => {
-	// Ensure testRef is populated with references to the test elements
-	serviceRef.value = Array.from(document.querySelectorAll('.services-item'));
-	
-	// Check if there are elements in testRef before accessing the clientWidth
-	if (serviceRef.value.length > 0) {
-		const serviceWidth = serviceRef.value[0].clientWidth;
-		document.documentElement.style.setProperty('--service-width', `${serviceWidth}px`);
-	}
+		// Ensure testRef is populated with references to the test elements
+		serviceRef.value = Array.from(document.querySelectorAll('.services-item'));
+		
+		// Check if there are elements in testRef before accessing the clientWidth
+		if (serviceRef.value.length > 0) {
+			const serviceWidth = serviceRef.value[0].clientWidth;
+			document.documentElement.style.setProperty('--service-width', `${serviceWidth}px`);
+		}
 	});
 </script>
 

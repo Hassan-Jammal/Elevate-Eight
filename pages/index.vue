@@ -96,10 +96,10 @@
 		<!-- About Us Area end -->
 
 		<!-- Headline area start -->
-		<div class="headline-area pt-90 rpt-85 rel z-1">
+		<div class="headline-area pt-130 rpt-100 rel z-1">
 			<div class="container-fluid">
 				<h2 class="headline-text marquee">
-					<span>Elevate <span>Eight</span></span>
+					<span><span>Dare</span><span> to </span> Elevate</span>
 				</h2>
 			</div>
 		</div>
@@ -255,10 +255,10 @@
 		<!-- Service Style Three end -->
 
 		<!-- Headline area start -->
-		<div class="headline-area pt-130 rpt-100 rel z-1">
+		<div class="headline-area  pt-130 rpt-100 rel z-1">
 			<div class="container-fluid">
 				<h2 class="headline-text marquee">
-					<span><span>Dare</span><span> to </span> Elevate</span>
+					<span>Elevate <span>Eight</span></span>
 				</h2>
 			</div>
 		</div>
