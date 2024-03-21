@@ -6,7 +6,7 @@
 				<div class="header-inner rel d-flex align-items-center">
 					<div class="logo-outer">
 						<div class="logo">
-							<NuxtLink href="/"><img src="/assets/images/logos/logo.png" alt="Logo" title="Logo" /></NuxtLink>
+							<NuxtLink href="/"><img src="/assets/images/logos/logo-small.svg" alt="Logo" title="Logo" /></NuxtLink>
 						</div>
 					</div>
 
@@ -16,7 +16,7 @@
 							<div class="navbar-header">
 								<div class="mobile-logo">
 									<NuxtLink href="/">
-										<img src="/assets/images/logos/logo.png" alt="Logo" title="Logo" />
+										<img src="/assets/images/logos/logo-small.svg" alt="Logo" title="Logo" />
 									</NuxtLink>
 								</div>
 

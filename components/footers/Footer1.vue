@@ -21,7 +21,7 @@
 				<div class="col-lg-7">
 					<div class="footer-left-content">
 						<div class="lets-work mt-50 mb-50 wow fadeInUp delay-0-2s">
-							<img src="/assets/images/logos/logo-small.svg" alt="Logo" />
+							<img src="/assets/images/logos/logo.png" alt="Logo" />
 							<!-- <img src="/assets/images/footer/lets-work.png" alt="Let's Work Man" /> -->
 							<span>Let’s Work Together</span>
 						</div>

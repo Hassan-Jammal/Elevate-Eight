@@ -24,3 +24,6 @@
 .va-select-option{
 	font-family: var(--e8-secondary-font) !important;
 }
+.va-input-wrapper__append-inner{
+	margin-right:20px;
+}

@@ -68,8 +68,8 @@
 						<div class="client-text mt-40 pb-50">
 							<div class="section-title mb-40 text-lg-start text-center ">
 								<h2 class="sub-title mb-15">Who We Are</h2>
-								<h3>Established in</h3>
-								<span class="d-block video-year rel">2024</span>
+								<h3>Established in 2024</h3>
+								<!-- <span class="d-block video-year rel">2024</span> -->
 							</div>
 
 							<p>
@@ -157,7 +157,7 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6">
 						<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-							<h2>Explore our Tech Stack Catalog</h2>
+							<h2>Explore our Tech Stack Repository</h2>
 						</div>
 					</div>
 				</div>
