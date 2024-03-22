@@ -16,12 +16,8 @@
 								<li class="breadcrumb-item active">Our Work</li>
 							</ol>
 						</nav>
-						<!-- <h2 class="section-title">
-							<span class="sub-title mb-15">Our Work</span>
-						</h2> -->
 						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
 							Turning Ideas into Digital Reality
-							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
 						</h1>
 					</div>
 				</div>
@@ -42,10 +38,10 @@
 						<div class="project-item">
 							<div class="image wow fadeInUp delay-0-2s">
 								<img :src="project.image" :alt="'Project ' + (index + 1)" />
-									<NuxtLink :to="`/projects/${project.slug}`" class="project-btn">
-										<i class="far fa-arrow-right"></i>
-									</NuxtLink>
-								</div>
+								<NuxtLink :to="`/projects/${project.slug}`" class="project-btn">
+									<i class="far fa-arrow-right"></i>
+								</NuxtLink>
+							</div>
 							<div class="content wow fadeInUp delay-0-2s">
 								<NuxtLink :to="`/projects/${project.slug}`" class="category">{{ project.category }}</NuxtLink>
 								<h2>
@@ -63,16 +59,15 @@
 		<section class="work-with-area pb-150 rpb-145 rel z-1">
 			<div class="container">
 				<div class="row justify-content-center pb-45 rpb-25">
-					<div class="col-xl-7 col-lg-9">
-						<div class="section-title text-center wow fadeInUp delay-0-2s">
-							<span class="sub-title mb-15">Work With Us</span>
-							<h2>Have Any Projects On Minds! Feel Free to Contact Us</h2>
-							<NuxtLink class="explore-more text-start mt-30" href="contact"><i
-									class="fas fa-arrow-right"></i>
-								<span>Explore more</span>
-							</NuxtLink>
-						</div>
+				<div class="col-xl-7 col-lg-9">
+					<div class="section-title text-center wow fadeInUp delay-0-2s">
+					<span class="sub-title mb-15">Work With Us</span>
+					<h2>Have Any Projects On Minds! Feel Free to Contact Us</h2>
+					<NuxtLink class="theme-btn text-start mt-30" href="contact">
+						<span>Explore more</span>
+					</NuxtLink>
 					</div>
+				</div>
 				</div>
 			</div>
 			<span class="big-text light-opacity">Let’s Work Together</span>

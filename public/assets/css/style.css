@@ -6556,9 +6556,9 @@ background: #00000099;;
 }
 
 .slide-content>* {
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
+	-webkit-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
@@ -10340,10 +10340,9 @@ background: #00000099;;
 	position: absolute;
 	left: 0;
 	bottom: -5px;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
-	background: black;
+	-webkit-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 .team-member .btn-social .read-more {
@@ -10362,9 +10361,9 @@ background: #00000099;;
 }
 
 .team-member .content {
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
+	-webkit-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 	position: relative;
 	padding-right: 30px;
 }

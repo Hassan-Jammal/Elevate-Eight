@@ -68,10 +68,10 @@
           </div>
           <div class="col-lg-7">
             <div class="error-image wow zoomIn delay-0-2s">
-              <img
+              <!-- <img
                 src="/assets/images/background/404-error.png"
                 alt="404 Error"
-              />
+              /> -->
             </div>
           </div>
         </div>
