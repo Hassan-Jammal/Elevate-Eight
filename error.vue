@@ -25,7 +25,7 @@
               <!-- menu sidbar -->
               <div class="menu-sidebar">
                 <button @click="toggleSidebar()">
-                  <img src="/assets/images/icons/toggler.svg" alt="Toggler" />
+                  <img src="/assets/images/services/seo.svg" alt="Toggler" />
                 </button>
               </div>
             </div>
@@ -69,7 +69,7 @@
           <div class="col-lg-7">
             <div class="error-image wow zoomIn delay-0-2s">
               <!-- <img
-                src="/assets/images/background/404-error.png"
+                src="/assets/images/services/seo.svg"
                 alt="404 Error"
               /> -->
             </div>
