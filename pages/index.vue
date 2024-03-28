@@ -8,6 +8,7 @@
 				</div>
 			</div>
 				<div class="hero-bottom-image">
+					<div class="shadow"></div>
 					<img src="/assets/images/hero/earth.png" alt="Earth Image" width="1920" height="634" />
 	
 					<div class="hero-social">
@@ -153,7 +154,7 @@
 						</div>
 					</div>
 				</div>
-				<NuxtLink class="read-more" href="/services"><span>Explore All Services</span> <i class="far fa-arrow-right"></i></NuxtLink>
+				<NuxtLink class="read-more d-flex w-max mx-auto" href="/services"><span>Explore All Services</span> <i class="far fa-arrow-right"></i></NuxtLink>
 			</div>
 		</section>
 		<!-- Service Style Three end -->
@@ -174,7 +175,7 @@
 				<div class="row">
 					<div class="col-xl-7">
 						<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-							<img src="/assets/images/services/why-choose-left.jpg" alt="Why Choose Left Image" />
+							<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left Image" />
 						</div>
 					</div>
 					<div class="col-xl-5">
@@ -242,3 +243,17 @@ export default {
 	},
 };
 </script>
+
+<style lang="sass">
+	.hero-bottom-image .shadow
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 999999
+		background: linear-gradient(180deg, rgba(3, 1, 13, 0) 0%, #03010D 75.5%)
+
+		
+</style>
