@@ -175,7 +175,7 @@
 				<div class="row">
 					<div class="col-xl-7">
 						<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-							<img src="/assets/images/services/why-choose-left.jpeg" alt="Why Choose Left Image" />
+							<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left Image" />
 						</div>
 					</div>
 					<div class="col-xl-5">

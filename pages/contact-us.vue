@@ -138,14 +138,14 @@
 			<div class="container">
 				<h2 class="text-center mb-100 rmb-50">Frequently Asked Questions</h2>
 				<div v-for="(category, index) in faqs" :key="index" class="pb-105 rpb-75">
-					<div class="row align-items-center gap-100">
+					<div class="row align-item-center gap-100">
 						<!-- Left-aligned image for even-indexed categories -->
 						<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-md-0' : 'order-1 order-md-1'">
 							<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
 								<img :src="category.image" alt="FAQs" />
 							</div>
 						</div>
-						<div class="col-lg-7">
+						<div class="col-lg-7" :class="index % 2 === 0 ? 'order-1 order-md-1' : 'order-1 order-md-0'">
 							<div class="faq-content-part wow fadeInRight delay-0-2s">
 								<div class="section-title mb-30">
 									<h2 class="sub-title mb-15">{{ category.category }}</h2>
@@ -154,7 +154,7 @@
 									<!-- Loop through each question in the category -->
 									<div v-for="(question, qIndex) in category.questions" :key="qIndex" class="accordion-item">
 										<h5 class="accordion-header">
-											<button class="accordion-button collapsed" :data-bs-toggle="'collapse'"
+											<button class="accordion-button collapsed gap-1 justify-content-between" :data-bs-toggle="'collapse'"
 												:data-bs-target="'#collapse-' + index + '-' + qIndex">
 												{{ question.question }}
 											</button>
@@ -194,7 +194,7 @@
 const faqs = [
 	{
 		category: "Development",
-		image: "/assets/images/faqs/development.jpeg",
+		image: "/assets/images/faqs/development.png",
 		questions: [
 			{
 				question: "How long does it take to design a website or a mobile application?",
@@ -228,7 +228,7 @@ const faqs = [
 	},
 	{
 		category: "Branding",
-		image: "/assets/images/faqs/branding.jpeg",
+		image: "/assets/images/faqs/branding.png",
 		questions: [
 			{
 				question: "How long does it take to design a logo?",
