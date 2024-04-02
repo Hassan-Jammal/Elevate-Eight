@@ -270,6 +270,10 @@ textarea {
 	padding-top: 20px;
 }
 
+textarea.form-control {
+	resize: none;
+}
+
 label {
 	cursor: pointer;
 	font-weight: 500;
