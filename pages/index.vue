@@ -12,9 +12,9 @@
 					<img src="/assets/images/hero/earth.png" alt="Earth Image" width="1920" height="634" />
 	
 					<div class="hero-social">
-						<a href="#"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
-						<a href="#"><i class="fab fa-linkedin-in"></i> <span>Linkedin</span></a>
-						<a href="#"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+						<a href="https://www.instagram.com/elevateeight_/"><i class="fab fa-instagram" rel="noopener noreferrer"></i> <span>Instagram</span></a>
+						<a href="https://www.linkedin.com/company/elevateeight"><i class="fab fa-linkedin-in" rel="noopener noreferrer"></i> <span>Linkedin</span></a>
+						<a href="" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
 					</div>
 				</div>
 		</section>
@@ -73,12 +73,12 @@
 								<h2>Turning Ideas into Digital Reality</h2>
 							</div>
 							<div class="content">
-								<p>Elevate 8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
+								<p>
+									Elevate 8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
 									With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
-									From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with.</p>
-								<NuxtLink class="read-more mt-10" href="about">Read More <i
-										class="far fa-arrow-right"></i>
-								</NuxtLink>
+									From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with.
+								</p>
+								<NuxtLink class="read-more mt-10" href="/about-us">Read More <i class="far fa-arrow-right"></i></NuxtLink>
 							</div>
 						</div>
 					</div>
@@ -112,11 +112,11 @@
 					<div class="col-xl-3 col-lg-4 col-md-6">
 						<div class="service-three-item wow fadeInUp delay-0-2s">
 							<div class="title-icon">
-								<h5>Social Media Marketing</h5>
+								<h5>Social Media Management</h5>
 								<img src="/assets/images/services/social-media-marketing.svg" alt="Icon" width="50" class="w-auto" />
 							</div>
 							<div class="content">
-								<p>Amplify your online presence with Elevate Eight's Social Media Marketing expertise.</p>
+								<p>Amplify your online presence with Elevate Eight's Social Media Management expertise.</p>
 							</div>
 						</div>
 					</div>
@@ -160,7 +160,7 @@
 		<!-- Service Style Three end -->
 
 		<!-- Headline area start -->
-		<div class="headline-area  pt-130 rpt-100 rel z-1">
+		<div class="headline-area pt-130 rpt-100 rel z-1">
 			<div class="container-fluid">
 				<h2 class="headline-text marquee">
 					<span>Elevate <span>Eight</span></span>
@@ -175,7 +175,7 @@
 				<div class="row">
 					<div class="col-xl-7">
 						<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-							<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left Image" />
+							<img src="/assets/images/services/why-choose-left.jpeg" alt="Why Choose Left Image" />
 						</div>
 					</div>
 					<div class="col-xl-5">

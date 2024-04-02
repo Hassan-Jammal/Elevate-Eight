@@ -73,20 +73,20 @@
 </template>
 
 <script setup>
-import { e8Utilits } from "~/utilits";
-import Nav from './Nav.vue';
+	import { e8Utilits } from "~/utilits";
+	import Nav from './Nav.vue';
 
-const props = defineProps(["singlePage"]);
+	const props = defineProps(["singlePage"]);
 
-onMounted(() => {
-	e8Utilits.stickyNav();
-});
+	onMounted(() => {
+		e8Utilits.stickyNav();
+	});
 
-const toggleSidebar = () => {
-	document.querySelector("body").classList.add("side-content-visible");
-};
+	const toggleSidebar = () => {
+		document.querySelector("body").classList.add("side-content-visible");
+	};
 
-const toggleSidebar2 = () => {
-	document.querySelector("body").classList.add("side-content-visible-nav");
-};
+	const toggleSidebar2 = () => {
+		document.querySelector("body").classList.add("side-content-visible-nav");
+	};
 </script>

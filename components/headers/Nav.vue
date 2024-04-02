@@ -1,19 +1,19 @@
 <template>
 	<ul class="navigation clearfix">
 		<li class="wow fadeInUp delay-0-4s">
-			<NuxtLink href="/about" @click="closeSidebar()">About Us</NuxtLink>
+			<NuxtLink href="/about-us" @click="closeSidebar()">About Us</NuxtLink>
 		</li>
 		<li class="wow fadeInUp delay-0-5s">
 			<NuxtLink href="/services" @click="closeSidebar()">Services</NuxtLink>
 		</li>
 		<li class="wow fadeInUp delay-0-6s">
-			<NuxtLink href="/projects" @click="closeSidebar()">Work</NuxtLink>
+			<NuxtLink href="/portfolio" @click="closeSidebar()">Portfolio</NuxtLink>
 		</li>
 		<li class="wow fadeInUp delay-0-7s">
 			<NuxtLink href="/team" @click="closeSidebar()">Team</NuxtLink>
 		</li>
 		<li class="wow fadeInUp delay-0-8s">
-			<NuxtLink href="/contact" @click="closeSidebar()">Contact Us</NuxtLink>
+			<NuxtLink href="/contact-us" @click="closeSidebar()">Contact Us</NuxtLink>
 		</li>
 		<li class="d-lg-none d-block wow fadeInUp delay-0-9s">
 			<a href="#" class="theme-btn" @click="toggleSidebar()">

@@ -584,7 +584,7 @@ a.theme-btn {
 	-o-transition: 0.3s;
 	transition: 0.3s;
 	text-align: center;
-	padding: 13px 35px;
+	padding: 14px 25px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -600,6 +600,7 @@ a.theme-btn {
 	border-radius: 12px;
 	font-family: var(--e8-secondary-font);
 	/* border: 1px solid var(--e8-border-color); */
+	line-height: 1;
 }
 
 .theme-btn i,
@@ -627,7 +628,6 @@ a.theme-btn:hover i {
 }
 
 @media only screen and (max-width: 575px) {
-
 	.theme-btn,
 	a.theme-btn {
 		padding: 10px 25px;
@@ -4711,7 +4711,7 @@ h6,
 }
 
 .main-header .logo {
-	width: 100px;
+	width: 80px;
 	z-index: 9;
 	padding: 2px 0;
 	position: relative;
@@ -4803,7 +4803,7 @@ background: #00000099;
 		width: 100%;
 		height: 3px;
 		position: absolute;
-		bottom: -15px;
+		bottom: -18px;
 		left: 0;
 		opacity: 0;
 		visibility: hidden;
@@ -4896,6 +4896,7 @@ background: #00000099;
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	line-height: 1;
 }
 @media only screen and (max-width: 1199px) {
 	.main-menu .navbar-collapse li a {
@@ -5101,11 +5102,11 @@ background: #00000099;
 	-ms-flex-align: center;
 	align-items: center;
 }
-
+/* 
 .menu-btns .theme-btn {
 	padding-top: 9px;
 	padding-bottom: 9px;
-}
+} */
 
 @media only screen and (max-width: 991px) {
 	.menu-btns {
@@ -12213,7 +12214,7 @@ background: #00000099;;
 }
 
 .feature-item-three .top-part .serial-number {
-	color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.4);
 	font-size: 55px;
 	font-weight: 300;
 	-webkit-transition: 0.3s;

@@ -119,39 +119,16 @@
 		</div>
 		<!-- Headline Area end -->
 
-		<!-- Skills Area Start -->
-		<section class="skills-area pt-100 rpt-70 rel z-1">
-			<div class="container container-1590">
+		<!-- Who We Are start -->
+		<section class="who-we-are-area pt-100 rpt-70 rel z-1">
+			<div class="container container-1290">
 				<div class="row justify-content-center">
 					<div class="col-lg-6">
 						<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-							<h2>Explore our Tech Stack Repository</h2>
+							<h2>What we stand for</h2>
 						</div>
 					</div>
 				</div>
-				<div class="skills-wrap">
-					<div class="skill-item" v-for="(technology, index) in technologies" :key="index">
-						<img :src="`/assets/images/skills/${ technology.icon }.svg`" alt="Skill Icon" />
-						<span class="text">{{ technology.name }}</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Skills Area End -->
-
-		<!-- Who We Are start -->
-		<section class="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
-			<div class="container container-1290">
-				<!-- <div class="row justify-content-center">
-          <div class="col-lg-7">
-            <div
-              class="section-title text-center mb-70 wow fadeInUp delay-0-2s"
-            >
-              <span class="sub-title mb-15">Our Core Values</span>
-              <h2>We are Professional and Experience Team</h2>
-            </div>
-          </div>
-        </div> -->
 				<div class="row gap-90">
 					<div class="col-lg-4 col-md-6">
 						<div class="why-choose-item style-two wow fadeInUp delay-0-2s">
@@ -198,6 +175,26 @@
 			</div>
 		</section>
 		<!-- Who We Are end -->
+
+		<!-- Skills Area Start -->
+		<section class="skills-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
+			<div class="container container-1590">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+							<h2>Explore our Tech Stack Repository</h2>
+						</div>
+					</div>
+				</div>
+				<div class="skills-wrap">
+					<div class="skill-item" v-for="(technology, index) in technologies" :key="index">
+						<img :src="`/assets/images/skills/${ technology.icon }.svg`" alt="Skill Icon" />
+						<span class="text">{{ technology.name }}</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Skills Area End -->
 
 		<!-- Headline area start -->
 		<!-- <div class="headline-area bgc-primary pt-80 pb-65">

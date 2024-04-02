@@ -73,9 +73,9 @@
 
 				<!--Social Icons-->
 				<div class="social-style-one">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.instagram.com/elevateeight_/" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/elevateeight" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+					<a href="" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
 				</div>
 			</div>
 		</div>
@@ -99,7 +99,7 @@
 		"UX/UI Design",
 		"Hosting Plans",
 		"Logo Design",
-		"Social Media Marketing",
+		"Social Media Management",
 		"Maintenance & Support",
 	];
 

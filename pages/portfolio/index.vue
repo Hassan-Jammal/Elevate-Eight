@@ -1,5 +1,7 @@
 <template>
 	<NuxtLayout name="elevate8">
+		<!-- <PageBanner :pageName="'Project Grid'" /> -->
+
 		<!-- Page Banner Section Start -->
 		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
 			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
@@ -11,48 +13,93 @@
 								<li class="breadcrumb-item">
 									<NuxtLink href="/">Home</NuxtLink>
 								</li>
-								<li class="breadcrumb-item active">Services</li>
+								<li class="breadcrumb-item active">Portfolio</li>
 							</ol>
 						</nav>
-						
-						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-							This Is What We Do Best
-							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
+						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
+							Turning Ideas into Digital Reality
 						</h1>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Page Banner Section End -->
-
-		<!-- Feature Three Area start -->
-		<section class="feature-three-area pb-50 rpb-20 rel z-1">
-			<div class="container container-1290">
+		
+		<!-- Project Grid Area start -->
+		<section class="project-grid-area pt-130 rpt-100 pb-10 rpb-25">
+			<div class="container container-1210">
 
 				<h2 class="section-title mb-60">
-					<span class="sub-title">What We Offer</span>
+					<span class="sub-title">Our Works</span>
 				</h2>
 				
-				<div class="row gap-130">
-					<div v-for="(service, index) in services" :key="index" class="col-md-6">
-						<div class="feature-item-three wow fadeInUp delay-0-2s">
-							<div class="top-part">
-								<span class="serial-number">{{ service.id < 10 ? '0' + service.id : service.id }}</span>
+				<div class="row gap-110">
+					<div v-for="(project, index) in projects" :key="index" class="col-lg-6">
+						<div class="project-item">
+							<div class="image wow fadeInUp delay-0-2s">
+								<img :src="project.image" :alt="'Project ' + (index + 1)" />
+								<NuxtLink :to="`/projects/${project.slug}`" class="project-btn">
+									<i class="far fa-arrow-right"></i>
+								</NuxtLink>
 							</div>
-							<div class="content">
-								<h4>{{ service.name }}</h4>
-								<p>{{ service.description }}</p>
+							<div class="content wow fadeInUp delay-0-2s">
+								<NuxtLink :to="`/projects/${project.slug}`" class="category">{{ project.category }}</NuxtLink>
+								<h2>
+									<NuxtLink :to="`/projects/${project.slug}`">{{ project.name }}</NuxtLink>
+								</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Feature Three Area end -->
+		<!-- Project Grid Area end -->
+
+		<!-- Headline Area start -->
+		<div class="headline-area bgc-primary pt-80 pb-65">
+			<div class="container-fluid">
+				<div class="services-wrap">
+					<template v-for="(service, index) in services" :key="index">
+						<span class="services-item" ref="service">
+							<i class="fas fa-star-of-life"></i>
+							{{ service.name }}
+						</span>
+					</template>
+					<template v-for="(service, index) in services" :key="index">
+						<span class="services-item" ref="service">
+							<i class="fas fa-star-of-life"></i>
+							{{ service.name }}
+						</span>
+					</template>
+				</div>
+			</div>
+		</div>
+		<!-- Headline Area end -->
+		
+		<!-- Work With Area start -->
+		<section class="work-with-area pt-130 rpt-100 pb-150 rpb-145 rel z-1">
+			<div class="container">
+				<div class="row justify-content-center pb-45 rpb-25">
+				<div class="col-xl-7 col-lg-9">
+					<div class="section-title text-center wow fadeInUp delay-0-2s">
+					<span class="sub-title mb-15">Partner with Us</span>
+					<h2>Got a Project in Mind? Let's Make it Happen!</h2>
+					<a href="#" @click="toggleSidebar()" class="theme-btn text-start mt-30">Get a Quote</a>
+					</div>
+				</div>
+				</div>
+			</div>
+			<span class="big-text light-opacity">Let’s Work Together</span>
+		</section>
+		<!-- Work With Area end -->
 	</NuxtLayout>
 </template>
 
 <script setup>
+	import { projectsData } from '~/data/work-data'; // Adjust the path accordingly
+
+	const projects = ref([]);
+	
 	const services = [
 		{
 			id: 1,
@@ -108,7 +155,21 @@
 
 	const serviceRef = ref([]);
 
+	const fetchData = () => {
+		projects.value = projectsData.map(project => ({
+			...project,
+		}));
+	};
+
+
+	const toggleSidebar = () => {
+		document.querySelector("body").classList.add("side-content-visible");
+	};
+	
 	onMounted(() => {
+
+		fetchData();
+
 		// Ensure testRef is populated with references to the test elements
 		serviceRef.value = Array.from(document.querySelectorAll('.services-item'));
 		
@@ -119,10 +180,3 @@
 		}
 	});
 </script>
-
-
-<style scoped>
-	
-	
-	
-</style>
