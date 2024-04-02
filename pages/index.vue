@@ -200,7 +200,7 @@
 									<span class="icon-bottom-shape"></span>
 								</div>
 								<div class="content">
-									<h4>Innovative and Passionate</h4>
+									<h4>Innovative and Passionate </h4>
 									<p>With our continual dedication to bringing innovative and imaginative solutions, we excel as a strategic partner for digital marketing, web and app projects. Through our ongoing efforts to explore novel approaches, we reliably help clients strengthen their revenue generation.</p>
 								</div>
 							</div>
