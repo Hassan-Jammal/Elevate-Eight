@@ -128,7 +128,7 @@
 						<!-- Left-aligned image for even-indexed categories -->
 						<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-md-0' : 'order-1 order-md-1'">
 							<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
-								<img :src="category.image" alt="FAQs" />
+								<img :src="category.image" alt="FAQs" class="image-rounded" />
 							</div>
 						</div>
 						<div class="col-lg-7" :class="index % 2 === 0 ? 'order-1 order-md-1' : 'order-1 order-md-0'">
