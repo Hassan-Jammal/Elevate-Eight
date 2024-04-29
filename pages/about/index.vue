@@ -15,12 +15,8 @@
 								<li class="breadcrumb-item active">About Us</li>
 							</ol>
 						</nav>
-						<!-- <h2 class="section-title">
-							<span class="sub-title mb-15">Our Work</span>
-						</h2> -->
 						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
-							We are Elevate Eight
-							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
+							We provide innovative designs solutions & expert talents
 						</h1>
 					</div>
 				</div>
@@ -37,7 +33,6 @@
 							<div class="section-title mb-40 text-lg-start text-center ">
 								<h2 class="sub-title mb-15">Who We Are</h2>
 								<h3>Established in 2024</h3>
-								<!-- <span class="d-block video-year rel">2024</span> -->
 							</div>
 
 							<p>
@@ -54,7 +49,7 @@
 								development.<br /><br />
 								We specialize in building custom web applications, mobile apps, responsive websites and
 								scaling existing platforms.
-								<!-- Our portfolio features work for clients of all sizes, from nimble startups to large corporations.  -->
+								<!-- Our works features work for clients of all sizes, from nimble startups to large corporations.  -->
 								Technologies we leverage include <strong class="">React, Vue.js, Node.js, Laravel (PHP),
 									MySQL, HTML, CSS/SASS, JavaScript, GIT version control, Docker, Bootstrap, Tailwind
 									CSS, Wordpress, Apache, Nginx, Next.js, Nuxt</strong>.<br /><br />
@@ -65,44 +60,12 @@
 								Let's get started on elevating your vision to new heights.
 							</p>
 						</div>
-						<!-- <div class="row">
-              <div class="col-xl-10">
-                <div class="client-logo-wrap">
-                  <NuxtLink class="client-logo-item" href="contact">
-                    <img
-                      src="/assets/images/client-logos/client-logo-two1.png"
-                      alt="Client Logo"
-                    />
-                  </NuxtLink>
-                  <NuxtLink class="client-logo-item" href="contact">
-                    <img
-                      src="/assets/images/client-logos/client-logo-two2.png"
-                      alt="Client Logo"
-                    />
-                  </NuxtLink>
-                  <NuxtLink class="client-logo-item" href="contact">
-                    <img
-                      src="/assets/images/client-logos/client-logo-two3.png"
-                      alt="Client Logo"
-                    />
-                  </NuxtLink>
-                </div>
-              </div>
-            </div> -->
+					
 					</div>
 					<div class="col-lg-5 wow fadeInRight delay-0-2s position-relative">
 						<div class="ratio ratio-1x1">
-							<img src="/assets/images/about/about-42.png" alt="Client Logo" class="object-fit-cover" />
+							<img src="/assets/images/about/about-42.png" alt="Client Logo" class="image-rounded object-fit-cover" />
 						</div>
-						<!-- Founded in -->
-						<!-- <div class="video-year text-lg-end text-center rel">
-              <span>2024</span>
-              <img
-                class="leaf-shape"
-                src="/assets/images/video/leaf.png"
-                alt="Leaf"
-              />
-            </div> -->
 					</div>
 				</div>
 			</div>
@@ -464,6 +427,19 @@
 
 <script setup>
 
+	useSeoMeta({
+		title: 'About Us — Experienced Product Design Team',
+		description: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
+		
+		ogTitle: 'About Us — Experienced Product Design Team',
+		ogDescription: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
+		ogImage: 'https://example.com/image.png',
+		
+		twitterTitle: 'About Us — Experienced Product Design Team',
+		twitterDescription: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
+		twitterCard: 'summary_large_image',
+	})
+
 	const technologies = [
 		{
 			id: 1,
@@ -545,7 +521,7 @@
 		},
 		{
 			id: 14,
-			name: 'Nuxt.js',
+			name: 'Nuxt',
 			icon: 'nuxtjs',
 			link: 'https://nuxt.com/'
 		},

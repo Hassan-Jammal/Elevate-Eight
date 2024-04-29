@@ -15,32 +15,30 @@
 							</ol>
 						</nav>
 
-						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-							This Is What We Do Best
-							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
-						</h1>
+						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">We've got everything covered</h1>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Page Banner Section End -->
 
-		<!-- Feature Three Area start -->
-		<section class="feature-three-area pb-50 rpb-20 rel z-1">
+		<!-- Service Style Three start -->
+		<section class="service-three-area pt-130 rpt-100 rel z-1">
 			<div class="container container-1290">
-
 				<h2 class="section-title mb-60">
 					<span class="sub-title">What We Offer</span>
 				</h2>
-
-				<div class="row gap-130">
+				<div class="row">
 					<div v-for="(service, index) in services" :key="index" class="col-md-6">
-						<div class="feature-item-three wow fadeInUp delay-0-2s">
-							<div class="top-part">
+						<div class="service-three-item wow fadeInUp delay-0-2s">
+							<div class="d-flex flex-column">
 								<span class="serial-number">{{ service.id < 10 ? '0' + service.id : service.id }}</span>
+								<div class="title-icon">
+									<h5>{{ service.name }}</h5>
+									<img src="/assets/images/services/social-media-marketing.svg" alt="Icon" width="50" class="w-auto" />
+								</div>
 							</div>
 							<div class="content">
-								<h4>{{ service.name }}</h4>
 								<p>{{ service.description }}</p>
 							</div>
 						</div>
@@ -48,10 +46,81 @@
 				</div>
 			</div>
 		</section>
-		<!-- Feature Three Area end -->
+		<!-- Service Style Three end -->
+
+		<!-- Work Process Area start -->
+		<section class="work-process-area pt-130 rpt-100 rel z-1">
+			<div class="container container-1290 rel z-1">
+				<h2 class="text-center mb-100 rmb-50">Core Steps</h2>
+				<div class="row gap-70">
+					<div class="col-lg-4">
+						<div class="work-step-item style-two wow fadeInDown delay-0-2s">
+							<span class="step-number">Step 01</span>
+							<h4 class="title">Objectives and Target Audience</h4>
+							<div class="content">
+								<p>Clearly outline project goals and identify target users.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="work-step-item style-two mt-60 rmt-0 wow fadeInUp delay-0-2s">
+							<span class="step-number">Step 02</span>
+							<h4 class="title">Design</h4>
+							<div class="content">
+								<p>Develop the visual and structural aspects of the project.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="work-step-item style-two mt-120 rmt-0 wow fadeInDown delay-0-2s">
+							<span class="step-number">Step 03</span>
+							<h4 class="title">Development</h4>
+							<div class="content">
+								<p>Build the project's functional components.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="work-step-item style-two rmt-180 rmt-0 wow fadeInUp delay-0-2s">
+							<span class="step-number">Step 04</span>
+							<h4 class="title">Testing</h4>
+							<div class="content">
+								<p>Ensure the project functions correctly through rigorous testing.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="work-step-item style-two mt-60 rmt-0 wow fadeInUp delay-0-2s">
+							<span class="step-number">Step 05</span>
+							<h4 class="title">Deployment</h4>
+							<div class="content">
+								<p>Make the project accessible to users.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="work-step-item style-two mt-120 rmt-0 wow fadeInUp delay-0-2s">
+							<span class="step-number">Step 06</span>
+							<h4 class="title">Maintenance and Updates</h4>
+							<div class="content">
+								<p>Continuously improve and update the project.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-line-shape">
+					<!-- <img
+            src="/assets/images/shapes/work-process-line.png"
+            alt="Work Process Line"
+          /> -->
+				</div>
+			</div>
+		</section>
+		<!-- Work Process Area end -->
 
 		<!-- FAQ's Area start -->
-		<section class="faq-area rel z-1">
+		<section class="faq-area pt-130 rpt-100 rel z-1">
 			<div class="container">
 				<h2 class="text-center mb-100 rmb-50">Frequently Asked Questions</h2>
 				<div v-for="(category, index) in faqs" :key="index" class="pb-105 rpb-75">
@@ -98,6 +167,20 @@
 </template>
 
 <script setup>
+
+	useSeoMeta({
+		title: 'Our Services — Services we offer',
+		description: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',
+		
+		ogTitle: 'Our Services — Services we offer',
+		ogDescription: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',
+		ogImage: 'https://example.com/image.png',
+		
+		twitterTitle: 'Our Services — Services we offer',
+		twitterDescription: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',
+		twitterCard: 'summary_large_image',
+	})
+
 const services = [
 	{
 		id: 1,
@@ -106,8 +189,8 @@ const services = [
 	},
 	{
 		id: 2,
-		name: 'Mobile App Development',
-		description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UX/UI Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
+		name: 'Mobile Development',
+		description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UI/UX Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
 	},
 	{
 		id: 3,
@@ -126,8 +209,8 @@ const services = [
 	},
 	{
 		id: 6,
-		name: 'UX/UI Design',
-		description: 'Elevate user experiences with Elevate Eight\'s tailored UX/UI designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
+		name: 'UI/UX Design',
+		description: 'Elevate user experiences with Elevate Eight\'s tailored UI/UX designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
 	},
 	{
 		id: 7,

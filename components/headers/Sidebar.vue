@@ -34,13 +34,13 @@
 								placeholder="Choose Services"
 								:options="options"
 								multiple
-								color="#570ad4"
+								color="#7f4EFF"
 								class="w-100"
 								>
 								<template v-slot:content="{ value }">
 									<VaChip
 									v-for="chip in value"
-									color="#570ad4"
+									color="#7f4EFF"
 									:key="chip"
 									size="small"
 									class="mr-1 my-1"
@@ -57,7 +57,7 @@
 								v-model="value2"
 								placeholder="Choose Timeline Preference"
 								:options="options2"
-								color="#570ad4"
+								color="#7f4EFF"
 								class="w-100"
 								>
 							</VaSelect>
@@ -96,7 +96,7 @@
 		"E-commerce Website",
 		"Search Engine Optimization",
 		"Branding",
-		"UX/UI Design",
+		"UI/UX Design",
 		"Hosting Plans",
 		"Logo Design",
 		"Social Media Management",

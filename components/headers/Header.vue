@@ -4,15 +4,16 @@
 			<!--Header-Upper-->
 			<div class="header-upper">
 				<div class="container container-1620 clearfix">
-					<div class="header-inner rel d-flex align-items-center">
+					<div class="header-inner rel d-flex justify-content-between align-items-center">
 						<div class="logo-outer">
 							<div class="logo">
-								<NuxtLink href="/"><img src="/assets/images/logos/logo-small.svg" alt="Logo"
-										title="Logo" /></NuxtLink>
+								<NuxtLink href="/">
+									<img src="/assets/images/logos/logo-small.svg" alt="Logo" title="Logo" />
+								</NuxtLink>
 							</div>
 						</div>
 
-						<div class="nav-outer ms-lg-auto clearfix">
+						<div class="nav-outer ms-lgauto clearfix">
 							<!-- Main Menu -->
 							<nav class="main-menu navbar-expand-lg">
 								<div class="navbar-header">
@@ -32,32 +33,17 @@
 								</div>
 
 								<div class="navbar-collapse collapse clearfix">
-									<!-- <ul class="navigation onepage clearfix" v-if="singlePage == true">
-									<li><a href="#home">Home</a></li>
-									<li><a href="#about">about</a></li>
-									<li><a href="#services">services</a></li>
-									<li><a href="#projects">project</a></li>
-									<li><a href="#team">team</a></li>
-									<li><a href="#pricing">pricing</a></li>
-									<li><a href="#news">news</a></li>
-								</ul> -->
 									<Nav /> <!-- v-else -->
 								</div>
 							</nav>
 							<!-- Main Menu End-->
 						</div>
 
-						<!-- Nav Search -->
-						<!-- <Search /> -->
-
 						<!-- Menu Button -->
 						<div class="menu-btns">
 							<!-- menu sidbar -->
 							<div class="menu-sidebar">
-								<a href="#" class="theme-btn" @click="toggleSidebar()">
-									<!-- <img src="/assets/images/icons/toggler.svg" alt="Toggler" /> -->
-									Get a Quote
-								</a>
+								<a href="#" class="theme-btn" @click="toggleSidebar()">Get a Quote</a>
 							</div>
 						</div>
 					</div>

@@ -22,7 +22,7 @@
 
 		<!-- About Us Area start -->
 		<section class="about-area pt-130 rpt-100 rel z-1">
-			<div class="container">
+			<div class="container container-1620">
 				<div class="row justify-content-between">
 					<div class="col-xl-5 col-lg-4 order-1 order-lg-0">
 						<div class="about-image mx-auto text-center rmt-45 wow fadeInUp delay-0-2s">
@@ -70,7 +70,7 @@
 						<div class="about-content wow fadeInUp delay-0-4s">
 							<div class="section-title mb-40 text-center text-lg-start">
 								<span class="sub-title mb-15">About Elevate Eight</span>
-								<h2>Turning Ideas into Digital Reality</h2>
+								<h2>We turn ideas into digital reality</h2>
 							</div>
 							<div class="content">
 								<p>
@@ -78,7 +78,7 @@
 									With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
 									From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with.
 								</p>
-								<NuxtLink class="read-more mt-10" href="/about-us">Read More <i class="far fa-arrow-right"></i></NuxtLink>
+								<NuxtLink class="read-more mt-10" href="/about">Read More <i class="far fa-arrow-right"></i></NuxtLink>
 							</div>
 						</div>
 					</div>
@@ -89,7 +89,7 @@
 
 		<!-- Headline area start -->
 		<div class="headline-area pt-130 rpt-100 rel z-1">
-			<div class="container-fluid">
+			<div class="container container-1620">
 				<h2 class="headline-text marquee">
 					<span><span>Dare</span><span> to </span> Elevate</span>
 				</h2>
@@ -99,21 +99,23 @@
 
 		<!-- Service Style Three start -->
 		<section class="service-three-area pt-130 rpt-100 rel z-1">
-			<div class="container">
+			<div class="container container-1620">
 				<div class="row justify-content-center">
 					<div class="col-lg-7">
 						<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-							<span class="sub-title mb-20">Creative Services</span>
-							<h2>Digital Marketing Sevices</h2>
+							<span class="sub-title mb-20">Design Services</span>
+							<h2>Digital marketing services</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xl-3 col-lg-4 col-md-6">
 						<div class="service-three-item wow fadeInUp delay-0-2s">
-							<div class="title-icon">
-								<h5>Social Media Management</h5>
-								<img src="/assets/images/services/social-media-marketing.svg" alt="Icon" width="50" class="w-auto" />
+							<div class="d-flex flex-column">
+								<div class="title-icon">
+									<h5>Social Media Management</h5>
+									<img src="/assets/images/services/social-media-marketing.svg" alt="Icon" width="50" class="w-auto" />
+								</div>
 							</div>
 							<div class="content">
 								<p>Amplify your online presence with Elevate Eight's Social Media Management expertise.</p>
@@ -122,20 +124,24 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6">
 						<div class="service-three-item wow fadeInDown delay-0-2s">
-							<div class="title-icon">
-								<h5>UX/UI Design</h5>
-								<img src="/assets/images/services/ux-ui.svg" alt="Icon" width="50" class="w-auto"/>
+							<div class="d-flex flex-column">
+								<div class="title-icon">
+									<h5>UI/UX Design</h5>
+									<img src="/assets/images/services/ux-ui.svg" alt="Icon" width="50" class="w-auto"/>
+								</div>
 							</div>
 							<div class="content">
-								<p>Elevate user experiences with Elevate Eight's tailored UX/UI designsditiis</p>
+								<p>Elevate user experiences with Elevate Eight's tailored UI/UX designsditiis</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6">
 						<div class="service-three-item wow fadeInUp delay-0-2s">
-							<div class="title-icon">
-								<h5>Search Engine Optimization</h5>
-								<img src="/assets/images/services/seo.svg" alt="Icon" width="50" class="w-auto" />
+							<div class="d-flex flex-column">
+								<div class="title-icon">
+									<h5>Search Engine Optimization</h5>
+									<img src="/assets/images/services/seo.svg" alt="Icon" width="50" class="w-auto" />
+								</div>
 							</div>
 							<div class="content">
 								<p>Optimize your online visibility with Elevate Eight's SEO solutions.</p>
@@ -144,9 +150,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6">
 						<div class="service-three-item wow fadeInDown delay-0-2s">
-							<div class="title-icon">
-								<h5>Branding</h5>
-								<img src="/assets/images/services/branding.svg" alt="Icon" width="50" class="w-auto" />
+							<div class="d-flex flex-column">
+								<div class="title-icon">
+									<h5>Branding</h5>
+									<img src="/assets/images/services/branding.svg" alt="Icon" width="50" class="w-auto" />
+								</div>
 							</div>
 							<div class="content">
 								<p>Build a distinctive brand identity with Elevate Eight's branding services</p>
@@ -161,7 +169,7 @@
 
 		<!-- Headline area start -->
 		<div class="headline-area pt-130 rpt-100 rel z-1">
-			<div class="container-fluid">
+			<div class="container container-1620">
 				<h2 class="headline-text marquee">
 					<span>Elevate <span>Eight</span></span>
 				</h2>
@@ -171,11 +179,11 @@
 
 		<!-- Why Choose Us Area start -->
 		<section class="why-choose-area pt-90 rpt-60 pb-75 rpb-45 rel z-1">
-			<div class="container-fluid">
+			<div class="container container-1620">
 				<div class="row">
 					<div class="col-xl-7">
 						<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-							<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left Image" />
+							<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left Image" class="image-rounded" />
 						</div>
 					</div>
 					<div class="col-xl-5">
@@ -220,28 +228,28 @@
 			</div>
 		</section>
 		<!-- Why Choose Us Area end -->
-
-		<!-- Headline area start -->
-		<!-- <div class="headline-area pt-60 rpt-50 rel z-1">
-			<div class="container-fluid">
-				<h2 class="headline-text marquee">
-					<span><span>clients</span> Say’s</span>
-				</h2>
-			</div>
-		</div> -->
-		<!-- Headline Area end -->
 	</NuxtLayout>
 </template>
 
-<script>
-import { e8Utilits } from "~/utilits";
+<script setup>
+	import { e8Utilits } from "~/utilits";
 
-export default {
-	name: "index",
-	mounted() {
+	useSeoMeta({
+		title: 'Design Agency Elevate 8 - Digital Product Design & Development solution',
+		description: 'Elevate 8 is a team ...',
+		
+		ogTitle: 'Design Agency Elevate 8 - Digital Product Design & Development solutions',
+		ogDescription: 'Elevate 8 is a team ...',
+		ogImage: 'https://example.com/image.png',
+		
+		twitterTitle: 'Design Agency Elevate 8 - Digital Product Design & Development solution',
+		twitterDescription: 'Elevate 8 is a team ...',
+		twitterCard: 'summary_large_image',
+	})
+
+	const mounted = () => {
 		e8Utilits.counterUp();
-	},
-};
+	};
 </script>
 
 <style lang="sass">
@@ -254,6 +262,5 @@ export default {
 		height: 100%
 		z-index: 999999
 		background: linear-gradient(180deg, rgba(3, 1, 13, 0) 0%, #03010D 75.5%)
-
 		
 </style>

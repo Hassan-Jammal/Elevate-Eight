@@ -16,13 +16,7 @@
 								<li class="breadcrumb-item active">Contact Us</li>
 							</ol>
 						</nav>
-						<!-- <h2 class="section-title">
-							<span class="sub-title mb-15">Our Work</span>
-						</h2> -->
-						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
-							Partner with us
-							<!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf.png" alt="Leaf" /> -->
-						</h1>
+						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">Partner with us</h1>
 					</div>
 				</div>
 			</div>
@@ -39,7 +33,7 @@
 								<div class="col-xl-10">
 									<div class="section-title mb-60">
 										<span class="sub-title mb-15">Contact Information</span>
-										<h2>Have a Question or Idea? Here's How to Reach Us!</h2>
+										<h2>Have a question or idea? Reach us</h2>
 									</div>
 								</div>
 							</div>
@@ -75,10 +69,9 @@
 					</div>
 					<div class="col-xl-5 col-lg-6">
 						<div class="contact-page-form form-style-one wow fadeInUp delay-0-2s">
-							<div class="section-title mb-35">
-								<span class="sub-title mb-15">Get in touch!</span>
-								<h3>Send message</h3>
-							</div>
+							<!-- <div class="section-title mb-35">
+								<h3 class="sub-title mb-15">Get in touch!</h3>
+							</div> -->
 							<form id="contactForm" class="contactForm" @submit.prevent="">
 								<div class="row gap-60 pt-15">
 									<div class="col-md-12">
@@ -119,7 +112,7 @@
 									<div class="col-md-12">
 										<div class="form-group pt-5 mb-0">
 											<button type="submit" class="theme-btn w-100">
-												Send Message us <i class="far fa-arrow-right"></i>
+												Send Message <i class="far fa-arrow-right"></i>
 											</button>
 											<div id="msgSubmit" class="hidden"></div>
 										</div>
@@ -142,7 +135,7 @@
 						<!-- Left-aligned image for even-indexed categories -->
 						<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-md-0' : 'order-1 order-md-1'">
 							<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
-								<img :src="category.image" alt="FAQs" />
+								<img :src="category.image" alt="FAQs" class="image-rounded" />
 							</div>
 						</div>
 						<div class="col-lg-7" :class="index % 2 === 0 ? 'order-1 order-md-1' : 'order-1 order-md-0'">
@@ -191,6 +184,20 @@
 </template>
 
 <script setup>
+
+	useSeoMeta({
+		title: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
+		description: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
+		
+		ogTitle: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
+		ogDescription: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
+		ogImage: 'https://example.com/image.png',
+		
+		twitterTitle: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
+		twitterDescription: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
+		twitterCard: 'summary_large_image',
+	})
+
 const faqs = [
 	{
 		category: "Development",

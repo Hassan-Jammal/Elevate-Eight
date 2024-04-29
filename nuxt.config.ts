@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     config: {
       // Config here
     },
-
     css: false,
   },
   devtools: { enabled: true },
@@ -16,19 +15,18 @@ export default defineNuxtConfig({
   // ],
   app: {
     head: {
-      title: "Elevate8 - ",
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      titleTemplate: '%s | Elevate8',
       htmlAttrs: {
         lang: "en",
       },
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "" },
-        { name: "format-detection", content: "telephone=no" },
-      ],
       link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/images/favicon-64x64.png' },
+        { rel: 'icon', type: 'image/x-icon', href: '/images/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/x-icon', href: '/images/favicon-16x16.png' },
+        { rel: 'apple-touch-icon', type: 'image/png', href: '/images/apple-touch-icon-180x180.png' },
         { rel: "icon", type: "image/x-icon", href: "assets/images/favicon.png"},
-        // { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"},
         { rel: "stylesheet", href: "/assets/css/flaticon.min.css" },
         { rel: "stylesheet", href: "/assets/css/fontawesome-5.14.0.min.css" },
         { rel: "stylesheet", href: "/assets/css/select-dpd.css" },
@@ -40,6 +38,10 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/style.css" },
         { rel: "stylesheet", href: "/assets/css/custom.css" },
       ],
+      meta: [
+        { name: 'theme-color', content: '#00F7F7' },
+        { name: "format-detection", content: "telephone=no" },
+      ]
     },
-  }
+  },
 });

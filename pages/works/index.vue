@@ -13,11 +13,11 @@
 								<li class="breadcrumb-item">
 									<NuxtLink href="/">Home</NuxtLink>
 								</li>
-								<li class="breadcrumb-item active">Portfolio</li>
+								<li class="breadcrumb-item active">Works</li>
 							</ol>
 						</nav>
 						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s ">
-							Turning Ideas into Digital Reality
+							We turn ideas into digital reality
 						</h1>
 					</div>
 				</div>
@@ -37,7 +37,7 @@
 					<div v-for="(project, index) in projects" :key="index" class="col-lg-6">
 						<div class="project-item">
 							<div class="image wow fadeInUp delay-0-2s">
-								<img :src="project.image" :alt="'Project ' + (index + 1)" />
+								<img :src="project.image" :alt="'Project ' + (index + 1)" class="image-rounded" />
 								<NuxtLink :to="`/projects/${project.slug}`" class="project-btn">
 									<i class="far fa-arrow-right"></i>
 								</NuxtLink>
@@ -98,6 +98,19 @@
 <script setup>
 	import { projectsData } from '~/data/work-data'; // Adjust the path accordingly
 
+	useSeoMeta({
+		title: 'Our Works — Branding, Design and Development',
+		description: 'View all our past projects in Branding, Design and Development.',
+		
+		ogTitle: 'Our Works — Branding, Design and Development',
+		ogDescription: 'View all our past projects in Branding, Design and Development.',
+		ogImage: 'https://example.com/image.png',
+		
+		twitterTitle: 'Our Works — Branding, Design and Development',
+		twitterDescription: 'View all our past projects in Branding, Design and Development.',
+		twitterCard: 'summary_large_image',
+	})
+
 	const projects = ref([]);
 	
 	const services = [
@@ -108,8 +121,8 @@
 		},
 		{
 			id: 2,
-			name: 'Mobile App Development',
-			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UX/UI Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
+			name: 'Mobile Development',
+			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UI/UX Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
 		},
 		{
 			id: 3,
@@ -128,8 +141,8 @@
 		},
 		{
 			id: 6,
-			name: 'UX/UI Design',
-			description: 'Elevate user experiences with Elevate Eight\'s tailored UX/UI designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
+			name: 'UI/UX Design',
+			description: 'Elevate user experiences with Elevate Eight\'s tailored UI/UX designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
 		},
 		{
 			id: 7,
