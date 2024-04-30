@@ -3,11 +3,11 @@
 		<!-- <PageBanner :pageName="'Contact'" /> -->
 
 		<!-- Page Banner Section Start -->
-		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
+		<section class="page-banner d-flex align-items-center rel z-1"
 			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center text-md-start">
+					<div class="col-lg-12">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb wow fadeInUp delay-0-4s">
 								<li class="breadcrumb-item">
@@ -16,7 +16,7 @@
 								<li class="breadcrumb-item active">Contact Us</li>
 							</ol>
 						</nav>
-						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">Partner with us</h1>
+						<h1 class="hero-title wow fadeInUp delay-0-2s text-center">Partner with us</h1>
 					</div>
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 								<h3 class="sub-title mb-15">Get in touch!</h3>
 							</div> -->
 							<form id="contactForm" class="contactForm" @submit.prevent="">
-								<div class="row gap-60 pt-15">
+								<div class="row gap-60">
 									<div class="col-md-12">
 										<div class="form-group">
 											<label for="name"><i class="far fa-user"></i></label>

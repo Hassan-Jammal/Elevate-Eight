@@ -1,7 +1,7 @@
 <template>
 	<NuxtLayout name="elevate8">
 		<!-- Page Banner Section Start -->
-		<section class="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
+		<section class="page-banner d-flex align-items-center rel z-1"
 			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
 			<div class="container">
 				<div class="row">
@@ -15,7 +15,7 @@
 							</ol>
 						</nav>
 
-						<h1 class="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">We've got everything covered</h1>
+						<h1 class="hero-title wow fadeInUp delay-0-2s">We've got everything covered</h1>
 					</div>
 				</div>
 			</div>
@@ -25,9 +25,9 @@
 		<!-- Service Style Three start -->
 		<section class="service-three-area pt-130 rpt-100 rel z-1">
 			<div class="container container-1290">
-				<h2 class="section-title mb-60">
-					<span class="sub-title">What We Offer</span>
-				</h2>
+				<div class="section-title mb-40">
+					<h2 class="sub-title">What We Offer</h2>
+				</div>
 				<div class="row">
 					<div v-for="(service, index) in services" :key="index" class="col-md-6">
 						<div class="service-three-item wow fadeInUp delay-0-2s">

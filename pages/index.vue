@@ -68,7 +68,7 @@
 					</div>
 					<div class="col-xl-7 col-lg-8 order-0 order-lg-1">
 						<div class="about-content wow fadeInUp delay-0-4s">
-							<div class="section-title mb-40 text-center text-lg-start">
+							<div class="section-title mb-40">
 								<span class="sub-title mb-15">About Elevate Eight</span>
 								<h2>We turn ideas into digital reality</h2>
 							</div>
