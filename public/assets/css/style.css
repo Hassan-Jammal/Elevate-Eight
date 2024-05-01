@@ -11053,7 +11053,6 @@ background: #00000099;;
 /**************** ## Project Grid Area *****************/
 /*******************************************************/
 .project-item {
-	cursor: pointer;
 	margin-bottom: 65px
 }
 
@@ -11096,6 +11095,7 @@ background: #00000099;;
 } */
 
 .project-item .image {
+	cursor: pointer;
 	z-index: 1;
 	position: relative;
 }
@@ -11181,11 +11181,19 @@ background: #00000099;;
 	}
 } */
 
+
+.project-item .content .description {
+	margin-top: 15px;
+	font-size: 14px;
+	font-family: 'ClashDisplay-Medium';
+	line-height: 1.5;
+}
+
 .project-item .content .category {
-	font-size: 20px;
-	margin-bottom: 14px;
-	display: inline-block;
-	/* text-decoration: underline; */
+	margin-top: 15px;
+	font-size: 16px;
+	font-family: 'ClashDisplay-Medium';
+	line-height: 1.5;
 }
 
 @media only screen and (max-width: 1199px) {

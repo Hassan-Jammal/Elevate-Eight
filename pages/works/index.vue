@@ -41,8 +41,8 @@
 							</div>
 							<div class="content wow fadeInUp delay-0-2s mt-25">
 								<h4>{{ project.name }}</h4>
-								<p>{{ project.description }}</p>
-								<p>{{ project.category }}</p>
+								<p class="description">{{ project.description }}</p>
+								<p class="category">{{ project.category }}</p>
 							</div>
 						</div>
 					</div>
