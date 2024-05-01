@@ -31,9 +31,9 @@
 						<div class="our-location-part rmb-55 wow fadeInUp delay-0-2s">
 							<div class="row">
 								<div class="col-xl-10">
-									<div class="section-title mb-60">
-										<span class="sub-title mb-15">Contact Information</span>
-										<h2>Have a question or idea? Reach us</h2>
+									<div class="section-title mb-40">
+										<h2 class="sub-title mb-15">Contact Information</h2>
+										<h3>Have a question or idea?<br />Reach us</h3>
 									</div>
 								</div>
 							</div>

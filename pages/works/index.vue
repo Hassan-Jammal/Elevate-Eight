@@ -27,26 +27,22 @@
 		
 		<!-- Project Grid Area start -->
 		<section class="project-grid-area pt-130 rpt-100 pb-10 rpb-25">
-			<div class="container container-1210">
+			<div class="container-sm container-1210">
 
-				<h2 class="section-title mb-60">
-					<span class="sub-title">Our Works</span>
-				</h2>
-				
-				<div class="row gap-110">
-					<div v-for="(project, index) in projects" :key="index" class="col-lg-6">
+				<!-- <div class="section-title mb-40">
+					<h2 class="sub-title">Our Works</h2>
+				</div> -->
+				<div class="row gap-45">
+					<div v-for="(project, index) in projects" :key="index" class="project-wrapper col-xl-4 col-md-6">
 						<div class="project-item">
 							<div class="image wow fadeInUp delay-0-2s">
-								<img :src="project.image" :alt="'Project ' + (index + 1)" class="image-rounded" />
-								<NuxtLink :to="`/projects/${project.slug}`" class="project-btn">
-									<i class="far fa-arrow-right"></i>
-								</NuxtLink>
+								<img :src="project.image1" :alt="'Project ' + (index + 1)" class="image-rounded" />
+								<img :src="project.image2" :alt="'Project ' + (index + 1)" class="image-rounded position-absolute top-0 start-0" />
 							</div>
-							<div class="content wow fadeInUp delay-0-2s">
-								<NuxtLink :to="`/projects/${project.slug}`" class="category">{{ project.category }}</NuxtLink>
-								<h2>
-									<NuxtLink :to="`/projects/${project.slug}`">{{ project.name }}</NuxtLink>
-								</h2>
+							<div class="content wow fadeInUp delay-0-2s mt-25">
+								<h4>{{ project.name }}</h4>
+								<p>{{ project.description }}</p>
+								<p>{{ project.category }}</p>
 							</div>
 						</div>
 					</div>
@@ -112,7 +108,7 @@
 	})
 
 	const projects = ref([]);
-	
+
 	const services = [
 		{
 			id: 1,
@@ -173,7 +169,6 @@
 			...project,
 		}));
 	};
-
 
 	const toggleSidebar = () => {
 		document.querySelector("body").classList.add("side-content-visible");
