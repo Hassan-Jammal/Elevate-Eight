@@ -427,7 +427,7 @@
 
 <script setup>
 
-	useSeoMeta({
+	useServerSeoMeta({
 		title: 'About Us — Experienced Product Design Team',
 		description: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
 		

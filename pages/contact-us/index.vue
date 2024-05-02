@@ -185,7 +185,7 @@
 
 <script setup>
 
-	useSeoMeta({
+	useServerSeoMeta({
 		title: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
 		description: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
 		

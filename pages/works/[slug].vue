@@ -117,7 +117,7 @@
 <script setup>
     import { projectsData } from '~/data/work-data'; // Adjust the path accordingly
 
-    useSeoMeta({
+    useServerSeoMeta({
 		title: 'About Us',
 		description: 'Elevate 8 is a team ...',
 		

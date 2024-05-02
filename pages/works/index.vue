@@ -94,7 +94,7 @@
 <script setup>
 	import { projectsData } from '~/data/work-data'; // Adjust the path accordingly
 
-	useSeoMeta({
+	useServerSeoMeta({
 		title: 'Our Works — Branding, Design and Development',
 		description: 'View all our past projects in Branding, Design and Development.',
 		

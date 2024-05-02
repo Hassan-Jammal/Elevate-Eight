@@ -175,7 +175,7 @@
 
 <script setup>
 
-  useSeoMeta({
+  useServerSeoMeta({
 		title: 'About Us',
 		description: 'Elevate 8 is a team ...',
 		

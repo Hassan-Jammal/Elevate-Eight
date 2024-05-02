@@ -168,7 +168,7 @@
 
 <script setup>
 
-	useSeoMeta({
+	useServerSeoMeta({
 		title: 'Our Services — Services we offer',
 		description: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',
 		

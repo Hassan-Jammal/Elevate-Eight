@@ -234,14 +234,12 @@
 <script setup>
 	import { e8Utilits } from "~/utilits";
 
-	useSeoMeta({
+	useServerSeoMeta({
 		title: 'Design Agency Elevate 8 - Digital Product Design & Development solution',
 		description: 'Elevate 8 is a team ...',
-		
 		ogTitle: 'Design Agency Elevate 8 - Digital Product Design & Development solutions',
 		ogDescription: 'Elevate 8 is a team ...',
 		ogImage: 'https://example.com/image.png',
-		
 		twitterTitle: 'Design Agency Elevate 8 - Digital Product Design & Development solution',
 		twitterDescription: 'Elevate 8 is a team ...',
 		twitterCard: 'summary_large_image',
