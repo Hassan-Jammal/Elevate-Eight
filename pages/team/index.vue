@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="elevate8">
+  
     <!-- <PageBanner :pageName="'Expert Team'" /> -->
 
     <!-- Page Banner Section Start -->
@@ -170,12 +170,12 @@
       </div>
     </section>
     <!-- Team Area end -->
-  </NuxtLayout>
+  
 </template>
 
 <script setup>
 
-  useServerSeoMeta({
+  useSeoMeta({
 		title: 'About Us',
 		description: 'Elevate 8 is a team ...',
 		

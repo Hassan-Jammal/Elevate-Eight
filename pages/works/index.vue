@@ -1,5 +1,5 @@
 <template>
-	<NuxtLayout name="elevate8">
+	
 		<!-- <PageBanner :pageName="'Project Grid'" /> -->
 
 		<!-- Page Banner Section Start -->
@@ -88,13 +88,13 @@
 			<span class="big-text light-opacity">Let’s Work Together</span>
 		</section>
 		<!-- Work With Area end -->
-	</NuxtLayout>
+	
 </template>
 
 <script setup>
 	import { projectsData } from '~/data/work-data'; // Adjust the path accordingly
 
-	useServerSeoMeta({
+	useSeoMeta({
 		title: 'Our Works — Branding, Design and Development',
 		description: 'View all our past projects in Branding, Design and Development.',
 		

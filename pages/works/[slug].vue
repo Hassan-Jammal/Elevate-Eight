@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="elevate8">
+    
         <!-- Page Banner Section Start -->
         <section class="page-banner pt-210 rpt-150 pb-75 rel z-1"
             style="background-image: url(assets/images/hero/hero-two-bg.png)">
@@ -111,13 +111,13 @@
             </div>
         </section>
         <!-- Next Prev Post Area end -->
-    </NuxtLayout>
+    
 </template>
 
 <script setup>
     import { projectsData } from '~/data/work-data'; // Adjust the path accordingly
 
-    useServerSeoMeta({
+    useSeoMeta({
 		title: 'About Us',
 		description: 'Elevate 8 is a team ...',
 		

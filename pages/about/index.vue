@@ -1,5 +1,5 @@
 <template>
-	<NuxtLayout name="elevate8">
+	
 
     <!-- Page Banner Section Start -->
 		<section class="page-banner d-flex align-items-center rel z-1"
@@ -422,12 +422,12 @@
       </div>
     </section> -->
 		<!-- Client Logo Two end -->
-	</NuxtLayout>
+	
 </template>
 
 <script setup>
 
-	useServerSeoMeta({
+	useSeoMeta({
 		title: 'About Us — Experienced Product Design Team',
 		description: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
 		

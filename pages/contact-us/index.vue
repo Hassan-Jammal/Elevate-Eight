@@ -1,5 +1,5 @@
 <template>
-	<NuxtLayout name="elevate8">
+	
 		<!-- <PageBanner :pageName="'Contact'" /> -->
 
 		<!-- Page Banner Section Start -->
@@ -180,12 +180,12 @@
 			</div>
 		</div> -->
 		<!-- Location Map Area End -->
-	</NuxtLayout>
+	
 </template>
 
 <script setup>
 
-	useServerSeoMeta({
+	useSeoMeta({
 		title: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
 		description: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
 		

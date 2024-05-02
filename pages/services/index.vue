@@ -1,5 +1,5 @@
 <template>
-	<NuxtLayout name="elevate8">
+	
 		<!-- Page Banner Section Start -->
 		<section class="page-banner d-flex align-items-center rel z-1"
 			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
@@ -163,12 +163,12 @@
 			</div>
 		</section>
 		<!-- FAQ's Area end -->
-	</NuxtLayout>
+	
 </template>
 
 <script setup>
 
-	useServerSeoMeta({
+	useSeoMeta({
 		title: 'Our Services — Services we offer',
 		description: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',
 		

@@ -1,5 +1,5 @@
 <template>
-	<NuxtLayout name="elevate8">
+	
 		<!-- Hero Section Start -->
 		<section class="hero-area pt-250 rpt-150 rel z-1">
 			<div class="container container-1620">
@@ -228,13 +228,13 @@
 			</div>
 		</section>
 		<!-- Why Choose Us Area end -->
-	</NuxtLayout>
+	
 </template>
 
 <script setup>
 	import { e8Utilits } from "~/utilits";
 
-	useServerSeoMeta({
+	useSeoMeta({
 		title: 'Design Agency Elevate 8 - Digital Product Design & Development solution',
 		description: 'Elevate 8 is a team ...',
 		ogTitle: 'Design Agency Elevate 8 - Digital Product Design & Development solutions',
