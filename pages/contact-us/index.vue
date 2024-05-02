@@ -3,8 +3,7 @@
 		<!-- <PageBanner :pageName="'Contact'" /> -->
 
 		<!-- Page Banner Section Start -->
-		<section class="page-banner d-flex align-items-center rel z-1"
-			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
+		<section class="page-banner d-flex align-items-center rel z-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -191,7 +190,7 @@
 		
 		ogTitle: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
 		ogDescription: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
-		ogImage: 'https://example.com/image.png',
+		ogImage: '/assets/images/share-image-contact-us.png',
 		
 		twitterTitle: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
 		twitterDescription: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',

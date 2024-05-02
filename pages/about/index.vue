@@ -2,8 +2,7 @@
 	
 
     <!-- Page Banner Section Start -->
-		<section class="page-banner d-flex align-items-center rel z-1"
-			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
+		<section class="page-banner d-flex align-items-center rel z-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -433,7 +432,7 @@
 		
 		ogTitle: 'About Us — Experienced Product Design Team',
 		ogDescription: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
-		ogImage: 'https://example.com/image.png',
+		ogImage: '/assets/images/share-image-about-us.png',
 		
 		twitterTitle: 'About Us — Experienced Product Design Team',
 		twitterDescription: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',

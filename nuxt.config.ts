@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  ssr: false,
+  pages: true,
   modules: ["nuxt-swiper", "@vuestic/nuxt"],
   vuestic: {
     config: {
@@ -32,7 +32,6 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/select-dpd.css" },
         { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
         { rel: "stylesheet", href: "/assets/css/magnific-popup.min.css" },
-        { rel: "stylesheet", href: "/assets/css/nice-select.min.css" },
         { rel: "stylesheet", href: "/assets/css/animate.min.css" },
         { rel: "stylesheet", href: "/assets/css/slick.min.css" },
         { rel: "stylesheet", href: "/assets/css/style.css" },

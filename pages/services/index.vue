@@ -1,11 +1,10 @@
 <template>
 	
 		<!-- Page Banner Section Start -->
-		<section class="page-banner d-flex align-items-center rel z-1"
-			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
+		<section class="page-banner w-100 d-flex align-items-center rel z-1">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center text-md-start">
+					<div class="col-lg-12">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb wow fadeInUp delay-0-4s">
 								<li class="breadcrumb-item">
@@ -14,8 +13,7 @@
 								<li class="breadcrumb-item active">Services</li>
 							</ol>
 						</nav>
-
-						<h1 class="hero-title wow fadeInUp delay-0-2s">We've got everything covered</h1>
+						<h1 class="hero-title wow fadeInUp delay-0-2s text-center">We've got everything covered</h1>
 					</div>
 				</div>
 			</div>
@@ -174,7 +172,7 @@
 		
 		ogTitle: 'Our Services — Services we offer',
 		ogDescription: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',
-		ogImage: 'https://example.com/image.png',
+		ogImage: '/assets/images/share-image-services.png',
 		
 		twitterTitle: 'Our Services — Services we offer',
 		twitterDescription: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',

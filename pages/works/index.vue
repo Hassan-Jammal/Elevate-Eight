@@ -3,8 +3,7 @@
 		<!-- <PageBanner :pageName="'Project Grid'" /> -->
 
 		<!-- Page Banner Section Start -->
-		<section class="page-banner d-flex align-items-center rel z-1"
-			style="background: url(assets/images/shapes/Group.svg) center no-repeat; background-position: left;">
+		<section class="page-banner d-flex align-items-center rel z-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -100,7 +99,7 @@
 		
 		ogTitle: 'Our Works — Branding, Design and Development',
 		ogDescription: 'View all our past projects in Branding, Design and Development.',
-		ogImage: 'https://example.com/image.png',
+		ogImage: '/assets/images/share-image-wokrs.png',
 		
 		twitterTitle: 'Our Works — Branding, Design and Development',
 		twitterDescription: 'View all our past projects in Branding, Design and Development.',
