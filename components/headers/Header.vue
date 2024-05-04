@@ -3,7 +3,7 @@
 		<header class="main-header menu-absolute">
 			<!--Header-Upper-->
 			<div class="header-upper">
-				<div class="container container-1620 clearfix">
+				<div class="container clearfix">
 					<div class="header-inner rel d-flex justify-content-between align-items-center">
 						<div class="logo-outer">
 							<div class="logo">
@@ -26,7 +26,6 @@
 									<!-- Toggle Button -->
 									<button type="button" class="navbar-toggle" data-bs-toggle="collapse"
 										@click="toggleSidebar2()" data-bs-target=".navbar-collapse">
-										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
@@ -61,8 +60,6 @@
 <script setup>
 	import { e8Utilits } from "~/utilits";
 	import Nav from './Nav.vue';
-
-	const props = defineProps(["singlePage"]);
 
 	onMounted(() => {
 		e8Utilits.stickyNav();

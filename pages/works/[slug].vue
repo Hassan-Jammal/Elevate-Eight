@@ -3,7 +3,7 @@
         <!-- Page Banner Section Start -->
         <section class="page-banner pt-210 rpt-150 pb-75 rel z-1"
             style="background-image: url(assets/images/hero/hero-two-bg.png)">
-            <div class="container container-1290">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
 
@@ -32,7 +32,7 @@
 
         <!-- Project Details Content Area start -->
         <section class="project-details-area pt-80 rel z-1">
-            <div class="container container-1290">
+            <div class="container">
                 <div class="row pb-35 wow fadeInUp delay-0-2s">
                     <div class="col-lg-4">
                         <h3 class="title mb-30">Project Information's</h3>
@@ -79,7 +79,7 @@
 
         <!-- Next Prev Post Area start -->
         <section class="next-prev-post-area">
-            <div class="container container-1290">
+            <div class="container">
                 <div class="next-prev-post pt-110 rpt-80 pb-100 rpb-70">
                     <!-- Previous Project -->
                     <div v-if="prevProject" class="prev-post me-auto wow fadeInLeft delay-0-2s">

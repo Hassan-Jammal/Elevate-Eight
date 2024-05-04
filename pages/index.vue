@@ -1,7 +1,7 @@
 <template>
 	<!-- Hero Section Start -->
 	<section class="hero-area pt-250 rpt-150 rel z-1">
-		<div class="container container-1620">
+		<div class="container">
 			<div class="hero-content text-center wow fadeInLeft delay-0-2s">
 				<h1>Elevate <span>Your Online</span> Presence</h1>
 			</div>
@@ -21,7 +21,7 @@
 
 	<!-- About Us Area start -->
 	<section class="about-area pt-130 rpt-100 rel z-1">
-		<div class="container container-1620">
+		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-xl-5 col-lg-4 order-1 order-lg-0">
 					<div class="about-image mx-auto text-center rmt-45 wow fadeInUp delay-0-2s">
@@ -87,18 +87,18 @@
 	<!-- About Us Area end -->
 
 	<!-- Headline area start -->
-	<div class="headline-area pt-130 rpt-100 rel z-1">
-		<div class="container container-1620">
+	<section class="headline-area pt-130 rpt-100 rel z-1">
+		<div class="container">
 			<h2 class="headline-text marquee">
 				<span><span>Dare</span><span> to </span> Elevate</span>
 			</h2>
 		</div>
-	</div>
+	</section>
 	<!-- Headline Area end -->
 
 	<!-- Service Style Three start -->
 	<section class="service-three-area pt-130 rpt-100 rel z-1">
-		<div class="container container-1620">
+		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-7">
 					<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
@@ -167,18 +167,18 @@
 	<!-- Service Style Three end -->
 
 	<!-- Headline area start -->
-	<div class="headline-area pt-130 rpt-100 rel z-1">
-		<div class="container container-1620">
+	<section class="headline-area pt-130 rpt-100 rel z-1">
+		<div class="container">
 			<h2 class="headline-text marquee">
 				<span>Elevate <span>Eight</span></span>
 			</h2>
 		</div>
-	</div>
+	</section>
 	<!-- Headline Area end -->
 
 	<!-- Why Choose Us Area start -->
 	<section class="why-choose-area pt-90 rpt-60 pb-75 rpb-45 rel z-1">
-		<div class="container container-1620">
+		<div class="container">
 			<div class="row">
 				<div class="col-xl-7">
 					<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">

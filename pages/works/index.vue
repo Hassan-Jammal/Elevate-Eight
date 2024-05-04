@@ -1,93 +1,89 @@
 <template>
-	
-		<!-- <PageBanner :pageName="'Project Grid'" /> -->
-
-		<!-- Page Banner Section Start -->
-		<section class="page-banner d-flex align-items-center rel z-1">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<nav aria-label="breadcrumb">
-							<ol class="breadcrumb wow fadeInUp delay-0-4s">
-								<li class="breadcrumb-item">
-									<NuxtLink href="/">Home</NuxtLink>
-								</li>
-								<li class="breadcrumb-item active">Works</li>
-							</ol>
-						</nav>
-						<h1 class="hero-title wow fadeInUp delay-0-2s text-center">
-							We turn ideas into digital reality
-						</h1>
-					</div>
+	<!-- Page Banner Section Start -->
+	<section class="page-banner d-flex align-items-center rel z-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb wow fadeInUp delay-0-4s">
+							<li class="breadcrumb-item">
+								<NuxtLink href="/">Home</NuxtLink>
+							</li>
+							<li class="breadcrumb-item active">Works</li>
+						</ol>
+					</nav>
+					<h1 class="hero-title wow fadeInUp delay-0-2s text-center">
+						We turn ideas into digital reality
+					</h1>
 				</div>
 			</div>
-		</section>
-		<!-- Page Banner Section End -->
-		
-		<!-- Project Grid Area start -->
-		<section class="project-grid-area pt-130 rpt-100 pb-10 rpb-25">
-			<div class="container-sm container-1210">
+		</div>
+	</section>
+	<!-- Page Banner Section End -->
+	
+	<!-- Project Grid Area start -->
+	<section class="project-grid-area pt-130 rpt-100 pb-10 rpb-25">
+		<div class="container-sm">
 
-				<!-- <div class="section-title mb-40">
-					<h2 class="sub-title">Our Works</h2>
-				</div> -->
-				<div class="row gap-45">
-					<div v-for="(project, index) in projects" :key="index" class="project-wrapper col-xl-4 col-md-6">
-						<div class="project-item">
-							<div class="image wow fadeInUp delay-0-2s">
-								<img :src="project.image1" :alt="'Project ' + (index + 1)" class="image-rounded" />
-								<img :src="project.image2" :alt="'Project ' + (index + 1)" class="image-rounded position-absolute top-0 start-0" />
-							</div>
-							<div class="content wow fadeInUp delay-0-2s mt-25">
-								<h4>{{ project.name }}</h4>
-								<p class="description">{{ project.description }}</p>
-								<p class="category">{{ project.category }}</p>
-							</div>
+			<!-- <div class="section-title mb-40">
+				<h2 class="sub-title">Our Works</h2>
+			</div> -->
+			<div class="row gap-45">
+				<div v-for="(project, index) in projects" :key="index" class="project-wrapper col-xl-4 col-md-6">
+					<div class="project-item">
+						<div class="image wow fadeInUp delay-0-2s">
+							<img :src="project.image1" :alt="'Project ' + (index + 1)" class="image-rounded" />
+							<img :src="project.image2" :alt="'Project ' + (index + 1)" class="image-rounded position-absolute top-0 start-0" />
+						</div>
+						<div class="content wow fadeInUp delay-0-2s mt-25">
+							<h4>{{ project.name }}</h4>
+							<p class="description">{{ project.description }}</p>
+							<p class="category">{{ project.category }}</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- Project Grid Area end -->
+		</div>
+	</section>
+	<!-- Project Grid Area end -->
 
-		<!-- Headline Area start -->
-		<div class="headline-area bgc-primary pt-80 pb-65">
-			<div class="container-fluid">
-				<div class="services-wrap">
-					<template v-for="(service, index) in services" :key="index">
-						<span class="services-item" ref="service">
-							<i class="fas fa-star-of-life"></i>
-							{{ service.name }}
-						</span>
-					</template>
-					<template v-for="(service, index) in services" :key="index">
-						<span class="services-item" ref="service">
-							<i class="fas fa-star-of-life"></i>
-							{{ service.name }}
-						</span>
-					</template>
-				</div>
+	<!-- Headline Area start -->
+	<section class="headline-area bgc-primary pt-80 pb-65">
+		<div class="container">
+			<div class="services-wrap">
+				<template v-for="(service, index) in services" :key="index">
+					<span class="services-item" ref="service">
+						<i class="fas fa-star-of-life"></i>
+						{{ service.name }}
+					</span>
+				</template>
+				<template v-for="(service, index) in services" :key="index">
+					<span class="services-item" ref="service">
+						<i class="fas fa-star-of-life"></i>
+						{{ service.name }}
+					</span>
+				</template>
 			</div>
 		</div>
-		<!-- Headline Area end -->
-		
-		<!-- Work With Area start -->
-		<section class="work-with-area pt-130 rpt-100 pb-150 rpb-145 rel z-1">
-			<div class="container">
-				<div class="row justify-content-center pb-45 rpb-25">
-				<div class="col-xl-7 col-lg-9">
-					<div class="section-title text-center wow fadeInUp delay-0-2s">
-					<span class="sub-title mb-15">Partner with Us</span>
-					<h2>Got a Project in Mind? Let's Make it Happen!</h2>
-					<a href="#" @click="toggleSidebar()" class="theme-btn text-start mt-30">Get a Quote</a>
-					</div>
-				</div>
+	</section>
+	<!-- Headline Area end -->
+	
+	<!-- Work With Area start -->
+	<section class="work-with-area pt-130 rpt-100 pb-150 rpb-145 rel z-1">
+		<div class="container">
+			<div class="row justify-content-center pb-45 rpb-25">
+			<div class="col-xl-7 col-lg-9">
+				<div class="section-title text-center wow fadeInUp delay-0-2s">
+				<span class="sub-title mb-15">Partner with Us</span>
+				<h2>Got a Project in Mind? Let's Make it Happen!</h2>
+				<a href="#" @click="toggleSidebar()" class="theme-btn text-start mt-30">Get a Quote</a>
 				</div>
 			</div>
-			<span class="big-text light-opacity">Let’s Work Together</span>
-		</section>
-		<!-- Work With Area end -->
-	
+			</div>
+		</div>
+		<span class="big-text light-opacity">Let’s Work Together</span>
+	</section>
+	<!-- Work With Area end -->
 </template>
 
 <script setup>

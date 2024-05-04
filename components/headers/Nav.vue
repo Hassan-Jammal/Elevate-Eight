@@ -9,9 +9,9 @@
 		<li class="wow fadeInUp delay-0-6s">
 			<NuxtLink href="/works" @click="closeSidebar()">Works</NuxtLink>
 		</li>
-		<li class="wow fadeInUp delay-0-7s">
+		<!-- <li class="wow fadeInUp delay-0-7s">
 			<NuxtLink href="/team" @click="closeSidebar()">Team</NuxtLink>
-		</li>
+		</li> -->
 		<li class="wow fadeInUp delay-0-8s">
 			<NuxtLink href="/contact-us" @click="closeSidebar()">Contact Us</NuxtLink>
 		</li>

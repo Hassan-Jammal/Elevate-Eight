@@ -5162,10 +5162,11 @@ background: #00000099;
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
 	background: var(--e8-body-color);
-	height: 2px;
-	width: 30px;
+	height: 6px;
+	width: 24px;
 	display: block;
 	margin: 7px 0;
+	border-radius: 25px;
 }
 
 /* Menu Btns */
@@ -14234,9 +14235,32 @@ background: #00000099;;
 	margin-bottom: 20px;
 }
 
+.error-content h2 {
+	font-size: 30vw;
+}
+
+.error-content p {
+	width: 100%;
+}
+
 @media only screen and (min-width: 1200px) {
 	.error-content h1 {
-		font-size: 100px;
+		font-size: 80px !important;
+	}
+	.error-content h2 {
+		font-size: 15vw !important;;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.error-content h1 {
+		font-size: 50px;
+	}
+	.error-content p {
+		width: 75%;
+	}
+	.error-content h2 {
+		font-size: 17vw;
 	}
 }
 

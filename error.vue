@@ -1,92 +1,104 @@
 <template>
-  <div class="page-wrapper">
-    <!-- main header -->
-    <header class="main-header error-header menu-absolute">
-      <!--Header-Upper-->
-      <div class="header-upper">
-        <div class="container container-1290 clearfix">
-          <div class="header-inner py-50 rpy-10 rel d-flex align-items-center">
-            <div class="error-page-logo me-auto">
-              <div class="logo">
-                <NuxtLink href="/"
-                  ><img
-                    src="/assets/images/logos/logo.png"
-                    alt="Logo"
-                    title="Logo"
-                /></NuxtLink>
-              </div>
-            </div>
+    <div class="page-wrapper">
+		<!-- main header -->
+		<header class="main-header menu-absolute">
+			<!--Header-Upper-->
+			<div class="header-upper">
+				<div class="container clearfix">
+					<div class="header-inner rel d-flex justify-content-between align-items-center">
+						<div class="logo-outer">
+							<div class="logo">
+								<NuxtLink href="/">
+									<img src="/assets/images/logos/logo-small.svg" alt="Logo" title="Logo" />
+								</NuxtLink>
+							</div>
+						</div>
 
-            <!-- Nav Search -->
-            <HeadersSearch />
+						<div class="nav-outer ms-lgauto clearfix">
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-lg">
+								<div class="navbar-header">
+									<div class="mobile-logo">
+										<NuxtLink href="/">
+											<img src="/assets/images/logos/logo-small.svg" alt="Logo"
+												title="Logo" />
+										</NuxtLink>
+									</div>
 
-            <!-- Menu Button -->
-            <div class="menu-btns">
-              <!-- menu sidbar -->
-              <div class="menu-sidebar">
-                <button @click="toggleSidebar()">
-                  <img src="/assets/images/services/seo.svg" alt="Toggler" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End Header Upper-->
-    </header>
+									<!-- Toggle Button -->
+									<button type="button" class="navbar-toggle" data-bs-toggle="collapse"
+										@click="toggleSidebar2()" data-bs-target=".navbar-collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
 
-    <HeadersSidebar />
+								<div class="navbar-collapse collapse clearfix">
+									<Nav /> <!-- v-else -->
+								</div>
+							</nav>
+							<!-- Main Menu End-->
+						</div>
 
-    <!-- 404 Error Section Start -->
-    <section
-      class="error-section pt-220 rpt-120 pb-100 rpb-80 rel z-1"
-      style="background-image: url(assets/images/hero/hero-two-bg.png)"
-    >
-      <div class="container container-1290">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="error-content rmb-55 wow fadeInRight delay-0-2s">
-              <h1>OPPS!</h1>
-              <div class="section-title mb-50 rmb-35">
-                <h2>This Page Are Can't Be Found</h2>
-              </div>
-              <NuxtLink href="/" class="theme-btn style-two"
-                >Go to Home <i class="far fa-arrow-right"></i
-              ></NuxtLink>
-              <div class="social-style-four d-flex mt-60 rmt-35">
-                <a href="#"
-                  ><i class="fab fa-facebook-f"></i> <span>Facebook</span></a
-                >
-                <a href="#"
-                  ><i class="fab fa-twitter"></i> <span>Twitter</span></a
-                >
-                <a href="#"
-                  ><i class="fab fa-dribbble"></i> <span>Dribbble</span></a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="error-image wow zoomIn delay-0-2s">
-              <!-- <img
-                src="/assets/images/services/seo.svg"
-                alt="404 Error"
-              /> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- 404 Error Section End -->
-  </div>
+						<!-- Menu Button -->
+						<div class="menu-btns">
+							<!-- menu sidbar -->
+							<div class="menu-sidebar">
+								<a href="#" class="theme-btn" @click="toggleSidebar()">Get a Quote</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End Header Upper-->
+		</header>
+
+		<HeadersSidebar />
+
+		<HeadersMenuSidebars />
+
+		<!-- 404 Error Section Start -->
+		<section class="error-section d-flex justify-content-center align-items-center rel z-1">
+			<div class="container">
+				<div class="error-content row justify-content-between align-items-center text-center text-lg-start">
+					<div class="col-lg-6 order-2 order-lg-1">
+						<div class="rmb-55 wow fadeInRight delay-0-2s">
+							<div class="section-title mb-50 rmb-35">
+								<h1>Accept our appologies!</h1>
+								<p class="mt-20">The page you were looking for doesn't exist. You may have misstyped the address or the page may have moved.</p>
+							</div>
+							<NuxtLink href="/" class="theme-btn">Go to Home page<i class="far fa-arrow-right"></i></NuxtLink>
+						</div>
+					</div>
+					<div class="col-lg-6 order-1 order-lg-2 text-center text-lg-end">
+						<h2>404</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 404 Error Section End -->
+	</div>
 </template>
 
-<script>
-export default {
-  methods: {
-    toggleSidebar() {
-      document.querySelector("body").classList.add("side-content-visible");
-    },
-  },
-};
+<script setup>
+	import { e8Utilits } from "~/utilits";
+	import Nav from '~/components/headers/Nav.vue'
+
+	useSeoMeta({
+		title: 'Page Not Found',
+		ogTitle: 'Page Not Found',
+		twitterTitle: 'Page Not Found',
+	})
+
+	onMounted(() => {
+		e8Utilits.stickyNav();
+	});
+
+	const toggleSidebar = () => {
+		document.querySelector("body").classList.add("side-content-visible");
+	};
+
+	const toggleSidebar2 = () => {
+		document.querySelector("body").classList.add("side-content-visible-nav");
+	};
 </script>

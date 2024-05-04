@@ -1,6 +1,6 @@
 <template>
 	<footer class="main-footer footer-one rel z-1">
-		<div class="container container-1620">
+		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="footer-left-content">
@@ -26,9 +26,9 @@
 								<li>
 									<NuxtLink to="/works">Works</NuxtLink>
 								</li>
-								<li>
+								<!-- <li>
 									<NuxtLink to="/team">Team</NuxtLink>
-								</li>
+								</li> -->
 							</ul>
 							<ul class="list-style-two wow fadeInUp delay-0-3s flex-grow-1 w-100">
 								<li>
