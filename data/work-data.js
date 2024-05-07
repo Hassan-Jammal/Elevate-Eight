@@ -5,8 +5,8 @@ export const projectsData = [
         description: "Expert in solar panel and window cleaning, Cleantec LB ensures top performance with professional maintenance.",
         date: "May 1, 2024",
         location: "Beirut, Lebanon",
-        image1: "/assets/images/works/sneaker-beast2.png",
-        image2: "/assets/images/works/sneaker-beast1.png",
+        image1: "/assets/images/works/cleantec1.png",
+        image2: "/assets/images/works/cleantec2.png",
         slug: "cleantec",
     },
     {
@@ -25,8 +25,8 @@ export const projectsData = [
         description: "Turn sneakers into fashion statements with custom designs by SneakerBeast, specializing in artistic transformations.",
         date: "April 17, 2023",
         location: "Beirut, Lebanon",
-        image1: "/assets/images/works/sneaker-beast1.png",
-        image2: "/assets/images/works/sneaker-beast2.png",
+        image1: "/assets/images/works/sneakerbeast1.png",
+        image2: "/assets/images/works/sneakerbeast2.png",
         slug: "sneaker-best",
     },
     {

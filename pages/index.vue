@@ -1,12 +1,12 @@
 <template>
 	<!-- Hero Section Start -->
-	<section class="hero-area pt-250 rpt-150 rel z-1">
+	<section class="hero-area z-1">
 		<div class="container">
 			<div class="hero-content text-center wow fadeInLeft delay-0-2s">
 				<h1>Elevate <span>Your Online</span> Presence</h1>
 			</div>
 		</div>
-			<div class="hero-bottom-image">
+		<div class="hero-bottom-image">
 				<div class="shadow"></div>
 				<img src="/assets/images/hero/earth.png" alt="Earth Image" width="1920" height="634" />
 
