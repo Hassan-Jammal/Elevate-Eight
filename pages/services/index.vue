@@ -296,10 +296,6 @@
 					question: "Do you offer revisions if I'm not satisfied with the initial designs?",
 					answer: "Absolutely! We value your satisfaction and provide a certain number of revisions to ensure we meet your expectations. We work closely with you throughout the design process to refine the logo until it represents your vision."
 				},
-				{
-					question: "Do you offer revisions if I'm not satisfied with the initial designs?",
-					answer: "Definitely! We design logos that are versatile and suitable for various applications, whether it’s digital platforms, print materials, or signage. We consider the necessary factors to ensure the logo looks great in both digital and physical formats."
-				},
 			]
 		},
 		// {
