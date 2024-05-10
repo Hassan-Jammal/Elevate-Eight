@@ -67,12 +67,12 @@
 						<!-- <div class="section-title mb-35">
 							<h3 class="sub-title mb-15">Get in touch!</h3>
 						</div> -->
-						<form id="contactForm" class="contactForm" @submit.prevent="">
+						<form id="contactForm" class="contactForm" @submit.prevent="submitForm">
 							<div class="row gap-60">
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="name"><i class="far fa-user"></i></label>
-										<input type="text" id="name" name="name" class="form-control" value=""
+										<input v-model="formValues.name" type="text" id="name" name="name" class="form-control"
 											placeholder="Full Name" required data-error="Please enter your name" />
 										<div class="help-block with-errors"></div>
 									</div>
@@ -80,8 +80,8 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="phone_number"><i class="far fa-phone"></i></label>
-										<input type="text" id="phone_number" name="phone_number"
-											class="form-control" value="" placeholder="Phone" required
+										<input v-model="formValues.phone_number" type="text" id="phone_number" name="phone_number"
+											class="form-control" placeholder="Phone" required
 											data-error="Please enter your Number" />
 										<div class="help-block with-errors"></div>
 									</div>
@@ -89,7 +89,7 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="email"><i class="far fa-envelope"></i></label>
-										<input type="email" id="email" name="email" class="form-control" value=""
+										<input v-model="formValues.email" type="email" id="email" name="email" class="form-control"
 											placeholder="Email Address" required
 											data-error="Please enter your Email Address" />
 										<div class="help-block with-errors"></div>
@@ -98,7 +98,7 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="message"><i class="far fa-pencil"></i></label>
-										<textarea name="message" id="message" class="form-control" rows="2"
+										<textarea v-model="formValues.message" name="message" id="message" class="form-control" rows="2"
 											placeholder="Message" required
 											data-error="Please enter your Message"></textarea>
 										<div class="help-block with-errors"></div>
@@ -112,6 +112,7 @@
 										<div id="msgSubmit" class="hidden"></div>
 									</div>
 								</div>
+								<div v-if="submissionMessage">{{ submissionMessage }}</div>
 							</div>
 						</form>
 					</div>
@@ -178,6 +179,50 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+const formValues = ref({
+  name: '',
+  phone_number: '',
+  email: '',
+  message: ''
+});
+
+const submissionMessage = ref('');
+const submitForm = async () => {
+            try {
+                const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/contact-form-7/v1/contact-forms/6/feedback';
+                const formData = new FormData();
+                formData.append('your-name', formValues.value.name);
+                formData.append('your-email', formValues.value.email);
+                formData.append('your-phone-number', formValues.value.phone_number);
+                formData.append('your-message', formValues.value.message);
+                formData.append('_wpcf7_unit_tag', 'rte');
+                // console.log(formData);
+                // return;
+                const response = await fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    body: formData,
+                });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                submissionMessage.value = "Thank you for your message."
+                resetForm();
+            } catch (error) {
+                console.error("Form submission error:", error);
+                submissionMessage.value = "Error in submitting your message."
+                resetForm();
+            }
+    };
+    const resetForm = () => {
+        formValues.value.name="";
+        formValues.value.email="";
+        formValues.value.phone_number="";
+        formValues.value.message="";
+    }
+
+
 	useSeoMeta({
 		title: 'Contact Us — Questions and Project Inquiries to Dedicated Design & Development team',
 		description: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
@@ -190,6 +235,8 @@
 		twitterDescription: 'Got a project? Our team will carefully study your task and suggest on the best solution for your business. Tell us more about your idea: info@elevate8.co',
 		twitterCard: 'summary_large_image',
 	})
+
+
 
 	const faqs = [
 		{
