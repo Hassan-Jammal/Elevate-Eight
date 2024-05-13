@@ -5167,7 +5167,7 @@ background: #00000099;
 }
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-	background: var(--e8-body-color);
+	background: #FFFFFF;
 	height: 6px;
 	width: 24px;
 	display: block;
