@@ -15,18 +15,22 @@
 
 				<!--Appointment Form-->
 				<div class="appointment-form">
-					<form method="post" @submit.prevent="toggleSidebar()">
+					<form id="getQuoteForm" class="getQuoteForm" method="post" @submit.prevent="submitForm">
 						<div class="form-group">
-							<input type="text" name="full_name" value="" placeholder="Full Name" />
+							<input v-model="formValues.full_name" type="text" id="full_name" name="full_name" placeholder="Full Name" required data-error="Please enter your name" />
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<input type="text" name="email" value="" placeholder="Email Address" />
+							<input v-model="formValues.email" type="email" id="email" name="email" placeholder="Email Address" required data-error="Please enter your Email Address" />
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<input type="text" name="mobile" value="" placeholder="Phone Number" />
+							<input v-model="formValues.phone_number" type="text" id="phone_number" name="phone_number" placeholder="Phone" required data-error="Please enter your Number" />
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<input type="text" name="company_name" value="" placeholder="Company Name (optional)" />
+							<input v-model="formValues.company_name" type="text" id="company_name" name="company_name" placeholder="Company Name (optional)" />
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<VaSelect
@@ -36,21 +40,22 @@
 								multiple
 								color="#7f4EFF"
 								class="w-100"
-								>
+							>
 								<template v-slot:content="{ value }">
 									<VaChip
-									v-for="chip in value"
-									color="#7f4EFF"
-									:key="chip"
-									size="small"
-									class="mr-1 my-1"
-									closeable
-									@update:modelValue="deleteChip(chip)"
+										v-for="chip in value"
+										color="#7f4EFF"
+										:key="chip"
+										size="small"
+										class="mr-1 my-1"
+										closeable
+										@update:modelValue="deleteChip(chip)"
 									>
 									{{ chip }}
 									</VaChip>
 								</template>
 							</VaSelect>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<VaSelect
@@ -59,15 +64,19 @@
 								:options="options2"
 								color="#7f4EFF"
 								class="w-100"
-								>
+							>
 							</VaSelect>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<textarea placeholder="Tell us about your business" rows="5"></textarea>
+							<textarea v-model="formValues.message" id="message" name="message" placeholder="Tell us about your business" rows="5"></textarea>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<button type="submit" class="theme-btn">Send My Free Proposal</button>
+							<button type="submit" class="theme-btn" :disabled="isFormSubmitted">Send My Free Proposal <i class="far fa-arrow-right"></i></button>
+							<div id="msgSubmit" class="hidden"></div>
 						</div>
+						<div v-if="submissionMessage">{{ submissionMessage }}</div>
 					</form>
 				</div>
 
@@ -87,8 +96,6 @@
 	const toggleSidebar = () => {
 		document.querySelector("body").classList.remove("side-content-visible");
 	};
-
-	import { ref } from 'vue';
 
 	const options = [
 		"Web Development",
@@ -118,4 +125,66 @@
 	};
 
 	const value2 = ref(null);
+
+	const formValues = ref({
+		full_name: '',
+		email: '',
+		phone_number: '',
+		company_name: '',
+		message: ''
+	});
+
+	const isFormSubmitted = ref(false);
+	const submissionMessage = ref('');
+
+	const submitForm = async () => {
+		isFormSubmitted.value = true;
+		
+		try {	
+			const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/contact-form-7/v1/contact-forms/12/feedback';
+			const formData = new FormData();
+			formData.append('full-name', formValues.value.full_name);
+			formData.append('email', formValues.value.email);
+			formData.append('phone-number', formValues.value.phone_number);
+			formData.append('company-name', formValues.value.company_name);
+			formData.append('services', value.value.join(', ')); // Add chosen services
+			formData.append('timeline', value2.value); // Add chosen timeline
+			formData.append('message', formValues.value.message);
+			formData.append('_wpcf7_unit_tag', 'rte');
+			// console.log(formData);
+			// return;
+			const response = await fetch(API_ENDPOINT, {
+				method: 'POST',
+				body: formData,
+			});
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			const data = await response.json();
+				submissionMessage.value = "Thank you for your message."
+			setTimeout(() => {
+				resetForm();
+				toggleSidebar();
+				isFormSubmitted.value = false;
+			}, 3000);
+		} catch (error) {
+			// console.error("Form submission error:", error);
+			submissionMessage.value = "Error in submitting your message."
+			setTimeout(() => {
+				resetForm();
+				isFormSubmitted.value = false;
+			}, 3000);
+		}
+    };
+
+    const resetForm = () => {
+        formValues.value.full_name="";
+        formValues.value.email="";
+        formValues.value.phone_number="";
+        formValues.value.company_name="";
+        value.value=[];
+        value2.value="";
+        formValues.value.message="";
+		submissionMessage.value="";
+    }
 </script>

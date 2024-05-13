@@ -683,6 +683,12 @@ a.theme-btn {
 	line-height: 1;
 }
 
+.theme-btn:disabled,
+a.theme-btn:disabled {
+	background: var(--e8-body-color) !important;
+	cursor: not-allowed;
+}
+
 .theme-btn i,
 a.theme-btn i {
 	-webkit-transition: 0.3s;
