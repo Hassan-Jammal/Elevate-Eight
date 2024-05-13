@@ -95,7 +95,7 @@
 		
 		ogTitle: 'Our Works — Branding, Design and Development',
 		ogDescription: 'View all our past projects in Branding, Design and Development.',
-		ogImage: '/assets/images/share-image-wokrs.png',
+		ogImage: '/assets/images/share-image-works.png',
 		
 		twitterTitle: 'Our Works — Branding, Design and Development',
 		twitterDescription: 'View all our past projects in Branding, Design and Development.',
