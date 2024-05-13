@@ -40,6 +40,11 @@ export default defineNuxtConfig({
       meta: [
         { name: 'theme-color', content: '#00F7F7' },
         { name: "format-detection", content: "telephone=no" },
+        { name: "author", content: "Elevate8" },
+        { name: "og:site_namae", content: "630" },
+        { name: "og:image:alt", content: "Elevate8" },
+        { name: "og:image:width", content: "1200" },
+        { name: "og:image:height", content: "630" },
       ]
     },
   },
