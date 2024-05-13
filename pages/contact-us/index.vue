@@ -256,8 +256,8 @@ const submitForm = async () => {
 					answer: "Absolutely! We prioritize creating responsive websites for optimal viewing on desktops, laptops, tablets, and phones."
 				},
 				{
-					question: "Can you help with website maintenance and updates?",
-					answer: "Absolutely! We provide website and mobile application maintenance and update services for one year. After the initial year, the cost for maintenance and hosting is $150 to $300, depending on the size and products on your site."
+					question: "Can you help with website/app maintenance and updates?",
+					answer: "Absolutely! We provide website and mobile application maintenance and update services."
 				},
 				{
 					question: "Can you optimize my website for search engines (SEO)?",
@@ -265,11 +265,11 @@ const submitForm = async () => {
 				},
 				{
 					question: "Do you offer hosting services?",
-					answer: "Yes, we provide hosting services for one year as part of our packages. The hosting services are included free of charge for the first year. After the first year, there is an additional cost for hosting and maintenance, which ranges from $150 to $300 depending on the size and products on your site."
+					answer: "Yes, we provide hosting services for one year as part of our packages. The hosting services are included free of charge for the first year."
 				},
 				{
 					question: "Can you assist with acquiring a domain name?",
-					answer: "Absolutely! We can guide you in selecting and registering a relevant and memorable domain name. Additionally, as part of our packages, we offer free domain registration (standard) and hosting services for the first year."
+					answer: "Absolutely! We can guide you in selecting and registering a relevant and memorable domain name. Additionally, as part of our packages, we offer free domain registration (standard) for the first year."
 				}
 			]
 		},
