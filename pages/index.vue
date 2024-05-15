@@ -103,63 +103,26 @@
 				<div class="col-lg-7">
 					<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
 						<span class="sub-title mb-20">Design Services</span>
-						<h2>Digital marketing services</h2>
+						<h2>Digital branding and marketing</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="service-three-item wow fadeInUp delay-0-2s">
-						<div class="d-flex flex-column">
-							<div class="title-icon">
-								<h5>Social Media Management</h5>
-								<img src="/assets/images/services/social-media-marketing.svg" alt="Icon" width="50" class="w-auto" />
+				<template v-for="(service, index) in services" :key="index">
+					<div v-if="service.featured" class="col-xl-3 col-lg-4 col-md-6">
+						<div class="service-three-item wow fadeInUp delay-0-2s">
+							<div class="d-flex flex-column">
+								<div class="title-icon">
+									<h5>{{ service.name }}</h5>
+									<img :src="`/assets/images/services/${service.icon}.svg`" :alt="service.name" width="50" height="50" class="w-auto" />
+								</div>
+							</div>
+							<div class="content">
+								<p>{{ service.description }}</p>
 							</div>
 						</div>
-						<div class="content">
-							<p>Amplify your online presence with Elevate Eight's Social Media Management expertise.</p>
-						</div>
 					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="service-three-item wow fadeInDown delay-0-2s">
-						<div class="d-flex flex-column">
-							<div class="title-icon">
-								<h5>UI/UX Design</h5>
-								<img src="/assets/images/services/ux-ui.svg" alt="Icon" width="50" class="w-auto"/>
-							</div>
-						</div>
-						<div class="content">
-							<p>Elevate user experiences with Elevate Eight's tailored UI/UX designsditiis</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="service-three-item wow fadeInUp delay-0-2s">
-						<div class="d-flex flex-column">
-							<div class="title-icon">
-								<h5>Search Engine Optimization</h5>
-								<img src="/assets/images/services/seo.svg" alt="Icon" width="50" class="w-auto" />
-							</div>
-						</div>
-						<div class="content">
-							<p>Optimize your online visibility with Elevate Eight's SEO solutions.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="service-three-item wow fadeInDown delay-0-2s">
-						<div class="d-flex flex-column">
-							<div class="title-icon">
-								<h5>Branding</h5>
-								<img src="/assets/images/services/branding.svg" alt="Icon" width="50" class="w-auto" />
-							</div>
-						</div>
-						<div class="content">
-							<p>Build a distinctive brand identity with Elevate Eight's branding services</p>
-						</div>
-					</div>
-				</div>
+				</template>
 			</div>
 			<NuxtLink class="read-more d-flex w-max mx-auto" href="/services"><span>Explore All Services</span> <i class="far fa-arrow-right"></i></NuxtLink>
 		</div>
@@ -180,12 +143,12 @@
 	<section class="why-choose-area pt-90 rpt-60 pb-75 rpb-45 rel z-1">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-7">
+				<div class="col-xl-7 order-1 order-lg-0">
 					<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-						<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left Image" class="image-rounded" />
+						<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left" width="1920" height="1920" class="image-rounded" />
 					</div>
 				</div>
-				<div class="col-xl-5">
+				<div class="col-xl-5 order-0 order-lg-1">
 					<div class="why-choose-two-wrap">
 						<div class="section-title text-center text-lg-start mb-55 wow fadeInUp delay-0-2s">
 							<span class="sub-title mb-15">Why Choose Us</span>
@@ -197,7 +160,7 @@
 								<span class="icon-bottom-shape"></span>
 							</div>
 							<div class="content">
-								<h4>High-Quality Services</h4>
+								<h4>High-quality services</h4>
 								<p>We guarantee unparalleled quality through rigorous testing before delivering services, ensuring they meet and exceed our clients' expectations.</p>
 							</div>
 						</div>
@@ -207,7 +170,7 @@
 								<span class="icon-bottom-shape"></span>
 							</div>
 							<div class="content">
-								<h4>Innovative and Passionate</h4>
+								<h4>Innovative and passionate</h4>
 								<p>With our continual dedication to bringing innovative and imaginative solutions, we excel as a strategic partner for digital marketing, web and app projects. Through our ongoing efforts to explore novel approaches, we reliably help clients strengthen their revenue generation.</p>
 							</div>
 						</div>
@@ -217,7 +180,7 @@
 								<span class="icon-bottom-shape"></span>
 							</div>
 							<div class="content">
-								<h4>We Write Code That Works</h4>
+								<h4>We write code that works</h4>
 								<p>We create websites and mobile apps through careful coding then extensively test them. This ensures smooth loading on any device or browser. Our process guarantees customers' sites provide a seamless user experience whether accessed from a phone, tablet, computer or varying browsers. Users enjoy consistent and trouble-free access no matter how they connect online.</p>
 							</div>
 						</div>
@@ -244,6 +207,88 @@
 		twitterDescription: 'Elevate 8 is a team ...',
 		twitterCard: 'summary_large_image',
 	})
+
+	const services = [
+		{
+			id: 1,
+			name: 'Website Development',
+			description: 'From online platforms to corporate portals, Elevate Eight handles end-to-end web design and development. Our custom solutions are powered by technology tailored to your specific needs, ensuring scalability and top-notch performance.',
+			excerpt: 'From online platforms to corporate portals, Elevate Eight handles end-to-end web design and development.',
+			icon: 'website-development',
+			featured: false
+		},
+		{
+			id: 2,
+			name: 'Mobile App Development',
+			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UI/UX Design.',
+			excerpt: '',
+			icon: 'mobile-app-development',
+			featured: false
+		},
+		{
+			id: 3,
+			name: 'E-commerce Wesbites',
+			description: 'Transform your online business with Elevate Eight\'s e-commerce solutions.',
+			excerpt: '',
+			icon: 'e-commerce-websites',
+			featured: false
+		},
+		{
+			id: 4,
+			name: 'Search Engine Optimization',
+			description: 'Optimize your online visibility with Elevate Eight\'s technical SEO solutions.',
+			excerpt: '',
+			icon: 'search-engine-optimization',
+			featured: false
+		},
+		{
+			id: 5,
+			name: 'Branding',
+			description: 'Build a distinctive brand identity with Elevate Eight\'s branding services.',
+			excerpt: '',
+			icon: 'branding',
+			featured: true
+		},
+		{
+			id: 6,
+			name: 'UI/UX Design',
+			description: 'Elevate user experiences with Elevate Eight\'s tailored UI/UX designs.',
+			excerpt: '',
+			icon: 'ui-ux-design',
+			featured: true
+		},
+		{
+			id: 7,
+			name: 'Hosting Plans',
+			description: 'Reliable and scalable hosting solutions by Elevate Eight.',
+			excerpt: '',
+			icon: 'hosting-plans',
+			featured: false
+		},
+		{
+			id: 8,
+			name: 'Logo Design',
+			description: 'Make a lasting impression with Elevate Eight\'s logo design expertise.',
+			icon: 'logo-design',
+			featured: true
+		},
+		{
+			id: 9,
+			name: 'Social Media Management',
+			description: 'Amplify your online presence with Elevate Eight\'s Social Media Management expertise.',
+			excerpt: '',
+			icon: 'social-media-marketing',
+			featured: true
+		},
+		{
+			id: 10,
+			name: 'Maintenance & Support',
+			description: 'Ensure your digital presence is always at its prime with Elevate Eight\'s maintenance and support services.',
+			excerpt: '',
+			icon: 'maintenance-support',
+			featured: false
+		},
+	];
 
 	const mounted = () => {
 		e8Utilits.counterUp();

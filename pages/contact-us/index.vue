@@ -125,16 +125,16 @@
 	<!-- FAQ's Area start -->
 	<section class="faq-area rel z-1">
 		<div class="container">
-			<h2 class="text-center mb-100 rmb-50">Frequently Asked Questions</h2>
+			<h2 class="text-center mb-100 rmb-50">Frequently asked questions</h2>
 			<div v-for="(category, index) in faqs" :key="index" class="pb-105 rpb-75">
 				<div class="row align-item-center gap-100">
 					<!-- Left-aligned image for even-indexed categories -->
-					<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-md-0' : 'order-1 order-md-1'">
+					<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-lg-0' : 'order-1 order-lg-1'">
 						<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
-							<img :src="category.image" alt="FAQs" class="image-rounded" />
+							<img :src="`/assets/images/faqs/${category.image}.png`" :alt="category.category" width="1920" height="2834" class="image-rounded" />
 						</div>
 					</div>
-					<div class="col-lg-7" :class="index % 2 === 0 ? 'order-1 order-md-1' : 'order-1 order-md-0'">
+					<div class="col-lg-7" :class="index % 2 === 0 ? 'order-0 order-lg-1' : 'order-0 order-lg-0'">
 						<div class="faq-content-part wow fadeInRight delay-0-2s">
 							<div class="section-title mb-30">
 								<h2 class="sub-title mb-15">{{ category.category }}</h2>
@@ -143,7 +143,7 @@
 								<!-- Loop through each question in the category -->
 								<div v-for="(question, qIndex) in category.questions" :key="qIndex" class="accordion-item">
 									<h5 class="accordion-header">
-										<button class="accordion-button collapsed gap-1 justify-content-between" :data-bs-toggle="'collapse'"
+										<button class="accordion-button collapsed" :data-bs-toggle="'collapse'"
 											:data-bs-target="'#collapse-' + index + '-' + qIndex">
 											{{ question.question }}
 										</button>
@@ -250,7 +250,7 @@
 	const faqs = [
 		{
 			category: "Development",
-			image: "/assets/images/faqs/development.png",
+			image: "development",
 			questions: [
 				{
 					question: "How long does it take to design a website or a mobile application?",
@@ -284,7 +284,7 @@
 		},
 		{
 			category: "Branding",
-			image: "/assets/images/faqs/branding.png",
+			image: "branding",
 			questions: [
 				{
 					question: "How long does it take to design a logo?",

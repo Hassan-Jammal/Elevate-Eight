@@ -32,8 +32,8 @@
 				<div v-for="(project, index) in projects" :key="index" class="project-wrapper col-xl-4 col-md-6">
 					<div class="project-item">
 						<div class="image wow fadeInUp delay-0-2s">
-							<img :src="project.image1" :alt="'Project ' + (index + 1)" class="image-rounded" />
-							<img :src="project.image2" :alt="'Project ' + (index + 1)" class="image-rounded position-absolute top-0 start-0" />
+							<img :src="project.image1" :alt="project.name" width="1920" height="2352" class="w-full image-rounded" />
+							<img :src="project.image2" :alt="project.name" width="1920" height="2352" class="w-full image-rounded position-absolute top-0 start-0" />
 						</div>
 						<div class="content wow fadeInUp delay-0-2s mt-25">
 							<h4>{{ project.name }}</h4>
@@ -109,53 +109,74 @@
 			id: 1,
 			name: 'Website Development',
 			description: 'From online platforms to corporate portals, Elevate Eight handles end-to-end web design and development. Our custom solutions are powered by technology tailored to your specific needs, ensuring scalability and top-notch performance.',
+			icon: 'website-development',
+			featured: false
 		},
 		{
 			id: 2,
-			name: 'Mobile Development',
+			name: 'Mobile App Development',
 			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UI/UX Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
+			icon: 'mobile-app-development',
+			featured: false
 		},
 		{
 			id: 3,
 			name: 'E-commerce Wesbites',
 			description: 'Transform your online business with Elevate Eight\'s e-commerce solutions. From intuitive storefronts to secure payment gateways, we optimize your digital shop for success.',
+			icon: 'e-commerce-websites',
+			featured: false
 		},
 		{
 			id: 4,
 			name: 'Search Engine Optimization',
 			description: 'Optimize your online visibility with Elevate Eight\'s technical SEO solutions. From site audits to strategic optimizations, we enhance your website\'s performance and search engine rankings.',
+			icon: 'search-engine-optimization',
+			featured: false
 		},
 		{
 			id: 5,
 			name: 'Branding',
 			description: 'Build a distinctive brand identity with Elevate Eight\'s branding services. From logos to messaging, we create a cohesive brand image that resonates with your audience.',
+			icon: 'branding',
+			featured: true
 		},
 		{
 			id: 6,
 			name: 'UI/UX Design',
 			description: 'Elevate user experiences with Elevate Eight\'s tailored UI/UX designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
+			icon: 'ui-ux-design',
+			featured: true
 		},
 		{
 			id: 7,
 			name: 'Hosting Plans',
 			description: 'Reliable and scalable hosting solutions by Elevate Eight. Experience seamless performance and 24/7 support to keep your website running at its best.',
+			icon: 'hosting-plans',
+			featured: false
 		},
 		{
 			id: 8,
 			name: 'Logo Design',
 			description: 'Make a lasting impression with Elevate Eight\'s logo design expertise. Our creative designs capture the essence of your brand, leaving a memorable mark.',
+			icon: 'logo-design',
+			featured: true
 		},
 		{
 			id: 9,
 			name: 'Social Media Management',
 			description: 'Amplify your online presence with Elevate Eight\'s Social Media Management expertise. Elevate engagement, drive brand awareness, and foster meaningful connections as we craft compelling strategies tailored to your unique brand identity.',
+			icon: 'social-media-marketing',
+			featured: true
 		},
 		{
 			id: 10,
 			name: 'Maintenance & Support',
 			description: 'Ensure your digital presence is always at its prime with Elevate Eight\'s maintenance and support services. We handle the technicalities, so you can focus on your business.',
+			icon: 'maintenance-support',
+			featured: false
 		},
-	]
+	];
+
 
 	const serviceRef = ref([]);
 

@@ -5,7 +5,7 @@
 				<div class="col-lg-6">
 					<div class="footer-left-content">
 						<div class="lets-work mt-50 mb-50 wow fadeInUp delay-0-2s">
-							<img src="/assets/images/logos/logo.svg" alt="Logo" />
+							<img src="/assets/images/logos/logo.svg" alt="Logo" width="200" height="92"/>
 							<span>Let's Work<br />Together</span>
 						</div>
 						<div class="footer-contact-info wow fadeInUp delay-0-3s">
@@ -23,7 +23,7 @@
 								<li>
 									<NuxtLink to="/about">About Us</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/works">Works</NuxtLink>
 								</li>
 								<!-- <li>
@@ -34,7 +34,7 @@
 								<li>
 									<NuxtLink to="/contact-us">Contact Us</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<a href="#" @click="toggleSidebar()">Get a Quote</a>
 								</li>
 							</ul>
@@ -46,34 +46,34 @@
 								<li>
 									<NuxtLink to="/services">Web Development</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/services">Mobile Development</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/services">E-commerce Websites</NuxtLink>
 								</li>
-								<li>
-									<NuxtLink to="/services">SEO</NuxtLink>
+								<li class="mt-20">
+									<NuxtLink to="/services">Search Engine Optimization</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/services">Branding</NuxtLink>
 								</li>
 								
 							</ul>
 							<ul class="list-style-two wow fadeInUp delay-0-3s flex-grow-1 w-100">
 								<li>
-									<NuxtLink to="/services">UI/UX</NuxtLink>
+									<NuxtLink to="/services">UI/UX Design</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/services">Hosing Plans</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/services">Logo Design</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/services">Social Media Management</NuxtLink>
 								</li>
-								<li>
+								<li class="mt-20">
 									<NuxtLink to="/services">Maintenance & Support</NuxtLink>
 								</li>
 							</ul>

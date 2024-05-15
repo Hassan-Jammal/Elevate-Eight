@@ -32,7 +32,7 @@
 							<span class="serial-number">{{ service.id < 10 ? '0' + service.id : service.id }}</span>
 							<div class="title-icon">
 								<h5>{{ service.name }}</h5>
-								<img src="/assets/images/services/social-media-marketing.svg" alt="Icon" width="50" class="w-auto" />
+								<img :src="`/assets/images/services/${service.icon}.svg`" :alt="service.name" width="50" height="50" class="w-auto" />
 							</div>
 						</div>
 						<div class="content">
@@ -48,7 +48,7 @@
 	<!-- Work Process Area start -->
 	<section class="work-process-area pt-130 rpt-100 rel z-1">
 		<div class="container rel z-1">
-			<h2 class="text-center mb-100 rmb-50">Core Steps</h2>
+			<h2 class="text-center mb-100 rmb-50">Core steps</h2>
 			<div class="row gap-70">
 				<div class="col-lg-4">
 					<div class="work-step-item style-two wow fadeInDown delay-0-2s">
@@ -106,12 +106,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg-line-shape">
-				<!-- <img
-		src="/assets/images/shapes/work-process-line.png"
-		alt="Work Process Line"
-		/> -->
-			</div>
 		</div>
 	</section>
 	<!-- Work Process Area end -->
@@ -119,16 +113,16 @@
 	<!-- FAQ's Area start -->
 	<section class="faq-area pt-130 rpt-100 rel z-1">
 		<div class="container">
-			<h2 class="text-center mb-100 rmb-50">Frequently Asked Questions</h2>
+			<h2 class="text-center mb-100 rmb-50">Frequently asked questions</h2>
 			<div v-for="(category, index) in faqs" :key="index" class="pb-105 rpb-75">
 				<div class="row align-item-center gap-100">
 					<!-- Left-aligned image for even-indexed categories -->
-					<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-md-0' : 'order-1 order-md-1'">
+					<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-lg-0' : 'order-1 order-lg-1'">
 						<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
-							<img :src="category.image" alt="FAQs" class="image-rounded" />
+							<img :src="`/assets/images/faqs/${category.image}.png`" :alt="category.category" width="1920" height="2834" class="image-rounded" />
 						</div>
 					</div>
-					<div class="col-lg-7" :class="index % 2 === 0 ? 'order-1 order-md-1' : 'order-1 order-md-0'">
+					<div class="col-lg-7" :class="index % 2 === 0 ? 'order-0 order-lg-1' : 'order-0 order-lg-0'">
 						<div class="faq-content-part wow fadeInRight delay-0-2s">
 							<div class="section-title mb-30">
 								<h2 class="sub-title mb-15">{{ category.category }}</h2>
@@ -138,7 +132,7 @@
 								<div v-for="(question, qIndex) in category.questions" :key="qIndex"
 									class="accordion-item">
 									<h5 class="accordion-header">
-										<button class="accordion-button collapsed gap-1 justify-content-between"
+										<button class="accordion-button collapsed"
 											:data-bs-toggle="'collapse'"
 											:data-bs-target="'#collapse-' + index + '-' + qIndex">
 											{{ question.question }}
@@ -181,58 +175,79 @@
 			id: 1,
 			name: 'Website Development',
 			description: 'From online platforms to corporate portals, Elevate Eight handles end-to-end web design and development. Our custom solutions are powered by technology tailored to your specific needs, ensuring scalability and top-notch performance.',
+			icon: 'website-development',
+			featured: false
 		},
 		{
 			id: 2,
-			name: 'Mobile Development',
+			name: 'Mobile App Development',
 			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UI/UX Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
+			icon: 'mobile-app-development',
+			featured: false
 		},
 		{
 			id: 3,
 			name: 'E-commerce Wesbites',
 			description: 'Transform your online business with Elevate Eight\'s e-commerce solutions. From intuitive storefronts to secure payment gateways, we optimize your digital shop for success.',
+			icon: 'e-commerce-websites',
+			featured: false
 		},
 		{
 			id: 4,
 			name: 'Search Engine Optimization',
 			description: 'Optimize your online visibility with Elevate Eight\'s technical SEO solutions. From site audits to strategic optimizations, we enhance your website\'s performance and search engine rankings.',
+			icon: 'search-engine-optimization',
+			featured: false
 		},
 		{
 			id: 5,
 			name: 'Branding',
 			description: 'Build a distinctive brand identity with Elevate Eight\'s branding services. From logos to messaging, we create a cohesive brand image that resonates with your audience.',
+			icon: 'branding',
+			featured: true
 		},
 		{
 			id: 6,
 			name: 'UI/UX Design',
 			description: 'Elevate user experiences with Elevate Eight\'s tailored UI/UX designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
+			icon: 'ui-ux-design',
+			featured: true
 		},
 		{
 			id: 7,
 			name: 'Hosting Plans',
 			description: 'Reliable and scalable hosting solutions by Elevate Eight. Experience seamless performance and 24/7 support to keep your website running at its best.',
+			icon: 'hosting-plans',
+			featured: false
 		},
 		{
 			id: 8,
 			name: 'Logo Design',
 			description: 'Make a lasting impression with Elevate Eight\'s logo design expertise. Our creative designs capture the essence of your brand, leaving a memorable mark.',
+			icon: 'logo-design',
+			featured: true
 		},
 		{
 			id: 9,
 			name: 'Social Media Management',
 			description: 'Amplify your online presence with Elevate Eight\'s Social Media Management expertise. Elevate engagement, drive brand awareness, and foster meaningful connections as we craft compelling strategies tailored to your unique brand identity.',
+			icon: 'social-media-marketing',
+			featured: true
 		},
 		{
 			id: 10,
 			name: 'Maintenance & Support',
 			description: 'Ensure your digital presence is always at its prime with Elevate Eight\'s maintenance and support services. We handle the technicalities, so you can focus on your business.',
+			icon: 'maintenance-support',
+			featured: false
 		},
 	];
+
 
 	const faqs = [
 		{
 			category: "Development",
-			image: "/assets/images/faqs/development.png",
+			image: "development",
 			questions: [
 				{
 					question: "How long does it take to design a website or a mobile application?",
@@ -266,7 +281,7 @@
 		},
 		{
 			category: "Branding",
-			image: "/assets/images/faqs/branding.png",
+			image: "branding",
 			questions: [
 				{
 					question: "How long does it take to design a logo?",

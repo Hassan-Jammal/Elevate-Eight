@@ -8,7 +8,7 @@
 			<div class="main-menu d-flex justify-content-between align-items-center py-15">
 				<div class="mobile-logo">
 					<NuxtLink href="/">
-						<img src="/assets/images/logos/logo-small.svg" alt="Logo" title="Logo" />
+						<img src="/assets/images/logos/logo-small.svg" alt="Logo" width="100" height="46" />
 					</NuxtLink>
 				</div>
 				<div class="cross-icon" @click="toggleSidebar()">

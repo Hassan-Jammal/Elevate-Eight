@@ -61,7 +61,7 @@
 				</div>
 				<div class="col-lg-5 wow fadeInRight delay-0-2s position-relative">
 					<div class="ratio ratio-1x1">
-						<img src="/assets/images/about/about-42.png" alt="Client Logo" class="image-rounded object-fit-cover" />
+						<img src="/assets/images/about/laptop.png" alt="Laptop" width="1320" height="1980" class="image-rounded object-fit-cover" />
 					</div>
 				</div>
 			</div>
@@ -93,7 +93,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="why-choose-item style-two wow fadeInUp delay-0-2s">
 						<div class="why-choose-header">
-							<img src="/assets/images/icons/mission.svg" alt="Icon" width="70" class="w-auto" />
+							<img src="/assets/images/icons/mission.svg" alt="Mission" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our Mission</h5>
 						</div>
 						<p>At Elevate Eight, we empower businesses and individuals with innovative digital
@@ -106,7 +106,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="why-choose-item style-two wow fadeInUp delay-0-4s">
 						<div class="why-choose-header">
-							<img src="/assets/images/icons/vision.svg" alt="Icon" width="70" class="w-auto" />
+							<img src="/assets/images/icons/vision.svg" alt="Vision" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our Vision</h5>
 						</div>
 						<p>Elevate Eight envisions leading the digital frontier, innovating solutions that reshape
@@ -120,7 +120,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="why-choose-item style-two wow fadeInUp delay-0-6s">
 						<div class="why-choose-header">
-							<img src="/assets/images/icons/values.svg" alt="Icon" width="70" class="w-auto" />
+							<img src="/assets/images/icons/values.svg" alt="Values" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our Values</h5>
 						</div>
 						<p>Our Elevate Eight values are simple yet impactful: innovation, excellence, client focus,
@@ -148,7 +148,7 @@
 			</div>
 			<div class="skills-wrap">
 				<div class="skill-item" v-for="(technology, index) in technologies" :key="index">
-					<img :src="`/assets/images/skills/${ technology.icon }.svg`" alt="Skill Icon" />
+					<img :src="`/assets/images/skills/${ technology.icon }.svg`" :alt="technology.name" width="35" height="35" />
 					<span class="text">{{ technology.name }}</span>
 				</div>
 			</div>

@@ -8,7 +8,7 @@
 						<div class="logo-outer">
 							<div class="logo">
 								<NuxtLink href="/">
-									<img src="/assets/images/logos/logo-small.svg" alt="Logo" title="Logo" />
+									<img src="/assets/images/logos/logo-small.svg" alt="Logo" width="100" height="46" />
 								</NuxtLink>
 							</div>
 						</div>
@@ -19,7 +19,7 @@
 								<div class="navbar-header">
 									<div class="mobile-logo">
 										<NuxtLink href="/">
-											<img src="/assets/images/logos/logo-small.svg" alt="Logo" title="Logo" />
+											<img src="/assets/images/logos/logo-small.svg" alt="Logo" width="100" height="46" />
 										</NuxtLink>
 									</div>
 

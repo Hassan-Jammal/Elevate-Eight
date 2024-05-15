@@ -223,6 +223,7 @@ li {
 
 img {
 	width: 100%;
+	height: auto;
 	max-width: 100%;
 	display: inline-block;
 }
@@ -997,6 +998,7 @@ a.theme-btn.style-three {
 /* List style Two */
 .list-style-two li {
 	font-size: 16px;
+	line-height: normal;
 }
 
 .list-style-two li:not(:last-child) {
@@ -12050,6 +12052,9 @@ background: #00000099;;
 	font-size: 20px;
 	padding: 0;
 	color: white;
+	gap: 0.5rem;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 @media only screen and (max-width: 375px) {
