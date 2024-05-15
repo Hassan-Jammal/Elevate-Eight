@@ -242,6 +242,38 @@ footer:after {
 	content: "";
 }
 
+.contact-page-form input:-webkit-autofill,
+.contact-page-form input:-webkit-autofill:hover,
+.contact-page-form input:-webkit-autofill:focus,
+.contact-page-form input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #ffffff;
+}
+
+.contact-page-form input:-webkit-autofill,
+.contact-page-form textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+.appointment-form input:-webkit-autofill,
+.appointment-form input:-webkit-autofill:hover,
+.appointment-form input:-webkit-autofill:focus,
+.appointment-form input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #000000;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #000000;
+}
+
+.appointment-form input:-webkit-autofill,
+.appointment-form textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #010004 inset !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
 /*======= Input Styles =======*/
 input,
 select,
@@ -5429,13 +5461,13 @@ background: #00000099;
 	width: 100%;
 	line-height: 23px;
 	padding: 10px 25px !important;
-	color: #ffffff;
+	color: #1a1a1a;
 	font-size: 16px;
-	background: none;
+	background: transparent;
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid #1a1a1d;
 }
 
 .hidden-bar .appointment-form textarea {
@@ -5446,12 +5478,25 @@ background: #00000099;
 	padding: 10px 25px;
 	color: #ffffff;
 	font-size: 16px;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid #1a1a1d;
 	background: none;
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	resize: none;
+}
+
+.va-input-wrapper__field {
+	border: 1px solid #1a1a1d;
+}
+
+::placeholder {
+	color: #FFFFFF !important;
+	opacity: 1 !important; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+	color: #FFFFFF !important;
 }
 
 .hidden-bar .appointment-form input::-webkit-input-placeholder {
