@@ -94,7 +94,7 @@
 					<div class="why-choose-item style-two wow fadeInUp delay-0-2s">
 						<div class="why-choose-header">
 							<img src="/assets/images/icons/mission.svg" alt="Mission" width="70" height="70" class="w-auto" />
-							<h5 class="ms-4">Our Mission</h5>
+							<h5 class="ms-4">Our mission</h5>
 						</div>
 						<p>At Elevate Eight, we empower businesses and individuals with innovative digital
 							solutions, fostering growth, connections, and transforming ideas into reality. Committed
@@ -107,7 +107,7 @@
 					<div class="why-choose-item style-two wow fadeInUp delay-0-4s">
 						<div class="why-choose-header">
 							<img src="/assets/images/icons/vision.svg" alt="Vision" width="70" height="70" class="w-auto" />
-							<h5 class="ms-4">Our Vision</h5>
+							<h5 class="ms-4">Our vision</h5>
 						</div>
 						<p>Elevate Eight envisions leading the digital frontier, innovating solutions that reshape
 							industries and broaden horizons. We foresee a future where technology empowers seamless
@@ -121,7 +121,7 @@
 					<div class="why-choose-item style-two wow fadeInUp delay-0-6s">
 						<div class="why-choose-header">
 							<img src="/assets/images/icons/values.svg" alt="Values" width="70" height="70" class="w-auto" />
-							<h5 class="ms-4">Our Values</h5>
+							<h5 class="ms-4">Our values</h5>
 						</div>
 						<p>Our Elevate Eight values are simple yet impactful: innovation, excellence, client focus,
 							collaboration, adaptability, creativity, and social responsibility. These principles
@@ -142,7 +142,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-						<h2>Explore our Tech Stack Repository</h2>
+						<h2>Explore our tech stack repository</h2>
 					</div>
 				</div>
 			</div>

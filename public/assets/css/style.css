@@ -242,6 +242,14 @@ footer:after {
 	content: "";
 }
 
+.error-message {
+	margin-top: 3px;
+	line-height: 1;
+	text-align: start;
+	color: #c53030;
+	font-size: 12px
+}
+
 .contact-page-form input:-webkit-autofill,
 .contact-page-form input:-webkit-autofill:hover,
 .contact-page-form input:-webkit-autofill:focus,
@@ -5461,7 +5469,7 @@ background: #00000099;
 	width: 100%;
 	line-height: 23px;
 	padding: 10px 25px !important;
-	color: #1a1a1a;
+	color: #FFFFFF;
 	font-size: 16px;
 	background: transparent;
 	-webkit-transition: all 0.3s ease;

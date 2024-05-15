@@ -10,26 +10,29 @@
 					<span class="fa fa-times"></span>
 				</div>
 				<div class="title">
-					<h4>Experience Real Results</h4>
+					<h4>Experience real results</h4>
 				</div>
 
 				<!--Appointment Form-->
 				<div class="appointment-form">
 					<form id="getQuoteForm" class="getQuoteForm" method="post" @submit.prevent="submitForm">
 						<div class="form-group">
-							<input v-model="formValues.full_name" type="text" id="full_name" name="full_name" placeholder="Full Name" required data-error="Please enter your name" />
+							<input v-model="form.full_name" type="text" id="full_name" name="full_name" placeholder="Full Name" data-error="Please enter your name" />
+							<div v-if="errors.full_name" class="error-message">{{ errors.full_name }}</div>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<input v-model="formValues.email" type="email" id="email" name="email" placeholder="Email Address" required data-error="Please enter your Email Address" />
+							<input v-model="form.email" type="text" id="email" name="email" placeholder="Email Address" data-error="Please enter your Email Address" />
+							<div v-if="errors.email" class="error-message">{{ errors.email }}</div>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<input v-model="formValues.phone_number" type="text" id="phone_number" name="phone_number" placeholder="Phone" required data-error="Please enter your Number" />
+							<input v-model="form.phone_number" type="text" id="phone_number" name="phone_number" placeholder="Phone Number" data-error="Please enter your Number" />
+							<div v-if="errors.phone_number" class="error-message">{{ errors.phone_number }}</div>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<input v-model="formValues.company_name" type="text" id="company_name" name="company_name" placeholder="Company Name (optional)" />
+							<input v-model="form.company_name" type="text" id="company_name" name="company_name" placeholder="Company Name (optional)" />
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
@@ -55,6 +58,7 @@
 									</VaChip>
 								</template>
 							</VaSelect>
+							<div v-if="errors.services" class="error-message">{{ errors.services }}</div>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
@@ -66,17 +70,19 @@
 								class="w-100"
 							>
 							</VaSelect>
+							<div v-if="errors.timeline" class="error-message">{{ errors.timeline }}</div>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<textarea v-model="formValues.message" id="message" name="message" placeholder="Tell us about your business" rows="5"></textarea>
+							<textarea v-model="form.message" id="message" name="message" placeholder="Tell us about your business" rows="5" data-error="Please enter your message"></textarea>
+							<div v-if="errors.message" class="error-message">{{ errors.message }}</div>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<button type="submit" class="theme-btn" :disabled="isFormSubmitted">Send My Free Proposal <i class="far fa-arrow-right"></i></button>
 							<div id="msgSubmit" class="hidden"></div>
 						</div>
-						<div v-if="submissionMessage">{{ submissionMessage }}</div>
+						<div v-if="submissionMessage" class="text-xs">{{ submissionMessage }}</div>
 					</form>
 				</div>
 
@@ -126,7 +132,7 @@
 
 	const value2 = ref(null);
 
-	const formValues = ref({
+	const form = ref({
 		full_name: '',
 		email: '',
 		phone_number: '',
@@ -136,55 +142,102 @@
 
 	const isFormSubmitted = ref(false);
 	const submissionMessage = ref('');
+	
+	// Define reactive variables for validation messages
+	const errors = ref({
+        full_name: '',
+        email: '',
+        phone_number: '',
+        services: '',
+        timeline: '',
+        message: '',
+    });
+
+	const validationRules = {
+		full_name: {
+			required: 'Please enter your full name',
+			safe: 'Your input has invalid value'
+		},
+		email: {
+			required: 'Please enter your email address',
+			email: 'Please enter a valid email address',
+			safe: 'Your input has invalid value'
+		},
+		phone_number: {
+			required: 'Please enter your mobile number',
+			numeric: 'Please enter a valid numeric phone number',
+			length: 'Please enter a valid phone number',
+			safe: 'Your input has invalid value'
+		},
+		services: {
+			required: 'Please choose at least one service',
+			safe: 'Your input has invalid value'
+		},
+		timeline: {
+			required: 'Please choose your timeline preference',
+			safe: 'Your input has invalid value'
+		},
+		message: {
+			required: 'Please leave us a message',
+			safe: 'Your input has invalid value'
+		},
+	};
 
 	const submitForm = async () => {
-		isFormSubmitted.value = true;
-		
-		try {	
-			const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/contact-form-7/v1/contact-forms/12/feedback';
-			const formData = new FormData();
-			formData.append('full-name', formValues.value.full_name);
-			formData.append('email', formValues.value.email);
-			formData.append('phone-number', formValues.value.phone_number);
-			formData.append('company-name', formValues.value.company_name);
-			formData.append('services', value.value.join(', ')); // Add chosen services
-			formData.append('timeline', value2.value); // Add chosen timeline
-			formData.append('message', formValues.value.message);
-			formData.append('_wpcf7_unit_tag', 'rte');
-			// console.log(formData);
-			// return;
-			const response = await fetch(API_ENDPOINT, {
-				method: 'POST',
-				body: formData,
-			});
-			if (!response.ok) {
-				throw new Error('Network response was not ok');
+		const selectedServices = value.value.join(', '); 
+		const selectedTimeline = value2.value; 
+
+		form.value.services = selectedServices; // Append selected services to form object
+		form.value.timeline = selectedTimeline;
+
+		if (validateForm(form, errors, validationRules)) {
+			isFormSubmitted.value = true;
+			try {	
+				const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/contact-form-7/v1/contact-forms/12/feedback';
+				const formData = new FormData();
+				formData.append('full-name', form.value.full_name);
+				formData.append('email', form.value.email);
+				formData.append('phone-number', form.value.phone_number);
+				formData.append('company-name', form.value.company_name);
+				formData.append('services', selectedServices); // Add chosen services
+				formData.append('timeline', selectedTimeline); // Add chosen timeline
+				formData.append('message', form.value.message);
+				formData.append('_wpcf7_unit_tag', 'rte');
+				// console.log(formData);
+				// return;
+				const response = await fetch(API_ENDPOINT, {
+					method: 'POST',
+					body: formData,
+				});
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+				const data = await response.json();
+					submissionMessage.value = "Thank you for reaching out to us. We'll get back to you soon."
+				setTimeout(() => {
+					resetForm();
+					toggleSidebar();
+					isFormSubmitted.value = false;
+				}, 3000);
+			} catch (error) {
+				// console.error("Form submission error:", error);
+				submissionMessage.value = "Error in submitting your message."
+				setTimeout(() => {
+					resetForm();
+					isFormSubmitted.value = false;
+				}, 3000);
 			}
-			const data = await response.json();
-				submissionMessage.value = "Thank you for your message."
-			setTimeout(() => {
-				resetForm();
-				toggleSidebar();
-				isFormSubmitted.value = false;
-			}, 3000);
-		} catch (error) {
-			// console.error("Form submission error:", error);
-			submissionMessage.value = "Error in submitting your message."
-			setTimeout(() => {
-				resetForm();
-				isFormSubmitted.value = false;
-			}, 3000);
 		}
     };
 
     const resetForm = () => {
-        formValues.value.full_name="";
-        formValues.value.email="";
-        formValues.value.phone_number="";
-        formValues.value.company_name="";
+        form.value.full_name="";
+        form.value.email="";
+        form.value.phone_number="";
+        form.value.company_name="";
         value.value=[];
         value2.value="";
-        formValues.value.message="";
+        form.value.message="";
 		submissionMessage.value="";
     }
 </script>
