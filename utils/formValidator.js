@@ -1,6 +1,7 @@
 import { isValidEmail, isNumeric, isValidLength, isValidUrl, isSafe } from './validationUtils';
 
 export const validateForm = (form, errors, validationRules) => {
+    console.log("execute rule:" + form)
     Object.keys(errors.value).forEach((field) => {
         errors.value[field] = validateField(form, errors, field, validationRules);
     });
@@ -23,6 +24,7 @@ export const validateField = (form, errors, field, validationRules) => {
 export const executeRule = (form, field, rule, validationRules) => {
     switch (rule) {
         case 'required':
+            console.log("execute rule:" + form.value[field])
             return form.value[field] ? '' : validationRules[field][rule];
         case 'email':
             return isValidEmail(form.value[field]) ? '' : validationRules[field][rule];

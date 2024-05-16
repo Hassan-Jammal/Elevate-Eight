@@ -67,52 +67,54 @@
 						<!-- <div class="section-title mb-35">
 							<h3 class="sub-title mb-15">Get in touch!</h3>
 						</div> -->
-						<form id="contactForm" class="contactForm" method="post"  @submit.prevent="submitContactForm">
+						<form id="contactForm" class="contactForm" method="post" @submit.prevent="submitContactForm">
 							<div class="row gap-60">
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="contact_full_name"><i class="far fa-user"></i></label>
-										<input v-model="contactFormValues.contact_full_name" type="text" id="contact_full_name" name="contact_full_name" class="form-control"
-											placeholder="Full Name" required data-error="Please enter your full name" />
+										<input v-model="contactForm.contact_full_name" type="text" id="contact_full_name" name="contact_full_name" class="form-control"
+											placeholder="Full Name" data-error="Please enter your full name" />
+										<div v-if="contactErrors.contact_full_name" class="error-message">{{ contactErrors.contact_full_name }}</div>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="contact_email"><i class="far fa-envelope"></i></label>
-										<input v-model="contactFormValues.contact_email" type="email" id="contact_email" name="contact_email" class="form-control"
-											placeholder="Email Address" required
+										<input v-model="contactForm.contact_email" type="text" id="contact_email" name="contact_email" class="form-control"
+											placeholder="Email Address"
 											data-error="Please enter your email address" />
+										<div v-if="contactErrors.contact_email" class="error-message">{{ contactErrors.contact_email }}</div>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="contact_phone_number"><i class="far fa-phone"></i></label>
-										<input v-model="contactFormValues.contact_phone_number" type="text" id="contact_phone_number" name="contact_phone_number"
-											class="form-control" placeholder="Phone Number" required
+										<input v-model="contactForm.contact_phone_number" type="text" id="contact_phone_number" name="contact_phone_number"
+											class="form-control" placeholder="Phone Number"
 											data-error="Please enter your phone number" />
+										<div v-if="contactErrors.contact_phone_number" class="error-message">{{ contactErrors.contact_phone_number }}</div>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="contact_message"><i class="far fa-pencil"></i></label>
-										<textarea v-model="contactFormValues.contact_message" name="contact_message" id="contact_message" class="form-control" rows="2"
-											placeholder="Message" required
+										<textarea v-model="contactForm.contact_message" name="contact_message" id="contact_message" class="form-control" rows="2"
+											placeholder="Message"
 											data-error="Please enter your message"></textarea>
+										<div v-if="contactErrors.contact_message" class="error-message">{{ contactErrors.contact_message }}</div>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group pt-5 mb-0">
-										<button type="submit" class="theme-btn w-100" :disabled="isFormSubmitted">
-											Send Message <i class="far fa-arrow-right"></i>
-										</button>
+										<button type="submit" class="theme-btn w-100" :disabled="isContactFormSubmitted">Send Message <i class="far fa-arrow-right"></i></button>
 										<div id="msgSubmit" class="hidden"></div>
 									</div>
 								</div>
-								<div v-if="contactSubmissionMessage">{{ contactSubmissionMessage }}</div>
+								<div v-if="contactSubmissionMessage" class="text-xs">{{ contactSubmissionMessage }}</div>
 							</div>
 						</form>
 					</div>
@@ -192,58 +194,89 @@
 		twitterCard: 'summary_large_image',
 	})
 
-	const contactFormValues = ref({
+	const contactForm = ref({
 		contact_full_name: '',
 		contact_phone_number: '',
 		contact_email: '',
 		contact_message: ''
 	});
 
-	const isFormSubmitted = ref(false);
+	const isContactFormSubmitted = ref(false);
 	const contactSubmissionMessage = ref('');
 
+	// Define reactive variables for validation messages
+	const contactErrors = ref({
+        contact_full_name: '',
+        contact_email: '',
+        contact_phone_number: '',
+        contact_message: '',
+    });
+
+	const contactValidationRules = {
+		contact_full_name: {
+			required: 'Please enter your full name',
+			safe: 'Your input has invalid value'
+		},
+		contact_email: {
+			required: 'Please enter your email address',
+			email: 'Please enter a valid email address',
+			safe: 'Your input has invalid value'
+		},
+		contact_phone_number: {
+			required: 'Please enter your mobile number',
+			numeric: 'Please enter a valid numeric phone number',
+			length: 'Please enter a valid phone number',
+			safe: 'Your input has invalid value'
+		},
+		contact_message: {
+			required: 'Please leave us a message',
+			safe: 'Your input has invalid value'
+		},
+	};
+
 	const submitContactForm = async () => {
-		isFormSubmitted.value = true;
+		if (validateForm(contactForm, contactErrors, contactValidationRules)) {
+			isContactFormSubmitted.value = true;
+			try {
+				const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/contact-form-7/v1/contact-forms/6/feedback';
+				const formData = new FormData();
+				formData.append('full-name', contactForm.value.contact_full_name);
+				formData.append('email', contactForm.value.contact_email);
+				formData.append('phone-number', contactForm.value.contact_phone_number);
+				formData.append('message', contactForm.value.contact_message);
+				formData.append('_wpcf7_unit_tag', 'rte');
+				// console.log(formData);
+				// return;
+				const response = await fetch(API_ENDPOINT, {
+					method: 'POST',
+					body: formData,
+				});
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+				const data = await response.json();
+					contactSubmissionMessage.value = "Thank you for your message."
+				setTimeout(() => {
+					resetContactForm();
+					isContactFormSubmitted.value = false;
+				}, 3000);
 
-		try {
-			const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/contact-form-7/v1/contact-forms/6/feedback';
-			const formData = new FormData();
-			formData.append('full-name', contactFormValues.value.contact_full_name);
-			formData.append('email', contactFormValues.value.contact_email);
-			formData.append('phone-number', contactFormValues.value.contact_phone_number);
-			formData.append('message', contactFormValues.value.contact_message);
-			formData.append('_wpcf7_unit_tag', 'rte');
-			// console.log(formData);
-			// return;
-			const response = await fetch(API_ENDPOINT, {
-				method: 'POST',
-				body: formData,
-			});
-			if (!response.ok) {
-				throw new Error('Network response was not ok');
+			} catch (error) {
+				// console.error("Form submission error:", error);
+					contactSubmissionMessage.value = "Error in submitting your message."
+				setTimeout(() => {
+					resetContactForm();
+					isContactFormSubmitted.value = false;
+				}, 3000);
 			}
-			const data = await response.json();
-				contactSubmissionMessage.value = "Thank you for your message."
-			setTimeout(() => {
-				resetForm();
-				isFormSubmitted.value = false;
-			}, 3000);
-
-		} catch (error) {
-			// console.error("Form submission error:", error);
-				contactSubmissionMessage.value = "Error in submitting your message."
-			setTimeout(() => {
-				resetForm();
-				isFormSubmitted.value = false;
-			}, 3000);
 		}
     };
 
-    const resetForm = () => {
-        contactFormValues.value.contact_full_name="";
-        contactFormValues.value.contact_email="";
-        contactFormValues.value.contact_phone_number="";
-        contactFormValues.value.contact_message="";
+    const resetContactForm = () => {
+        contactForm.value.contact_full_name="";
+        contactForm.value.contact_email="";
+        contactForm.value.contact_phone_number="";
+        contactForm.value.contact_message="";
 		contactSubmissionMessage.value="";
     }
 

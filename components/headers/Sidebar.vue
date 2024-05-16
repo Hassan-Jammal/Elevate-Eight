@@ -17,7 +17,7 @@
 				<div class="appointment-form">
 					<form id="getQuoteForm" class="getQuoteForm" method="post" @submit.prevent="submitForm">
 						<div class="form-group">
-							<input v-model="form.full_name" type="text" id="full_name" name="full_name" placeholder="Full Name" data-error="Please enter your name" />
+							<input v-model="form.full_name" type="text" id="full_name" name="full_name" placeholder="Full Name" data-error="Please enter your full name" />
 							<div v-if="errors.full_name" class="error-message">{{ errors.full_name }}</div>
 							<div class="help-block with-errors"></div>
 						</div>
