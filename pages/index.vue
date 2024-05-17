@@ -11,9 +11,9 @@
 				<img src="/assets/images/hero/earth.png" alt="Earth Image" width="1920" height="634" />
 
 				<div class="hero-social">
-					<a href="https://www.instagram.com/elevateeight_/"><i class="fab fa-instagram" rel="noopener noreferrer"></i> <span>Instagram</span></a>
-					<a href="https://www.linkedin.com/company/elevateeight"><i class="fab fa-linkedin-in" rel="noopener noreferrer"></i> <span>Linkedin</span></a>
-					<a href="" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+					<a href="https://www.instagram.com/elevateeight_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" ></i> <span>Instagram</span></a>
+					<a href="https://www.linkedin.com/company/elevateeight" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> <span>Linkedin</span></a>
+					<a href="https://www.facebook.com/elevateight" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
 				</div>
 			</div>
 	</section>

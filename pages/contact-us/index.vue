@@ -56,11 +56,9 @@
 						</div>
 						<h4>Follow Us</h4>
 						<div class="social-style-two pt-15">
-							<a href="https://www.instagram.com/elevateeight_/" rel="noopener noreferrer"><i
-									class="fab fa-instagram"></i></a>
-							<a href="https://www.linkedin.com/company/elevateeight" rel="noopener noreferrer"><i
-									class="fab fa-linkedin-in"></i></a>
-							<a href="" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://www.instagram.com/elevateeight_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.linkedin.com/company/elevateeight" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+							<a href="https://www.facebook.com/elevateight" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
 						</div>
 					</div>
 				</div>
