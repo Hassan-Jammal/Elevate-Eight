@@ -13,20 +13,20 @@ export const e8Utilits = {
 	// 	wow.init();
 	// },
 	stickyNav() {
-		window.addEventListener("scroll", () => {
-			let offset = window.scrollY;
-			const sticky = document.querySelectorAll(".main-header");
-			for (let i = 0; i < sticky.length; i++) {
-				const stick = sticky[i];
-				if (stick) {
-					if (offset > 10) {
-						stick.classList.add("fixed-header");
-					} else {
-						stick.classList.remove("fixed-header");
-					}
-				}
-			}
-		});
+		// window.addEventListener("scroll", () => {
+		// 	let offset = window.scrollY;
+		// 	const sticky = document.querySelectorAll(".main-header");
+		// 	for (let i = 0; i < sticky.length; i++) {
+		// 		const stick = sticky[i];
+		// 		if (stick) {
+		// 			if (offset > 10) {
+		// 				stick.classList.add("fixed-header");
+		// 			} else {
+		// 				stick.classList.remove("fixed-header");
+		// 			}
+		// 		}
+		// 	}
+		// });
 	},
 	counterUp() {
 		const elements = document.querySelectorAll(".counter-text-wrap");

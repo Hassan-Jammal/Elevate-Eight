@@ -1,6 +1,5 @@
 <template>
-	<div>
-		<header class="main-header menu-absolute">
+		<header class="main-header" :class="{ 'active': isScrolledDown, 'background': !isOnTop }">
 			<!--Header-Upper-->
 			<div class="header-upper">
 				<div class="container clearfix">
@@ -54,15 +53,21 @@
 		<HeadersSidebar />
 
 		<HeadersMenuSidebars />
-	</div>
 </template>
 
 <script setup>
 	import { e8Utilits } from "~/utilits";
 	import Nav from './Nav.vue';
 
+	const lastScrollPosition = ref(0);
+	const isScrolledDown = ref(false);
+	const isOnTop = ref(true);
+	const scrollThreshold = 200;
+
 	onMounted(() => {
 		e8Utilits.stickyNav();
+		window.addEventListener('scroll', handleScroll);
+		checkScrollPosition();
 	});
 
 	const toggleSidebar = () => {
@@ -72,4 +77,22 @@
 	const toggleSidebar2 = () => {
 		document.querySelector("body").classList.add("side-content-visible-nav");
 	};
+
+	const handleScroll = () => {
+		const currentScrollPosition = window.scrollY;
+
+		// Check if the user has scrolled down
+		isScrolledDown.value = currentScrollPosition > lastScrollPosition.value;
+
+		// Check if the user is at the top of the page
+		isOnTop.value = currentScrollPosition === 0;
+
+		lastScrollPosition.value = currentScrollPosition;
+	};
+
+	const checkScrollPosition = () => {
+		// Check if the user is at the top of the page on mount
+		isOnTop.value = window.scrollY === 0;
+	};
+	
 </script>
