@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
+    "lodash": "^4.17.21",
     "nuxt-swiper": "^1.2.2",
     "react-nice-select": "^1.0.6",
     "vue-countup-v3": "^1.4.1",
