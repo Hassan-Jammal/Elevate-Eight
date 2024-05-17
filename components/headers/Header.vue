@@ -58,7 +58,7 @@
 <script setup>
 	import { e8Utilits } from "~/utilits";
 	import Nav from './Nav.vue';
-
+	
 	const lastScrollPosition = ref(0);
 	const isScrolledDown = ref(false);
 	const isOnTop = ref(true);
@@ -80,9 +80,10 @@
 
 	const handleScroll = () => {
 		const currentScrollPosition = window.scrollY;
+		const scrollDirection = currentScrollPosition > lastScrollPosition.value ? 'down' : 'up';
 
-		// Check if the user has scrolled down
-		isScrolledDown.value = currentScrollPosition > lastScrollPosition.value;
+		// Check if the user has scrolled down more than the threshold
+		isScrolledDown.value = scrollDirection === 'down' && currentScrollPosition > scrollThreshold;
 
 		// Check if the user is at the top of the page
 		isOnTop.value = currentScrollPosition === 0;

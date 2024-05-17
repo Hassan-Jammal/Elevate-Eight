@@ -3,6 +3,10 @@
 export default defineNuxtConfig({
   pages: true,
   modules: ["nuxt-swiper", "@vuestic/nuxt"],
+  devServer: {
+    host: '0.0.0.0',
+    https: false,
+  },
   vuestic: {
     config: {
       // Config here
