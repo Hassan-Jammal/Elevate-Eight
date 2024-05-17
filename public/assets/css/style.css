@@ -105,6 +105,7 @@
 body {
 	color: var(--e8-body-color);
 	background: #03010d;
+	overflow-x: hidden;
 	line-height: 32px;
 	font-size: 16px;
 	font-family: var(--e8-primary-font);
@@ -381,7 +382,7 @@ input[type="radio"] {
 	z-index: 9;
 	width: 100%;
 	margin: 0 auto;
-	overflow: hidden;
+	overflow-x: hidden;
 	min-width: 300px;
 }
 
