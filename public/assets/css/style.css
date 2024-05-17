@@ -235,6 +235,10 @@ mark {
 	text-decoration: underline;
 }
 
+section {
+	overflow-x: hidden;
+}
+
 header:after,
 section:after,
 footer:after {
