@@ -5811,6 +5811,22 @@ background: #00000099;
 	}
 }
 
+.hero-area:after {
+	z-index: -1;
+	width: 900px;
+	height: 900px;
+	opacity: 0.2;
+	border-radius: 50%;
+	-webkit-filter: blur(200px);
+	filter: blur(200px);
+	position: absolute;
+	right: -250px;
+	top: -130px;
+	background: var(--e8-primary-blue);
+	-webkit-animation: zoomInOut 5s infinite;
+	animation: zoomInOut 5s infinite;
+}
+
 .hero-bg {
 	z-index: -1;
 	position: absolute;
@@ -8095,6 +8111,9 @@ background: #00000099;;
 	/* -webkit-box-shadow: 0px 4px 60px rgba(84, 224, 220, 0.2);
 	box-shadow: 0px 4px 60px rgba(84, 224, 220, 0.2); */
 	background: radial-gradient(62.83% 48.66% at 10% 81.87%, rgba(102, 155, 255, 0.50) 0%, rgba(44, 65, 254, 0.00) 100%), linear-gradient(180deg, var(--e8-primary-purple) 0%, rgba(44, 65, 254, 0.00) 100%);
+}
+.service-three-area {
+	overflow-x: hidden;
 }
 
 .service-three-area:after {
