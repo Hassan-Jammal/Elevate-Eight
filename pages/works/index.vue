@@ -48,7 +48,7 @@
 	<!-- Project Grid Area end -->
 
 	<!-- Headline Area start -->
-	<section class="headline-area bgc-primary pt-80 pb-65 overflow-x-hidden">
+	<section class="headline-area bgc-primary pt-80 pb-65">
 		<div class="container">
 			<div class="services-wrap">
 				<template v-for="(service, index) in services" :key="index">
