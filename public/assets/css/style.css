@@ -105,12 +105,7 @@
 body {
 	color: var(--e8-body-color);
 	background: #03010d;
-	position: relative;
-	z-index: 9;
-	width: 100%;
-	margin: 0 auto;
 	overflow-x: hidden;
-	min-width: 300px;
 	line-height: 32px;
 	font-size: 16px;
 	font-family: var(--e8-primary-font);
@@ -5791,9 +5786,9 @@ background: #00000099;
 .main-header.header-two .menu-sidebar>button {
 	border-radius: 0;
 	/* background: #0a1019; */
-backdrop-filter: saturate(180%) blur(20px);
--webkit-backdrop-filter: saturate(180%) blur(20px);
-background: #00000099;;
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	background: #00000099;;
 }
 
 /*******************************************************/
@@ -5807,6 +5802,7 @@ background: #00000099;;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 
 @media only screen and (max-width: 991px) {
