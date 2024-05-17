@@ -235,10 +235,6 @@ mark {
 	text-decoration: underline;
 }
 
-section {
-	overflow-x: hidden;
-}
-
 header:after,
 section:after,
 footer:after {
@@ -5815,7 +5811,7 @@ background: #00000099;
 	}
 }
 
-.hero-area:after {
+/* .hero-area:after {
 	z-index: -1;
 	width: 900px;
 	height: 900px;
@@ -5829,7 +5825,7 @@ background: #00000099;
 	background: var(--e8-primary-blue);
 	-webkit-animation: zoomInOut 5s infinite;
 	animation: zoomInOut 5s infinite;
-}
+} */
 
 .hero-bg {
 	z-index: -1;
@@ -8117,7 +8113,7 @@ background: #00000099;;
 	background: radial-gradient(62.83% 48.66% at 10% 81.87%, rgba(102, 155, 255, 0.50) 0%, rgba(44, 65, 254, 0.00) 100%), linear-gradient(180deg, var(--e8-primary-purple) 0%, rgba(44, 65, 254, 0.00) 100%);
 }
 
-.service-three-area:after {
+/* .service-three-area:after {
 	z-index: -1;
 	width: 900px;
 	height: 900px;
@@ -8131,7 +8127,7 @@ background: #00000099;;
 	background: var(--e8-primary-blue);
 	-webkit-animation: zoomInOut 5s infinite;
 	animation: zoomInOut 5s infinite;
-}
+} */
 
 /* Service Style Four */
 .service-four-item {
