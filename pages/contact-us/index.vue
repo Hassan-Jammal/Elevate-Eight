@@ -37,8 +37,9 @@
 							<div class="col-sm-6">
 								<div class="our-location-address mb-40">
 									<h5>Lebanon</h5>
-									<p class="loc"><i class="fas fa-map-marker-alt"></i> Hamra, Beirut</p>
-									<a class="mailto mt-5" href="mailto:info@elevate8.co"><i class="fas fa-envelope"></i>info@elevate8.co</a>
+
+									<p class="loc"><i class="fas fa-map-marker-alt"></i> Hamra, Beirut</p><br />
+									<a class="mailto mt-5" href="mailto:info@elevate8.co"><i class="fas fa-envelope"></i>info@elevate8.co</a><br />
 									<a class="callto mt-5" href="callto:++9613011568"><i class="fas fa-phone"></i>+961 3 011 568</a><br />
 								</div>
 							</div>
