@@ -5811,22 +5811,6 @@ background: #00000099;
 	}
 }
 
-.hero-area:after {
-	z-index: -1;
-	width: 900px;
-	height: 900px;
-	opacity: 0.2;
-	border-radius: 50%;
-	-webkit-filter: blur(200px);
-	filter: blur(200px);
-	position: absolute;
-	right: -250px;
-	top: -130px;
-	background: var(--e8-primary-blue);
-	-webkit-animation: zoomInOut 5s infinite;
-	animation: zoomInOut 5s infinite;
-}
-
 .hero-bg {
 	z-index: -1;
 	position: absolute;
