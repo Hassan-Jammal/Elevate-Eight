@@ -54,7 +54,7 @@
 							</div> -->
 							<!-- <a class="mailto" href="mailto:info@elevate8.co">info@elevate8.co</a> -->
 						</div>
-						<h4>Follow Us</h4>
+						<h4>Follow us</h4>
 						<div class="social-style-two pt-15">
 							<a href="https://www.instagram.com/elevateeight_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
 							<a href="https://www.linkedin.com/company/elevateeight" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
@@ -90,11 +90,11 @@
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<label for="contact_phone_number"><i class="far fa-phone"></i></label>
-										<input v-model="contactForm.contact_phone_number" type="text" id="contact_phone_number" name="contact_phone_number"
-											class="form-control" placeholder="Phone Number"
-											data-error="Please enter your phone number" />
-										<div v-if="contactErrors.contact_phone_number" class="error-message">{{ contactErrors.contact_phone_number }}</div>
+										<label for="contact_subject"><i class="far fa-phone"></i></label>
+										<input v-model="contactForm.contact_subject" type="text" id="contact_subject" name="contact_subject"
+											class="form-control" placeholder="Subject"
+											data-error="Please enter your subject" />
+										<div v-if="contactErrors.contact_subject" class="error-message">{{ contactErrors.contact_subject }}</div>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -196,7 +196,7 @@
 
 	const contactForm = ref({
 		contact_full_name: '',
-		contact_phone_number: '',
+		contact_subject: '',
 		contact_email: '',
 		contact_message: ''
 	});
@@ -208,7 +208,7 @@
 	const contactErrors = ref({
         contact_full_name: '',
         contact_email: '',
-        contact_phone_number: '',
+        contact_subject: '',
         contact_message: '',
     });
 
@@ -222,10 +222,8 @@
 			email: 'Please enter a valid email address',
 			safe: 'Your input has invalid value'
 		},
-		contact_phone_number: {
-			required: 'Please enter your mobile number',
-			numeric: 'Please enter a valid numeric phone number',
-			length: 'Please enter a valid phone number',
+		contact_subject: {
+			required: 'Please enter your full name',
 			safe: 'Your input has invalid value'
 		},
 		contact_message: {
@@ -242,7 +240,7 @@
 				const formData = new FormData();
 				formData.append('full-name', contactForm.value.contact_full_name);
 				formData.append('email', contactForm.value.contact_email);
-				formData.append('phone-number', contactForm.value.contact_phone_number);
+				formData.append('subject', contactForm.value.contact_subject);
 				formData.append('message', contactForm.value.contact_message);
 				formData.append('_wpcf7_unit_tag', 'rte');
 				// console.log(formData);
@@ -275,7 +273,7 @@
     const resetContactForm = () => {
         contactForm.value.contact_full_name="";
         contactForm.value.contact_email="";
-        contactForm.value.contact_phone_number="";
+        contactForm.value.contact_subject="";
         contactForm.value.contact_message="";
 		contactSubmissionMessage.value="";
     }
