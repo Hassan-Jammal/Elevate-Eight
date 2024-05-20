@@ -90,7 +90,7 @@
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<label for="contact_subject"><i class="far fa-phone"></i></label>
+										<label for="contact_subject"><i class="far fa-question"></i></label>
 										<input v-model="contactForm.contact_subject" type="text" id="contact_subject" name="contact_subject"
 											class="form-control" placeholder="Subject"
 											data-error="Please enter your subject" />
