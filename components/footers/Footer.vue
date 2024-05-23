@@ -65,7 +65,7 @@
 									<NuxtLink to="/services">UI/UX Design</NuxtLink>
 								</li>
 								<li class="mt-20">
-									<NuxtLink to="/services">Hosing Plans</NuxtLink>
+									<NuxtLink to="/services">Hosting Plans</NuxtLink>
 								</li>
 								<li class="mt-20">
 									<NuxtLink to="/services">Logo Design</NuxtLink>
@@ -87,7 +87,7 @@
 					<div class="col-lg-6">
 						<div class="footer-bottom-menu pt-40 pb-35 rpb-0 wow fadeInRight delay-0-2s">
 							<div class="social-style-four justify-content-start gap-4 w-100 wow fadeInLeft delay-0-2s">
-								<a href="https://www.instagram.com/elevateeight_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+								<a href="https://www.instagram.com/elevate8agency/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
 								<a href="https://www.linkedin.com/company/elevateeight" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> <span>Linkedin</span></a>
 								<a href="https://www.facebook.com/elevateight" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
 							</div>

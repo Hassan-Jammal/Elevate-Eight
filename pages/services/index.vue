@@ -246,7 +246,7 @@
 
 	const faqs = [
 		{
-			category: "Development",
+			category: "Design & Development",
 			image: "development",
 			questions: [
 				{

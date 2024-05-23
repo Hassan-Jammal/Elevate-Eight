@@ -56,7 +56,7 @@
 						</div>
 						<h4>Follow us</h4>
 						<div class="social-style-two pt-15">
-							<a href="https://www.instagram.com/elevateeight_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.instagram.com/elevate8agency/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
 							<a href="https://www.linkedin.com/company/elevateeight" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
 							<a href="https://www.facebook.com/elevateight" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
 						</div>
@@ -237,6 +237,7 @@
 			isContactFormSubmitted.value = true;
 			try {
 				const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/contact-form-7/v1/contact-forms/6/feedback';
+				// const API_ENDPOINT = 'https://backend.elevate8.co/wp-json/forminator/v1/form/64/submit';
 				const formData = new FormData();
 				formData.append('full-name', contactForm.value.contact_full_name);
 				formData.append('email', contactForm.value.contact_email);
@@ -280,12 +281,12 @@
 
 	const faqs = [
 		{
-			category: "Development",
+			category: "Design & Development",
 			image: "development",
 			questions: [
 				{
-					question: "How long does it take to design a website or a mobile application?",
-					answer: "The timeframe for website or a mobile application design varies, but typically it takes between 3 weeks to 2 months."
+					question: "How long does it take to design a website/mobile app?",
+					answer: "The timeframe for designing a website or mobile application varies depending on the size and complexity of the project. Typically it takes between 4 weeks to 2 months."
 				},
 				{
 					question: "What info do you need from me to start the design process?",
@@ -296,7 +297,11 @@
 					answer: "Absolutely! We prioritize creating responsive websites for optimal viewing on desktops, laptops, tablets, and phones."
 				},
 				{
-					question: "Can you help with website/app maintenance and updates?",
+					question: "How long does it take to develop a website/mobile app?",
+					answer: "The timeframe for developing a website or mobile application varies depending on the size and complexity of the project. Typically, it takes between 4 weeks to 2 months."
+				},
+				{
+					question: "Can you help with website/mobile app maintenance and updates?",
 					answer: "Absolutely! We provide website and mobile application maintenance and update services."
 				},
 				{
