@@ -30,17 +30,42 @@
 			</div> -->
 			<div class="row gap-45">
 				<div v-for="(project, index) in projects" :key="index" class="project-wrapper col-xl-4 col-md-6">
-					<div class="project-item">
-						<div class="image wow fadeInUp delay-0-2s">
-							<img :src="project.image1" :alt="project.name" width="1920" height="2352" class="w-full image-rounded" />
-							<img :src="project.image2" :alt="project.name" width="1920" height="2352" class="w-full image-rounded position-absolute top-0 start-0" />
+					<template v-if="project.link">
+						<a :href="project.link" target="_blank" rel="noopener noreferrer">
+							<div class="project-item">
+								<div class="image wow fadeInUp delay-0-2s">
+									<img :src="project.image1" :alt="project.name" width="1920" height="2352" class="w-full image-rounded" />
+									<img :src="project.image2" :alt="project.name" width="1920" height="2352" class="w-full image-rounded position-absolute top-0 start-0" />
+								</div>
+								<div class="content wow fadeInUp delay-0-2s mt-25">
+									<h4>{{ project.name }}</h4>
+									<p class="description">{{ project.description }}</p>
+									<div class="category">
+										<template v-for="(cat, index) in project.category" :key="index" >
+										<span>{{ cat }}</span>
+										</template>
+									</div>
+								</div>
+							</div>
+						</a>
+					</template>
+					<template v-else>
+						<div class="project-item">
+							<div class="image wow fadeInUp delay-0-2s">
+								<img :src="project.image1" :alt="project.name" width="1920" height="2352" class="w-full image-rounded" />
+								<img :src="project.image2" :alt="project.name" width="1920" height="2352" class="w-full image-rounded position-absolute top-0 start-0" />
+							</div>
+								<div class="content wow fadeInUp delay-0-2s mt-25">
+								<h4>{{ project.name }}</h4>
+								<p class="description">{{ project.description }}</p>
+								<div class="category">
+									<template v-for="(cat, index) in project.category" :key="index" >
+										<span>{{ cat }}</span>
+									</template>
+								</div>
+							</div>
 						</div>
-						<div class="content wow fadeInUp delay-0-2s mt-25">
-							<h4>{{ project.name }}</h4>
-							<p class="description">{{ project.description }}</p>
-							<p class="category">{{ project.category }}</p>
-						</div>
-					</div>
+					</template>
 				</div>
 			</div>
 		</div>
@@ -81,7 +106,7 @@
 			</div>
 			</div>
 		</div>
-		<span class="big-text light-opacity">Let’s Work Together</span>
+		<span class="big-text light-opacity">Let's Work Together</span>
 	</section>
 	<!-- Work With Area end -->
 </template>

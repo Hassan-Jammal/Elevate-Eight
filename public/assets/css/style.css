@@ -11293,6 +11293,10 @@ background: #00000099;;
 } */
 
 
+.project-grid-area .project-wrapper a:hover {
+	color: var(--e8-body-color);
+}
+
 .project-item .content .description {
 	margin-top: 15px;
 	font-size: 14px;
@@ -11301,10 +11305,19 @@ background: #00000099;;
 }
 
 .project-item .content .category {
+	display: flex;
+	gap: 8px;
 	margin-top: 15px;
-	font-size: 16px;
-	font-family: 'ClashDisplay-Medium';
+	font-size: 12px;
+	font-family: 'ClashDisplay-Regular';
 	line-height: 1.5;
+	text-wrap: nowrap;
+}
+
+.project-item .content .category span{
+	padding: 6px 10px;
+	border: 1px solid #1b1b1b;
+	border-radius: 100px;
 }
 
 @media only screen and (max-width: 1199px) {
