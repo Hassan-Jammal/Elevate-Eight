@@ -7,7 +7,7 @@
 			<NuxtLink href="/services" @click="closeSidebar()">Services</NuxtLink>
 		</li>
 		<li class="wow fadeInUp delay-0-6s">
-			<NuxtLink href="/works" @click="closeSidebar()">Works</NuxtLink>
+			<NuxtLink href="/work" @click="closeSidebar()">Work</NuxtLink>
 		</li>
 		<!-- <li class="wow fadeInUp delay-0-7s">
 			<NuxtLink href="/team" @click="closeSidebar()">Team</NuxtLink>

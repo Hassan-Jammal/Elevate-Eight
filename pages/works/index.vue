@@ -9,7 +9,7 @@
 							<li class="breadcrumb-item">
 								<NuxtLink href="/">Home</NuxtLink>
 							</li>
-							<li class="breadcrumb-item active">Works</li>
+							<li class="breadcrumb-item active">Work</li>
 						</ol>
 					</nav>
 					<h1 class="hero-title wow fadeInUp delay-0-2s text-center">
@@ -26,7 +26,7 @@
 		<div class="container-sm">
 
 			<!-- <div class="section-title mb-40">
-				<h2 class="sub-title">Our Works</h2>
+				<h2 class="sub-title">Our Work</h2>
 			</div> -->
 			<div class="row gap-45">
 				<div v-for="(project, index) in projects" :key="index" class="project-wrapper col-xl-4 col-md-6">
@@ -115,14 +115,14 @@
 	import { projectsData } from '~/data/work-data'; // Adjust the path accordingly
 
 	useSeoMeta({
-		title: 'Our Works — Branding, Design and Development',
+		title: 'Our Work — Branding, Design and Development',
 		description: 'View all our past projects in Branding, Design and Development.',
 		
-		ogTitle: 'Our Works — Branding, Design and Development',
+		ogTitle: 'Our Work — Branding, Design and Development',
 		ogDescription: 'View all our past projects in Branding, Design and Development.',
-		ogImage: '/assets/images/share-image-works.png',
+		ogImage: '/assets/images/share-image-work.png',
 		
-		twitterTitle: 'Our Works — Branding, Design and Development',
+		twitterTitle: 'Our Work — Branding, Design and Development',
 		twitterDescription: 'View all our past projects in Branding, Design and Development.',
 		twitterCard: 'summary_large_image',
 	})

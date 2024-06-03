@@ -47,7 +47,7 @@
 							experience and thoughtful design are just as important to us as strong
 							development.<br /><br />
 							We specialize in building custom web applications, mobile apps, responsive websites, and scaling existing platforms, as well as providing comprehensive design and UI/UX services.
-							<!-- Our works features work for clients of all sizes, from nimble startups to large corporations.  -->
+							<!-- Our work features work for clients of all sizes, from nimble startups to large corporations.  -->
 							
 							When you partner with Elevate 8, you gain so much more than just a project - you gain a
 							team dedicated to advocating for your success. Our mission is to level up your business

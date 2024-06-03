@@ -24,7 +24,7 @@
 									<NuxtLink to="/about">About Us</NuxtLink>
 								</li>
 								<li class="mt-20">
-									<NuxtLink to="/works">Works</NuxtLink>
+									<NuxtLink to="/work">Work</NuxtLink>
 								</li>
 								<!-- <li>
 									<NuxtLink to="/team">Team</NuxtLink>
