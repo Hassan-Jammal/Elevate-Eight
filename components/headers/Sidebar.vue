@@ -109,7 +109,7 @@
 		"E-commerce Website",
 		"Search Engine Optimization",
 		"Branding",
-		"UI/UX Design",
+		"UX/UI Design",
 		"Hosting Plans",
 		"Logo Design",
 		"Social Media Management",

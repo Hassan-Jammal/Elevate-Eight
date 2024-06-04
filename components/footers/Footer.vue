@@ -62,7 +62,7 @@
 							</ul>
 							<ul class="list-style-two wow fadeInUp delay-0-3s flex-grow-1 w-100">
 								<li>
-									<NuxtLink to="/services">UI/UX Design</NuxtLink>
+									<NuxtLink to="/services">UX/UI Design</NuxtLink>
 								</li>
 								<li class="mt-20">
 									<NuxtLink to="/services">Hosting Plans</NuxtLink>

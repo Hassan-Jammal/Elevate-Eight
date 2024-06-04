@@ -40,7 +40,7 @@
 						</div>
 						<div class="content">
 							<h4>Patrick V. Schroeder</h4>
-							<span>UI/UX Designer</span>
+							<span>UX/UI Designer</span>
 						</div>
 						<div class="btn-social">
 							<div class="social-style-two">
@@ -59,7 +59,7 @@
 						</div>
 						<div class="content">
 							<h4>Patrick V. Schroeder</h4>
-							<span>UI/UX Designer</span>
+							<span>UX/UI Designer</span>
 						</div>
 						<div class="btn-social">
 							<div class="social-style-two">
@@ -79,7 +79,7 @@
 						</div>
 						<div class="content">
 							<h4>Patrick V. Schroeder</h4>
-							<span>UI/UX Designer</span>
+							<span>UX/UI Designer</span>
 						</div>
 						<div class="btn-social">
 							<div class="social-style-two">

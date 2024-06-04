@@ -181,7 +181,7 @@
 		{
 			id: 2,
 			name: 'Mobile App Development',
-			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UI/UX Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
+			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UX/UI Design. Our solutions span tech startups, education, healthcare, and general use, adhering to Apple\'s App Store and Google\'s Play Store guidelines.',
 			icon: 'mobile-app-development',
 			featured: false
 		},
@@ -208,8 +208,8 @@
 		},
 		{
 			id: 6,
-			name: 'UI/UX Design',
-			description: 'Elevate user experiences with Elevate Eight\'s tailored UI/UX designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
+			name: 'UX/UI Design',
+			description: 'Elevate user experiences with Elevate Eight\'s tailored UX/UI designs, ensuring seamless interaction and engaging interfaces for your digital platforms.',
 			icon: 'ui-ux-design',
 			featured: true
 		},

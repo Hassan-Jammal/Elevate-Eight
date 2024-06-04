@@ -75,7 +75,7 @@
 							<p>
 								Elevate 8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
 								With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
-								From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with. Our services encompass comprehensive design, UI/UX, and development to ensure a seamless and engaging user experience.
+								From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with. Our services encompass comprehensive design, UX/UI, and development to ensure a seamless and engaging user experience.
 							</p>
 							<NuxtLink class="read-more mt-10" href="/about">Read More <i class="far fa-arrow-right"></i></NuxtLink>
 						</div>
@@ -220,7 +220,7 @@
 		{
 			id: 2,
 			name: 'Mobile App Development',
-			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UI/UX Design.',
+			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UX/UI Design.',
 			excerpt: '',
 			icon: 'mobile-app-development',
 			featured: false
@@ -251,8 +251,8 @@
 		},
 		{
 			id: 6,
-			name: 'UI/UX Design',
-			description: 'Elevate user experiences with Elevate Eight\'s tailored UI/UX designs.',
+			name: 'UX/UI Design',
+			description: 'Elevate user experiences with Elevate Eight\'s tailored UX/UI designs.',
 			excerpt: '',
 			icon: 'ui-ux-design',
 			featured: true

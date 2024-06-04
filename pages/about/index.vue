@@ -46,7 +46,7 @@
 							throughout the entire process to ensure the final product is perfectly tailored. User
 							experience and thoughtful design are just as important to us as strong
 							development.<br /><br />
-							We specialize in building custom web applications, mobile apps, responsive websites, and scaling existing platforms, as well as providing comprehensive design and UI/UX services.
+							We specialize in building custom web applications, mobile apps, responsive websites, and scaling existing platforms, as well as providing comprehensive design and UX/UI services.
 							<!-- Our work features work for clients of all sizes, from nimble startups to large corporations.  -->
 							
 							When you partner with Elevate 8, you gain so much more than just a project - you gain a

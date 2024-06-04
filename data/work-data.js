@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         name: "Pocket",
-        category: ["ui/ux design", "website design"],
+        category: ["UX/UI Design", "Web Design", "App Dsesign"],
         description: "Experience cutting-edge fintech innovation. Explore innovative financial solutions for every stage.",
         date: "May 1, 2024",
         location: "Beirut, Lebanon",
@@ -12,7 +12,7 @@ export const projectsData = [
     },
     {
         name: "CleanTec",
-        category: ["web development", "landing page"],
+        category: ["Wordpress", "Web Design", "Web Development", "Landing Page"],
         description: "Expert in solar panel and window cleaning, Cleantec LB ensures top performance with professional maintenance.",
         date: "May 1, 2024",
         location: "Beirut, Lebanon",
@@ -23,7 +23,7 @@ export const projectsData = [
     },
     {
         name: "Hady Ghaddar",
-        category: ["web development", "landing page"],
+        category: ["Wordpress", "Web Development", "Landing Page"],
         description: "Capture life's moments with finesse through photo sessions and drone coverage by Photographer in Beirut.",
         date: "July 09, 2023",
         location: "Beirut, Lebanon",
@@ -34,7 +34,7 @@ export const projectsData = [
     },
     {
         name: "SneakerBeast",
-        category: ["web development", "e-commerce"],
+        category: ["Shopify", "E-commerce"],
         description: "Turn sneakers into fashion statements with custom designs by SneakerBeast, specializing in artistic transformations.",
         date: "April 17, 2023",
         location: "Beirut, Lebanon",
@@ -45,7 +45,7 @@ export const projectsData = [
     },
     {
         name: "Roula & Joseph",
-        category: ["web design & development", "landing page"],
+        category: ["Web Design", "Web Development", "Landing Page"],
         description: "Dive into Roula and Joseph's wedding website for creative insights into their special day.",
         date: "May 13, 2024",
         location: "Beirut, Lebanon",
