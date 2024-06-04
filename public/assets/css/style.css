@@ -11306,6 +11306,7 @@ background: #00000099;;
 
 .project-item .content .category {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 8px;
 	margin-top: 15px;
 	font-size: 12px;
