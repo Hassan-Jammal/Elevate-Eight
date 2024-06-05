@@ -50,8 +50,7 @@
 							<!-- Our work features work for clients of all sizes, from nimble startups to large corporations.  -->
 							
 							When you partner with Elevate8, you gain so much more than just a project - you gain a
-							team dedicated to advocating for your success. Our mission is to level up your business
-							through user-centric digital solutions crafted by our dedicated team of professionals.
+							team dedicated to advocating for your success.
 							<br />
 						</p>
 					</div>
