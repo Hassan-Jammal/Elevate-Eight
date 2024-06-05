@@ -100,14 +100,14 @@
 <script setup>
 	useSeoMeta({
 		title: 'About Us',
-		description: 'Elevate 8 is a team ...',
+		description: 'Elevate8 is a team ...',
 
-		ogTitle: 'About Us — Experienced Product Design Team | Elevate 8',
-		ogDescription: 'Elevate 8 is a team ...',
+		ogTitle: 'About Us — Experienced Product Design Team | Elevate8',
+		ogDescription: 'Elevate8 is a team ...',
 		ogImage: 'https://example.com/image.png',
 
-		twitterTitle: 'About Us — Experienced Product Design Team | Elevate 8',
-		twitterDescription: 'Elevate 8 is a team ...',
+		twitterTitle: 'About Us — Experienced Product Design Team | Elevate8',
+		twitterDescription: 'Elevate8 is a team ...',
 		twitterCard: 'summary_large_image',
 	})
 </script>

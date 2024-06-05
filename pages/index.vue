@@ -68,12 +68,12 @@
 				<div class="col-xl-7 col-lg-8 order-0 order-lg-1">
 					<div class="about-content wow fadeInUp delay-0-4s">
 						<div class="section-title mb-40">
-							<span class="sub-title mb-15">About Elevate Eight</span>
+							<span class="sub-title mb-15">About Elevate8</span>
 							<h2>We turn ideas into digital reality</h2>
 						</div>
 						<div class="content">
 							<p>
-								Elevate 8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
+								Elevate8, a cutting-edge company dedicated to crafting professional websites and apps that empower businesses to thrive in the digital world.<br />
 								With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
 								From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with. Our services encompass comprehensive design, UX/UI, and development to ensure a seamless and engaging user experience.
 							</p>
@@ -196,15 +196,15 @@
 	import { e8Utilits } from "~/utilits";
 
 	useSeoMeta({
-		title: 'Design Agency Elevate 8 - Digital Product Design & Development solution',
-		description: 'Elevate 8 is a team ...',
+		title: 'Design Agency Elevate8 - Digital Product Design & Development solution',
+		description: 'Elevate8 is a team ...',
 		
-		ogTitle: 'Design Agency Elevate 8 - Digital Product Design & Development solutions',
-		ogDescription: 'Elevate 8 is a team ...',
+		ogTitle: 'Design Agency Elevate8 - Digital Product Design & Development solutions',
+		ogDescription: 'Elevate8 is a team ...',
 		ogImage: '/assets/images/share-image-homepage.png',
 		
-		twitterTitle: 'Design Agency Elevate 8 - Digital Product Design & Development solution',
-		twitterDescription: 'Elevate 8 is a team ...',
+		twitterTitle: 'Design Agency Elevate8 - Digital Product Design & Development solution',
+		twitterDescription: 'Elevate8 is a team ...',
 		twitterCard: 'summary_large_image',
 	})
 
@@ -212,15 +212,15 @@
 		{
 			id: 1,
 			name: 'Website Development',
-			description: 'From online platforms to corporate portals, Elevate Eight handles end-to-end web design and development. Our custom solutions are powered by technology tailored to your specific needs, ensuring scalability and top-notch performance.',
-			excerpt: 'From online platforms to corporate portals, Elevate Eight handles end-to-end web design and development.',
+			description: 'From online platforms to corporate portals, Elevate8 handles end-to-end web design and development. Our custom solutions are powered by technology tailored to your specific needs, ensuring scalability and top-notch performance.',
+			excerpt: 'From online platforms to corporate portals, Elevate8 handles end-to-end web design and development.',
 			icon: 'website-development',
 			featured: false
 		},
 		{
 			id: 2,
 			name: 'Mobile App Development',
-			description: 'Elevate Eight crafts custom mobile apps for iOS and Android, focusing on seamless UX/UI Design.',
+			description: 'Elevate8 crafts custom mobile apps for iOS and Android, focusing on seamless UX/UI Design.',
 			excerpt: '',
 			icon: 'mobile-app-development',
 			featured: false
@@ -228,7 +228,7 @@
 		{
 			id: 3,
 			name: 'E-commerce Wesbites',
-			description: 'Transform your online business with Elevate Eight\'s e-commerce solutions.',
+			description: 'Transform your online business with Elevate8\'s e-commerce solutions.',
 			excerpt: '',
 			icon: 'e-commerce-websites',
 			featured: false
@@ -236,7 +236,7 @@
 		{
 			id: 4,
 			name: 'Search Engine Optimization',
-			description: 'Optimize your online visibility with Elevate Eight\'s technical SEO solutions.',
+			description: 'Optimize your online visibility with Elevate8\'s technical SEO solutions.',
 			excerpt: '',
 			icon: 'search-engine-optimization',
 			featured: false
@@ -244,7 +244,7 @@
 		{
 			id: 5,
 			name: 'Branding',
-			description: 'Build a distinctive brand identity with Elevate Eight\'s branding services.',
+			description: 'Build a distinctive brand identity with Elevate8\'s branding services.',
 			excerpt: '',
 			icon: 'branding',
 			featured: true
@@ -252,7 +252,7 @@
 		{
 			id: 6,
 			name: 'UX/UI Design',
-			description: 'Elevate user experiences with Elevate Eight\'s tailored UX/UI designs.',
+			description: 'Elevate user experiences with Elevate8\'s tailored UX/UI designs.',
 			excerpt: '',
 			icon: 'ui-ux-design',
 			featured: true
@@ -260,7 +260,7 @@
 		{
 			id: 7,
 			name: 'Hosting Plans',
-			description: 'Reliable and scalable hosting solutions by Elevate Eight.',
+			description: 'Reliable and scalable hosting solutions by Elevate8.',
 			excerpt: '',
 			icon: 'hosting-plans',
 			featured: false
@@ -268,14 +268,14 @@
 		{
 			id: 8,
 			name: 'Logo Design',
-			description: 'Make a lasting impression with Elevate Eight\'s logo design expertise.',
+			description: 'Make a lasting impression with Elevate8\'s logo design expertise.',
 			icon: 'logo-design',
 			featured: true
 		},
 		{
 			id: 9,
 			name: 'Social Media Management',
-			description: 'Amplify your online presence with Elevate Eight\'s Social Media Management expertise.',
+			description: 'Amplify your online presence with Elevate8\'s Social Media Management expertise.',
 			excerpt: '',
 			icon: 'social-media-marketing',
 			featured: true
@@ -283,7 +283,7 @@
 		{
 			id: 10,
 			name: 'Maintenance & Support',
-			description: 'Ensure your digital presence is always at its prime with Elevate Eight\'s maintenance and support services.',
+			description: 'Ensure your digital presence is always at its prime with Elevate8\'s maintenance and support services.',
 			excerpt: '',
 			icon: 'maintenance-support',
 			featured: false

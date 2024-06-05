@@ -7,7 +7,7 @@
         <use xlink:href="#circlePath" fill="none"></use>
         <text style="letter-spacing: 9.7px;">
             <!-- circle text -->
-            <textPath fill="white" xlink:href="#circlePath">Elevate 8 - Elevate 8 -</textPath>
+            <textPath fill="white" xlink:href="#circlePath">Elevate8 - Elevate8 -</textPath>
         </text>
     </g>
 </svg>

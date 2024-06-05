@@ -33,11 +33,11 @@
 						</div>
 
 						<p>
-							<!-- Passionate about transforming ideas into reality, our team comprises talented individuals with diverse backgrounds and skill sets. United in our commitment to surpassing expectations, our creative team is dedicated to delivering impactful work that resonates with excellence for our clients. With strategic locations in Beirut, Lebanon, and Doha, Qatar, if you're seeking a digital partner that can transform your online presence and drive meaningful results, look no further than Elevate 8. -->
+							<!-- Passionate about transforming ideas into reality, our team comprises talented individuals with diverse backgrounds and skill sets. United in our commitment to surpassing expectations, our creative team is dedicated to delivering impactful work that resonates with excellence for our clients. With strategic locations in Beirut, Lebanon, and Doha, Qatar, if you're seeking a digital partner that can transform your online presence and drive meaningful results, look no further than Elevate8. -->
 
-							<!-- Elevate 8 is a full-service web and application development agency with offices in Beirut, Lebanon and Doha, Qatar. We were founded with the goal of creating elegant, user-focused digital solutions that elevate businesses to new heights. -->
+							<!-- Elevate8 is a full-service web and application development agency with offices in Beirut, Lebanon and Doha, Qatar. We were founded with the goal of creating elegant, user-focused digital solutions that elevate businesses to new heights. -->
 							
-							Elevate 8 is a full-service digital agency based in 
+							Elevate8 is a full-service digital agency based in 
 							Beirut, Lebanon. We were founded with the goal of creating elegant,
 							user-centric digital solutions that elevate businesses to new heights.<br /><br />
 							<!-- Over the past years, we've grown to be a dedicated team of talented developers, designers and project managers. Our diverse experience across multiple industries means we understand the unique challenges different businesses face. We bring this insight along with our creativity and technical expertise to every project.<br /><br /> -->
@@ -49,11 +49,10 @@
 							We specialize in building custom web applications, mobile apps, responsive websites, and scaling existing platforms, as well as providing comprehensive design and UX/UI services.
 							<!-- Our work features work for clients of all sizes, from nimble startups to large corporations.  -->
 							
-							When you partner with Elevate 8, you gain so much more than just a project - you gain a
+							When you partner with Elevate8, you gain so much more than just a project - you gain a
 							team dedicated to advocating for your success. Our mission is to level up your business
 							through user-centric digital solutions crafted by our dedicated team of professionals.
 							<br />
-							Let's turn your ideas into digital reality.
 						</p>
 					</div>
 				
@@ -95,7 +94,7 @@
 							<img src="/assets/images/icons/mission.svg" alt="Mission" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our mission</h5>
 						</div>
-						<p>At Elevate Eight, we empower businesses and individuals with innovative digital
+						<p>At Elevate8, we empower businesses and individuals with innovative digital
 							solutions, fostering growth, connections, and transforming ideas into reality. Committed
 							to excellence in web development, mobile app design, branding, social media management.
 							Our goal is to provide tailored, results-driven strategies, enabling clients to thrive
@@ -108,7 +107,7 @@
 							<img src="/assets/images/icons/vision.svg" alt="Vision" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our vision</h5>
 						</div>
-						<p>Elevate Eight envisions leading the digital frontier, innovating solutions that reshape
+						<p>Elevate8 envisions leading the digital frontier, innovating solutions that reshape
 							industries and broaden horizons. We foresee a future where technology empowers seamless
 							fulfillment of aspirations. By pushing creative and technological boundaries, we
 							redefine excellence in web development, mobile app design, branding, social media
@@ -122,7 +121,7 @@
 							<img src="/assets/images/icons/values.svg" alt="Values" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our values</h5>
 						</div>
-						<p>Our Elevate Eight values are simple yet impactful: innovation, excellence, client focus,
+						<p>Our Elevate8 values are simple yet impactful: innovation, excellence, client focus,
 							collaboration, adaptability, creativity, and social responsibility. These principles
 							drive us to push boundaries, uphold high standards, prioritize transparency in
 							partnerships, foster teamwork, stay adaptable, fuel creativity, and maintain a strong
@@ -159,14 +158,14 @@
 <script setup>
 	useSeoMeta({
 		title: 'About Us — Experienced Product Design Team',
-		description: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
+		description: 'We at Elevate8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
 		
 		ogTitle: 'About Us — Experienced Product Design Team',
-		ogDescription: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
+		ogDescription: 'We at Elevate8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
 		ogImage: '/assets/images/share-image-about-us.png',
 		
 		twitterTitle: 'About Us — Experienced Product Design Team',
-		twitterDescription: 'We at Elevate 8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
+		twitterDescription: 'We at Elevate8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
 		twitterCard: 'summary_large_image',
 	})
 

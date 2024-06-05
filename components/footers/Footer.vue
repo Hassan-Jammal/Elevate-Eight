@@ -96,7 +96,7 @@
 					<div class="col-lg-6">
 						<div class="copyright-text pt-40 pb-35 rpt-10 wow fadeInLeft delay-0-2s">
 							<p>
-								Copyright @{{ new Date().getFullYear() }}, <span>Elevate 8</span> All Rights Reserved
+								Copyright @{{ new Date().getFullYear() }}, <span>Elevate8</span> All Rights Reserved
 							</p>
 						</div>
 					</div>
