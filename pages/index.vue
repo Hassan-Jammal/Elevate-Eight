@@ -8,7 +8,7 @@
 		</div>
 		<div class="hero-bottom-image">
 				<div class="shadow"></div>
-				<img src="/assets/images/hero/earth.png" alt="Earth Image" width="1920" height="634" />
+				<img src="/assets/images/hero/earth.webp" alt="Earth Image" width="1920" height="634" />
 
 				<div class="hero-social">
 					<a href="https://www.instagram.com/elevate8agency/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram"><i class="fab fa-instagram" ></i> <span>Instagram</span></a>
@@ -145,7 +145,7 @@
 			<div class="row">
 				<div class="col-xl-7 order-1 order-lg-0">
 					<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-						<img src="/assets/images/services/why-choose-left.png" alt="Why Choose Left" width="1920" height="1920" class="image-rounded" />
+						<img src="/assets/images/services/why-choose-left.webp" alt="Why Choose Left" width="1920" height="1920" class="image-rounded" />
 					</div>
 				</div>
 				<div class="col-xl-5 order-0 order-lg-1">
@@ -201,7 +201,7 @@
 		
 		ogTitle: 'Design Agency Elevate8 - Digital Product Design & Development solutions',
 		ogDescription: 'Elevate8 is a team ...',
-		ogImage: '/assets/images/share-image-homepage.png',
+		ogImage: '/assets/images/share-image-homepage.webp',
 		
 		twitterTitle: 'Design Agency Elevate8 - Digital Product Design & Development solution',
 		twitterDescription: 'Elevate8 is a team ...',

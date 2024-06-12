@@ -120,7 +120,7 @@
 		
 		ogTitle: 'Our Work — Branding, Design and Development',
 		ogDescription: 'View all our past projects in Branding, Design and Development.',
-		ogImage: '/assets/images/share-image-work.png',
+		ogImage: '/assets/images/share-image-work.webp',
 		
 		twitterTitle: 'Our Work — Branding, Design and Development',
 		twitterDescription: 'View all our past projects in Branding, Design and Development.',

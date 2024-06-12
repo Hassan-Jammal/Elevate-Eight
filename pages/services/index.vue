@@ -119,7 +119,7 @@
 					<!-- Left-aligned image for even-indexed categories -->
 					<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-lg-0' : 'order-1 order-lg-1'">
 						<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
-							<img :src="`/assets/images/faqs/${category.image}.png`" :alt="category.category" width="1920" height="2834" class="image-rounded" />
+							<img :src="`/assets/images/faqs/${category.image}.webp`" :alt="category.category" width="1920" height="2834" class="image-rounded" />
 						</div>
 					</div>
 					<div class="col-lg-7" :class="index % 2 === 0 ? 'order-0 order-lg-1' : 'order-0 order-lg-0'">
@@ -163,7 +163,7 @@
 		
 		ogTitle: 'Our Services — Services we offer',
 		ogDescription: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',
-		ogImage: '/assets/images/share-image-services.png',
+		ogImage: '/assets/images/share-image-services.webp',
 		
 		twitterTitle: 'Our Services — Services we offer',
 		twitterDescription: 'We provide all the services you need to ship your digital product and reach to your target audience. From analysis to design, development and finally launching.',

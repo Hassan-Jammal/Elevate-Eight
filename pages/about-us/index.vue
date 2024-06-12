@@ -58,7 +58,7 @@
 				</div>
 				<div class="col-lg-5 wow fadeInRight delay-0-2s position-relative">
 					<div class="ratio ratio-1x1">
-						<img src="/assets/images/about-us/laptop.png" alt="Laptop" width="1320" height="1980" class="image-rounded object-fit-cover" />
+						<img src="/assets/images/about-us/laptop.webp" alt="Laptop" width="1320" height="1980" class="image-rounded object-fit-cover" />
 					</div>
 				</div>
 			</div>
@@ -161,7 +161,7 @@
 		
 		ogTitle: 'About Us — Experienced Product Design Team',
 		ogDescription: 'We at Elevate8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
-		ogImage: '/assets/images/share-image-about-us.png',
+		ogImage: '/assets/images/share-image-about-us.webp',
 		
 		twitterTitle: 'About Us — Experienced Product Design Team',
 		twitterDescription: 'We at Elevate8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
