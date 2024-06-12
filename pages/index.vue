@@ -8,7 +8,7 @@
 		</div>
 		<div class="hero-bottom-image">
 				<div class="shadow"></div>
-				<img src="/assets/images/hero/earth.webp" alt="Earth Image" width="1920" height="634" />
+				<img src="/assets/images/hero/earth.webp" alt="Earth Image" width="1280" height="423" />
 
 				<div class="hero-social">
 					<a href="https://www.instagram.com/elevate8agency/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram"><i class="fab fa-instagram" ></i> <span>Instagram</span></a>
