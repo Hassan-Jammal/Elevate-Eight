@@ -31,7 +31,7 @@
 			<div class="row gap-45">
 				<div v-for="(project, index) in projects" :key="index" class="project-wrapper col-xl-4 col-md-6">
 					<template v-if="project.link">
-						<a :href="project.link" target="_blank" rel="noopener noreferrer">
+						<a :href="project.link" target="_blank" rel="noopener noreferrer" aria-label="Visit Website">
 							<div class="project-item">
 								<div class="image wow fadeInUp delay-0-2s">
 									<img :src="project.image1" :alt="project.name" width="1920" height="2352" class="w-full image-rounded" />

@@ -11,9 +11,9 @@
 				<img src="/assets/images/hero/earth.png" alt="Earth Image" width="1920" height="634" />
 
 				<div class="hero-social">
-					<a href="https://www.instagram.com/elevate8agency/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" ></i> <span>Instagram</span></a>
-					<a href="https://www.linkedin.com/company/elevateeight" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> <span>Linkedin</span></a>
-					<a href="https://www.facebook.com/elevateight" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+					<a href="https://www.instagram.com/elevate8agency/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram"><i class="fab fa-instagram" ></i> <span>Instagram</span></a>
+					<a href="https://www.linkedin.com/company/elevateeight" target="_blank" rel="noopener noreferrer" aria-label="Visit Linkedin"><i class="fab fa-linkedin-in"></i> <span>Linkedin</span></a>
+					<a href="https://www.facebook.com/elevateight" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
 				</div>
 			</div>
 	</section>
@@ -77,7 +77,7 @@
 								With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
 								From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with. Our services encompass comprehensive design, UX/UI, and development to ensure a seamless and engaging user experience.
 							</p>
-							<NuxtLink class="read-more mt-10" href="/about-us">Read More <i class="far fa-arrow-right"></i></NuxtLink>
+							<NuxtLink class="read-more mt-10" href="/about-us">About Us <i class="far fa-arrow-right"></i></NuxtLink>
 						</div>
 					</div>
 				</div>

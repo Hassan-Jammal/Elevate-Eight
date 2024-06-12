@@ -24,7 +24,7 @@
 
 									<!-- Toggle Button -->
 									<button type="button" class="navbar-toggle" data-bs-toggle="collapse"
-										@click="toggleSidebar2()" data-bs-target=".navbar-collapse">
+										@click="toggleSidebar2()" data-bs-target=".navbar-collapse" id="al" aria-label="Close">
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
