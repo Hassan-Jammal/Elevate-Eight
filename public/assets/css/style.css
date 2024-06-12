@@ -7460,7 +7460,7 @@ background: #00000099;
 .about-image svg .animated {
 	-webkit-animation: rotated_circle 30s infinite;
 	animation: rotated_circle 30s infinite linear;
-	transform-origin: center center;/
+	transform-origin: center center;
 }
 
 .text-left-border {
