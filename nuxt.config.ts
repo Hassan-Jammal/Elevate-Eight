@@ -2,10 +2,17 @@
 
 export default defineNuxtConfig({
   pages: true,
-  modules: ["nuxt-swiper", "@vuestic/nuxt"],
+  modules: ["nuxt-swiper", "@vuestic/nuxt", "@nuxtjs/sitemap"],
   devServer: {
     host: '0.0.0.0',
     https: false,
+  },
+  site: {
+    url: 'https://elevate8.co',
+  },
+  sitemap: {
+    // exclude all URLs that start with /secret
+    exclude: ['/team/**']
   },
   vuestic: {
     config: {

@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/sitemap": "^5.2.0",
     "@types/bootstrap": "^5.2.10",
     "@vuestic/nuxt": "^1.0.19",
     "nuxt": "^3.8.2",
