@@ -145,7 +145,7 @@
 			<div class="row">
 				<div class="col-xl-7 order-1 order-lg-0">
 					<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-						<img src="/assets/images/services/why-choose-left.webp" alt="Why Choose Left" width="1920" height="1920" class="image-rounded" />
+						<img src="/assets/images/services/why-choose-left.webp" alt="Why Choose Left" width="1280" height="1280" class="image-rounded" />
 					</div>
 				</div>
 				<div class="col-xl-5 order-0 order-lg-1">
