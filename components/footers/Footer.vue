@@ -21,7 +21,7 @@
 						<div class="footer-widget widget_nav_menu gap-3 w-100">
 							<ul class="list-style-two wow fadeInUp delay-0-3s flex-grow-1 w-100">
 								<li>
-									<NuxtLink to="/about">About Us</NuxtLink>
+									<NuxtLink to="/about-us">About Us</NuxtLink>
 								</li>
 								<li class="mt-20">
 									<NuxtLink to="/work">Work</NuxtLink>

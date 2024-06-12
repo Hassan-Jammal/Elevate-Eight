@@ -77,7 +77,7 @@
 								With our exceptional team of skilled developers, designers, and SEO experts, we create visually stunning and user-friendly digital solutions that leave a lasting impact on our clients and their customers.<br />
 								From sleek and responsive websites to robust mobile applications, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to meet the unique needs of each business we work with. Our services encompass comprehensive design, UX/UI, and development to ensure a seamless and engaging user experience.
 							</p>
-							<NuxtLink class="read-more mt-10" href="/about">Read More <i class="far fa-arrow-right"></i></NuxtLink>
+							<NuxtLink class="read-more mt-10" href="/about-us">Read More <i class="far fa-arrow-right"></i></NuxtLink>
 						</div>
 					</div>
 				</div>

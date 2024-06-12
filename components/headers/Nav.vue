@@ -1,7 +1,7 @@
 <template>
 	<ul class="navigation clearfix">
 		<li class="wow fadeInUp delay-0-4s">
-			<NuxtLink href="/about" @click="closeSidebar()">About Us</NuxtLink>
+			<NuxtLink href="/about-us" @click="closeSidebar()">About Us</NuxtLink>
 		</li>
 		<li class="wow fadeInUp delay-0-5s">
 			<NuxtLink href="/services" @click="closeSidebar()">Services</NuxtLink>

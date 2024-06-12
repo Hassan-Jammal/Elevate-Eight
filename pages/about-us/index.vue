@@ -58,7 +58,7 @@
 				</div>
 				<div class="col-lg-5 wow fadeInRight delay-0-2s position-relative">
 					<div class="ratio ratio-1x1">
-						<img src="/assets/images/about/laptop.png" alt="Laptop" width="1320" height="1980" class="image-rounded object-fit-cover" />
+						<img src="/assets/images/about-us/laptop.png" alt="Laptop" width="1320" height="1980" class="image-rounded object-fit-cover" />
 					</div>
 				</div>
 			</div>
