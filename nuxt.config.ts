@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
   pages: true,
-  modules: ["nuxt-swiper", "@vuestic/nuxt", "@nuxtjs/sitemap"],
+  modules: ["nuxt-swiper", "@vuestic/nuxt", "@nuxtjs/sitemap", "nuxt-purgecss"],
   devServer: {
     host: '0.0.0.0',
     https: false,
@@ -13,6 +13,10 @@ export default defineNuxtConfig({
   sitemap: {
     // exclude all URLs that start with /secret
     exclude: ['/team/**']
+  },
+  purgecss: {
+    enabled: true, // Always enable purgecss
+    safelist: [/nuxt/], // Add my-class token to the safelist (e.g. .my-class)
   },
   vuestic: {
     config: {
