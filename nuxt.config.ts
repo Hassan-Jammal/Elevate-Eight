@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/custom.min.css" },
       ],
       meta: [
-        { name: 'theme-color', content: '#00F7F7' },
+        { name: 'theme-color', content: '#7F4EFF' },
         { name: "format-detection", content: "telephone=no" },
         { name: "author", content: "Elevate8" },
         { name: "og:site_namae", content: "630" },

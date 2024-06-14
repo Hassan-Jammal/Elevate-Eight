@@ -254,7 +254,7 @@
 					throw new Error('Network response was not ok');
 				}
 				const data = await response.json();
-					contactSubmissionMessage.value = "Thank you for reaching out to us. We'll get back to you soon."
+				contactSubmissionMessage.value = "Thank you for reaching out to us. We'll get back to you soon."
 				setTimeout(() => {
 					resetContactForm();
 					isContactFormSubmitted.value = false;
@@ -262,7 +262,7 @@
 
 			} catch (error) {
 				// console.error("Form submission error:", error);
-					contactSubmissionMessage.value = "Error in submitting your message."
+				contactSubmissionMessage.value = "Error in submitting your message."
 				setTimeout(() => {
 					resetContactForm();
 					isContactFormSubmitted.value = false;
