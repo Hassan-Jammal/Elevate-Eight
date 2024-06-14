@@ -2,7 +2,7 @@
 	<!-- Hero Section Start -->
 	<section class="hero-area z-1">
 		<div class="container">
-			<div class="hero-content text-center wow fadeInLeft delay-0-2s">
+			<div class="hero-content text-center" data-aos="fade-left" data-aos-delay="200">
 				<h1>Elevate <span>Your Online</span> Presence</h1>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-xl-5 col-lg-4 order-1 order-lg-0">
-					<div class="about-image mx-auto text-center rmt-45 wow fadeInUp delay-0-2s">
+					<div class="about-image mx-auto text-center rmt-45" data-aos="fade-up" data-aos-delay="200">
 						<svg width="100%" height="100%" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_197_181)">
 								<path d="M82.5 164.607C127.847 164.607 164.607 127.847 164.607 82.5C164.607 37.1535 127.847 0.392914 82.5 0.392914C37.1535 0.392914 0.392944 37.1535 0.392944 82.5C0.392944 127.847 37.1535 164.607 82.5 164.607Z" fill="white" stroke="#54E0DB" stroke-width="0.785714"/>
@@ -66,7 +66,7 @@
 					</div>
 				</div>
 				<div class="col-xl-7 col-lg-8 order-0 order-lg-1">
-					<div class="about-content wow fadeInUp delay-0-4s">
+					<div class="about-content" data-aos="fade-up" data-aos-delay="400">
 						<div class="section-title mb-40">
 							<span class="sub-title mb-15">About Elevate8</span>
 							<h2>We turn ideas into digital reality</h2>
@@ -101,7 +101,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-7">
-					<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+					<div class="section-title text-center mb-60" data-aos="fade-up" data-aos-delay="200">
 						<span class="sub-title mb-20">Design Services</span>
 						<h2>Digital branding and marketing</h2>
 					</div>
@@ -110,7 +110,7 @@
 			<div class="row">
 				<template v-for="(service, index) in services" :key="index">
 					<div v-if="service.featured" class="col-xl-3 col-lg-4 col-md-6">
-						<div class="service-three-item wow fadeInUp delay-0-2s">
+						<div class="service-three-item" data-aos="fade-up" :data-aos-delay="index * 100">
 							<div class="d-flex flex-column">
 								<div class="title-icon">
 									<h5>{{ service.name }}</h5>
@@ -144,17 +144,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-7 order-1 order-lg-0">
-					<div class="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
+					<div class="why-choose-left-image mb-40" data-aos="fade-left" data-aos-delay="200">
 						<img src="/assets/images/services/why-choose-left.webp" alt="Why Choose Left" width="1280" height="1280" class="image-rounded" />
 					</div>
 				</div>
 				<div class="col-xl-5 order-0 order-lg-1">
 					<div class="why-choose-two-wrap">
-						<div class="section-title text-center text-lg-start mb-55 wow fadeInUp delay-0-2s">
+						<div class="section-title text-center text-lg-start mb-55" data-aos="fade-up" data-aos-delay="200">
 							<span class="sub-title mb-15">Why Choose Us</span>
 							<h2>Your complete service destination, provided by us.</h2>
 						</div>
-						<div class="why-choose-item-two wow fadeInUp delay-0-3s">
+						<div class="why-choose-item-two" data-aos="fade-up" data-aos-delay="300">
 							<div class="icon">
 								<i class="fas fa-check"></i>
 								<span class="icon-bottom-shape"></span>
@@ -164,7 +164,7 @@
 								<p>We guarantee unparalleled quality through rigorous testing before delivering services, ensuring they meet and exceed our clients' expectations.</p>
 							</div>
 						</div>
-						<div class="why-choose-item-two wow fadeInUp delay-0-5s">
+						<div class="why-choose-item-two" data-aos="fade-up" data-aos-delay="500">
 							<div class="icon">
 								<i class="fas fa-check"></i>
 								<span class="icon-bottom-shape"></span>
@@ -174,7 +174,7 @@
 								<p>With our continual dedication to bringing innovative and imaginative solutions, we excel as a strategic partner for digital marketing, web and app projects. Through our ongoing efforts to explore novel approaches, we reliably help clients strengthen their revenue generation.</p>
 							</div>
 						</div>
-						<div class="why-choose-item-two wow fadeInUp delay-0-7s">
+						<div class="why-choose-item-two" data-aos="fade-up" data-aos-delay="700">
 							<div class="icon">
 								<i class="fas fa-check"></i>
 								<span class="icon-bottom-shape"></span>

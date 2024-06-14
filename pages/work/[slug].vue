@@ -7,11 +7,11 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <h1 class="hero-title style-two mt-65 mb-30 wow fadeInUp delay-0-2s">
+                        <h1 class="hero-title style-two mt-65 mb-30" data-aos="fade-up" data-aos-delay="200">
                             {{ project?.name }}
                             <!-- <img class="mxw-10 leaf" src="/assets/images/banner/leaf-small.png" alt="Leaf" /> -->
                         </h1>
-                        <p class="banner-text wow fadeInUp delay-0-3s">
+                        <p class="banner-text" data-aos="fade-up" data-aos-delay="300">
                             {{ project?.description }}
                         </p>
                     </div>
@@ -23,7 +23,7 @@
         <!-- Project Details Image start -->
         <div class="project-details-image rel z-1">
             <div class="container-fluid">
-                <div class="image wow fadeInUp delay-0-2s">
+                <div class="image" data-aos="fade-up" data-aos-delay="200">
                     <img :src="project?.image" alt="Project" />
                 </div>
             </div>
@@ -33,7 +33,7 @@
         <!-- Project Details Content Area start -->
         <section class="project-details-area pt-80 rel z-1">
             <div class="container">
-                <div class="row pb-35 wow fadeInUp delay-0-2s">
+                <div class="row pb-35" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-4">
                         <h3 class="title mb-30">Project Information's</h3>
                     </div>
@@ -62,12 +62,12 @@
              
                 <!-- <div class="row">
                     <div class="col-lg-6">
-                        <div class="image my-30 wow fadeInUp delay-0-2s">
+                        <div class="image my-30" data-aos="fade-up" data-aos-delay="200">
                             <img src="/assets/images/projects/project-middle1.jpg" alt="Project" />
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="image my-30 wow fadeInUp delay-0-4s">
+                        <div class="image my-30" data-aos="fade-up" data-aos-delay="400">
                             <img src="/assets/images/projects/project-middle2.jpg" alt="Project" />
                         </div>
                     </div>
@@ -82,7 +82,7 @@
             <div class="container">
                 <div class="next-prev-post pt-110 rpt-80 pb-100 rpb-70">
                     <!-- Previous Project -->
-                    <div v-if="prevProject" class="prev-post me-auto wow fadeInLeft delay-0-2s">
+                    <div v-if="prevProject" class="prev-post me-auto" data-aos="fade-left" data-aos-delay="200">
                         <div class="image">
                             <img :src="prevProject.image" :alt="prevProject.name"/>
                         </div>
@@ -95,7 +95,7 @@
                     </div>
 
                     <!-- Next Project -->
-                    <div v-if="nextProject" class="next-post ms-auto wow fadeInRight delay-0-2s">
+                    <div v-if="nextProject" class="next-post ms-auto" data-aos="fade-right" data-aos-delay="200">
                         <div class="content">
                             <h4>
                                 <NuxtLink :to="`/projects/${nextProject.slug}`">{{ nextProject.name }}</NuxtLink>

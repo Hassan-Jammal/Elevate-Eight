@@ -5,9 +5,9 @@
   >
     <div class="container">
       <div class="banner-inner rpt-10">
-        <h2 class="page-title wow fadeInUp delay-0-2s">{{ pageName }}</h2>
+        <h2 class="page-title" data-aos="fade-up" data-aos-delay="200">{{ pageName }}</h2>
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
+          <ol class="breadcrumb justify-content-center" data-aos="fade-up" data-aos-delay="400">
             <li class="breadcrumb-item">
               <NuxtLink href="/">Home</NuxtLink>
             </li>

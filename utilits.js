@@ -1,32 +1,19 @@
-// import WOW from "wow.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const e8Utilits = {
-	// wowjs() {
-	// 	// Create a new instance of WOW.js
-	// 	var wow = new WOW({
-	// 		boxClass: "wow", // animated element css class (default is wow)
-	// 		animateClass: "animated", // animation css class (default is animated)
-	// 		offset: 0, // distance to the element when triggering the animation (default is 0)
-	// 		mobile: false, // trigger animations on mobile devices (default is true)
-	// 		live: true, // act on asynchronously loaded content (default is true)
-	// 	});
-	// 	wow.init();
-	// },
-	stickyNav() {
-		// window.addEventListener("scroll", () => {
-		// 	let offset = window.scrollY;
-		// 	const sticky = document.querySelectorAll(".main-header");
-		// 	for (let i = 0; i < sticky.length; i++) {
-		// 		const stick = sticky[i];
-		// 		if (stick) {
-		// 			if (offset > 10) {
-		// 				stick.classList.add("fixed-header");
-		// 			} else {
-		// 				stick.classList.remove("fixed-header");
-		// 			}
-		// 		}
-		// 	}
-		// });
+	aosInit() {
+		if (process.client) {
+			AOS.init({
+				offset: 0, // offset (in px) from the original trigger point
+				delay: 0, // values from 0 to 3000, with step 50ms
+				duration: 600, // values from 0 to 3000, with step 50ms
+				easing: 'ease', // default easing for AOS animations
+				once: true, // whether animation should happen only once - while scrolling down
+				mirror: false, // whether elements should animate out while scrolling past them
+				anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+			});
+		}
 	},
 	counterUp() {
 		const elements = document.querySelectorAll(".counter-text-wrap");

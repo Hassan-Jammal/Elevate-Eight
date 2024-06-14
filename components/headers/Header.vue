@@ -56,7 +56,6 @@
 </template>
 
 <script setup>
-	import { e8Utilits } from "~/utilits";
 	import Nav from './Nav.vue';
 	
 	const lastScrollPosition = ref(0);
@@ -65,7 +64,6 @@
 	const scrollThreshold = 200;
 
 	onMounted(() => {
-		e8Utilits.stickyNav();
 		window.addEventListener('scroll', handleScroll);
 		checkScrollPosition();
 	});

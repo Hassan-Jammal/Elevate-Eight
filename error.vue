@@ -61,7 +61,7 @@
 			<div class="container">
 				<div class="error-content row justify-content-between align-items-center text-center text-lg-start">
 					<div class="col-lg-6 order-2 order-lg-1">
-						<div class="rmb-55 wow fadeInRight delay-0-2s">
+						<div class="rmb-55" data-aos="fade-right" data-aos-delay="200">
 							<div class="section-title mb-50 rmb-35">
 								<h1>Accept our appologies!</h1>
 								<p class="mt-20">The page you were looking for doesn't exist. You may have misstyped the address or the page may have moved.</p>
@@ -80,7 +80,6 @@
 </template>
 
 <script setup>
-	import { e8Utilits } from "~/utilits";
 	import Nav from '~/components/headers/Nav.vue'
 
 	useSeoMeta({
@@ -88,10 +87,6 @@
 		ogTitle: 'Page Not Found',
 		twitterTitle: 'Page Not Found',
 	})
-
-	onMounted(() => {
-		e8Utilits.stickyNav();
-	});
 
 	const toggleSidebar = () => {
 		document.querySelector("body").classList.add("side-content-visible");

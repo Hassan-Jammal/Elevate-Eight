@@ -5,14 +5,14 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb wow fadeInUp delay-0-4s">
+						<ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
 							<li class="breadcrumb-item">
 								<NuxtLink href="/">Home</NuxtLink>
 							</li>
 							<li class="breadcrumb-item active">Services</li>
 						</ol>
 					</nav>
-					<h1 class="hero-title wow fadeInUp delay-0-2s text-center">We've got everything covered</h1>
+					<h1 class="hero-title text-center" data-aos="fade-up" data-aos-delay="200">We've got everything covered</h1>
 				</div>
 			</div>
 		</div>
@@ -27,7 +27,7 @@
 			</div>
 			<div class="row">
 				<div v-for="(service, index) in services" :key="index" class="col-md-6">
-					<div class="service-three-item wow fadeInUp delay-0-2s">
+					<div class="service-three-item" data-aos="fade-up" :data-aos-delay="index * 100">
 						<div class="d-flex flex-column">
 							<span class="serial-number">{{ service.id < 10 ? '0' + service.id : service.id }}</span>
 							<div class="title-icon">
@@ -51,7 +51,7 @@
 			<h2 class="text-center mb-100 rmb-50">Core steps</h2>
 			<div class="row gap-70">
 				<div class="col-lg-4">
-					<div class="work-step-item style-two wow fadeInDown delay-0-2s">
+					<div class="work-step-item style-two" data-aos="fade-down" data-aos-delay="200">
 						<span class="step-number">Step 01</span>
 						<h4 class="title">Objectives and Target Audience</h4>
 						<div class="content">
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="work-step-item style-two mt-60 rmt-0 wow fadeInUp delay-0-2s">
+					<div class="work-step-item style-two mt-60 rmt-0" data-aos="fade-up" data-aos-delay="200">
 						<span class="step-number">Step 02</span>
 						<h4 class="title">Design</h4>
 						<div class="content">
@@ -69,7 +69,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="work-step-item style-two mt-120 rmt-0 wow fadeInDown delay-0-2s">
+					<div class="work-step-item style-two mt-120 rmt-0" data-aos="fade-down" data-aos-delay="200">
 						<span class="step-number">Step 03</span>
 						<h4 class="title">Development</h4>
 						<div class="content">
@@ -78,7 +78,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="work-step-item style-two rmt-180 rmt-0 wow fadeInUp delay-0-2s">
+					<div class="work-step-item style-two rmt-180 rmt-0" data-aos="fade-down" data-aos-delay="200">
 						<span class="step-number">Step 04</span>
 						<h4 class="title">Testing</h4>
 						<div class="content">
@@ -88,7 +88,7 @@
 				</div>
 
 				<div class="col-lg-4">
-					<div class="work-step-item style-two mt-60 rmt-0 wow fadeInUp delay-0-2s">
+					<div class="work-step-item style-two mt-60 rmt-0" data-aos="fade-up" data-aos-delay="200">
 						<span class="step-number">Step 05</span>
 						<h4 class="title">Deployment</h4>
 						<div class="content">
@@ -97,7 +97,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="work-step-item style-two mt-120 rmt-0 wow fadeInUp delay-0-2s">
+					<div class="work-step-item style-two mt-120 rmt-0" data-aos="fade-down" data-aos-delay="200">
 						<span class="step-number">Step 06</span>
 						<h4 class="title">Maintenance and Updates</h4>
 						<div class="content">
@@ -118,12 +118,12 @@
 				<div class="row align-item-center gap-100">
 					<!-- Left-aligned image for even-indexed categories -->
 					<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-lg-0' : 'order-1 order-lg-1'">
-						<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
+						<div class="faq-image-part rmb-55" data-aos="fade-left" data-aos-delay="200">
 							<img :src="`/assets/images/faqs/${category.image}.webp`" :alt="category.category" width="1920" height="2834" class="image-rounded" />
 						</div>
 					</div>
 					<div class="col-lg-7" :class="index % 2 === 0 ? 'order-0 order-lg-1' : 'order-0 order-lg-0'">
-						<div class="faq-content-part wow fadeInRight delay-0-2s">
+						<div class="faq-content-part" data-aos="fade-right" data-aos-delay="200">
 							<div class="section-title mb-30">
 								<h2 class="sub-title mb-15">{{ category.category }}</h2>
 							</div>

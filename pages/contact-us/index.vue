@@ -5,14 +5,14 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb wow fadeInUp delay-0-4s">
+						<ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
 							<li class="breadcrumb-item">
 								<NuxtLink href="/">Home</NuxtLink>
 							</li>
 							<li class="breadcrumb-item active">Contact Us</li>
 						</ol>
 					</nav>
-					<h1 class="hero-title wow fadeInUp delay-0-2s text-center">Partner with us</h1>
+					<h1 class="hero-title text-center" data-aos="fade-up" data-aos-delay="200">Partner with us</h1>
 				</div>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-lg-6">
-					<div class="our-location-part rmb-55 wow fadeInUp delay-0-2s">
+					<div class="our-location-part rmb-55" data-aos="fade-up" data-aos-delay="200">
 						<div class="row">
 							<div class="col-xl-10">
 								<div class="section-title mb-40">
@@ -63,7 +63,7 @@
 					</div>
 				</div>
 				<div class="col-xl-5 col-lg-6">
-					<div class="contact-page-form form-style-one wow fadeInUp delay-0-2s">
+					<div class="contact-page-form form-style-one" data-aos="fade-up" data-aos-delay="200">
 						<!-- <div class="section-title mb-35">
 							<h3 class="sub-title mb-15">Get in touch!</h3>
 						</div> -->
@@ -132,12 +132,12 @@
 				<div class="row align-item-center gap-100">
 					<!-- Left-aligned image for even-indexed categories -->
 					<div class="col-lg-5" :class="index % 2 === 0 ? 'order-1 order-lg-0' : 'order-1 order-lg-1'">
-						<div class="faq-image-part rmb-55 wow fadeInLeft delay-0-2s">
+						<div class="faq-image-part rmb-55" data-aos="fade-left" data-aos-delay="200">
 							<img :src="`/assets/images/faqs/${category.image}.webp`" :alt="category.category" width="1920" height="2834" class="image-rounded" />
 						</div>
 					</div>
 					<div class="col-lg-7" :class="index % 2 === 0 ? 'order-0 order-lg-1' : 'order-0 order-lg-0'">
-						<div class="faq-content-part wow fadeInRight delay-0-2s">
+						<div class="faq-content-part" data-aos="fade-right" data-aos-delay="200">
 							<div class="section-title mb-30">
 								<h2 class="sub-title mb-15">{{ category.category }}</h2>
 							</div>
@@ -167,7 +167,7 @@
 	<!-- FAQ's Area end -->
 
 	<!-- Location Map Area Start -->
-	<!-- <div class="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
+	<!-- <div class="contact-page-map mb-120 rpb-90" data-aos="fade-up" data-aos-delay="200">
 		<div class="container-fluid">
 			<div class="our-location">
 				<iframe

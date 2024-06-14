@@ -15,9 +15,13 @@
 <script setup>
     import Header from "~/components/headers/Header.vue";
     import Footer from "~/components/footers/Footer.vue";
-    // import { e8Utilits } from "~/utilits";
+    import { e8Utilits } from "~/utilits";
   
-    // onMounted(() => {
-    //     e8Utilits.wowjs();
-    // });
+    onMounted(() => {
+        e8Utilits.aosInit();
+    });
 </script>
+
+<style>
+    @import 'aos/dist/aos.css';
+</style>

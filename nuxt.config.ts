@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   },
   purgecss: {
     enabled: true, // Always enable purgecss
-    safelist: [/nuxt/, /va/], // Add my-class token to the safelist (e.g. .my-class)
+    safelist: [/nuxt/, /va/, /aos/], // Add my-class token to the safelist (e.g. .my-class)
   },
   gtag: {
     id: 'G-ZGWBH1GMH3'

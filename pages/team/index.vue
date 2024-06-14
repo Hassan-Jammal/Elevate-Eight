@@ -5,14 +5,14 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb wow fadeInUp delay-0-4s">
+						<ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
 							<li class="breadcrumb-item">
 								<NuxtLink href="/">Home</NuxtLink>
 							</li>
 							<li class="breadcrumb-item active">Our Team</li>
 						</ol>
 					</nav>
-					<h1 class="hero-title wow fadeInUp delay-0-2s text-center">
+					<h1 class="hero-title text-center" data-aos="fade-up" data-aos-delay="200">
 						Meet the Professionals
 					</h1>
 				</div>
@@ -26,7 +26,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-9">
-					<div class="section-title text-center mb-55 wow fadeInUp delay-0-2s">
+					<div class="section-title text-center mb-55" data-aos="fade-up" data-aos-delay="200">
 						<span class="sub-title mb-20">Team Members</span>
 						<h2>Meet Our Professionals Team</h2>
 					</div>
@@ -34,7 +34,7 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-lg-4 col-sm-6">
-					<div class="team-member style-two wow fadeInUp delay-0-2s">
+					<div class="team-member style-two" data-aos="fade-up" data-aos-delay="200">
 						<div class="image">
 							<img src="/assets/images/team/member-two1.jpeg" alt="Team Member" />
 						</div>
@@ -53,7 +53,7 @@
 				</div>
 
 				<div class="col-lg-4 col-sm-6">
-					<div class="team-member style-two wow fadeInUp delay-0-2s">
+					<div class="team-member style-two" data-aos="fade-up" data-aos-delay="200">
 						<div class="image">
 							<img src="/assets/images/team/member-two1.jpeg" alt="Team Member" />
 						</div>
@@ -73,7 +73,7 @@
 				</div>
 
 				<div class="col-lg-4 col-sm-6">
-					<div class="team-member style-two wow fadeInUp delay-0-2s">
+					<div class="team-member style-two" data-aos="fade-up" data-aos-delay="200">
 						<div class="image">
 							<img src="/assets/images/team/member-two1.jpeg" alt="Team Member" />
 						</div>

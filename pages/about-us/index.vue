@@ -5,14 +5,14 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb wow fadeInUp delay-0-4s">
+						<ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
 							<li class="breadcrumb-item">
 								<NuxtLink href="/">Home</NuxtLink>
 							</li>
 							<li class="breadcrumb-item active">About Us</li>
 						</ol>
 					</nav>
-					<h1 class="hero-title wow fadeInUp delay-0-2s text-center">
+					<h1 class="hero-title text-center" data-aos="fade-up" data-aos-delay="200">
 						We provide innovative designs solutions & expert talents
 					</h1>
 				</div>
@@ -25,8 +25,8 @@
 	<section class="video-area-two pt-130 rpt-100 rel z-1">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-lg-7 wow fadeInLeft delay-0-2s">
-					<div class="client-text pb-50">
+				<div class="col-lg-7">
+					<div class="client-text pb-50" data-aos="fade-left" data-aos-delay="200">
 						<div class="section-title mb-40">
 							<h2 class="sub-title mb-15">Who We Are</h2>
 							<h3>Established in 2024</h3>
@@ -54,10 +54,9 @@
 							<br />
 						</p>
 					</div>
-				
 				</div>
-				<div class="col-lg-5 wow fadeInRight delay-0-2s position-relative">
-					<div class="ratio ratio-1x1">
+				<div class="col-lg-5 position-relative">
+					<div class="ratio ratio-1x1" data-aos="fade-right" data-aos-delay="200">
 						<img src="/assets/images/about-us/laptop.webp" alt="Laptop" width="1320" height="1980" class="image-rounded object-fit-cover" />
 					</div>
 				</div>
@@ -81,14 +80,14 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
-					<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+					<div class="section-title text-center mb-60" data-aos="fade-up" data-aos-delay="200">
 						<h2>What we stand for</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row gap-90">
 				<div class="col-lg-4 col-md-6">
-					<div class="why-choose-item style-two wow fadeInUp delay-0-2s">
+					<div class="why-choose-item style-two" data-aos="fade-up" data-aos-delay="200">
 						<div class="why-choose-header">
 							<img src="/assets/images/icons/mission.svg" alt="Mission" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our mission</h5>
@@ -101,7 +100,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="why-choose-item style-two wow fadeInUp delay-0-4s">
+					<div class="why-choose-item style-two" data-aos="fade-up" data-aos-delay="400">
 						<div class="why-choose-header">
 							<img src="/assets/images/icons/vision.svg" alt="Vision" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our vision</h5>
@@ -115,7 +114,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="why-choose-item style-two wow fadeInUp delay-0-6s">
+					<div class="why-choose-item style-two" data-aos="fade-up" data-aos-delay="600">
 						<div class="why-choose-header">
 							<img src="/assets/images/icons/values.svg" alt="Values" width="70" height="70" class="w-auto" />
 							<h5 class="ms-4">Our values</h5>
@@ -138,13 +137,13 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
-					<div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+					<div class="section-title text-center mb-60" data-aos="fade-up" data-aos-delay="200">
 						<h2>Explore our tech stack repository</h2>
 					</div>
 				</div>
 			</div>
 			<div class="skills-wrap">
-				<div class="skill-item" v-for="(technology, index) in technologies" :key="index">
+				<div class="skill-item" v-for="(technology, index) in technologies" :key="index" data-aos="fade-up" :data-aos-delay="index * 100">
 					<img :src="`/assets/images/skills/${ technology.icon }.svg`" :alt="technology.name" width="35" height="35" />
 					<span class="text">{{ technology.name }}</span>
 				</div>
