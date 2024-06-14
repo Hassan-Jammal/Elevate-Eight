@@ -2,7 +2,13 @@
 
 export default defineNuxtConfig({
   pages: true,
-  modules: ["nuxt-swiper", "@vuestic/nuxt", "@nuxtjs/sitemap", "nuxt-purgecss"],
+  modules: [
+    "nuxt-swiper",
+    "@vuestic/nuxt",
+    "@nuxtjs/sitemap",
+    "nuxt-purgecss",
+    "nuxt-gtag"
+  ],
   devServer: {
     host: '0.0.0.0',
     https: false,
@@ -17,6 +23,9 @@ export default defineNuxtConfig({
   purgecss: {
     enabled: true, // Always enable purgecss
     safelist: [/nuxt/, /va/], // Add my-class token to the safelist (e.g. .my-class)
+  },
+  gtag: {
+    id: 'G-ZGWBH1GMH3'
   },
   vuestic: {
     config: {

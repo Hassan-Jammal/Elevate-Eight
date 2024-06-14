@@ -16,6 +16,7 @@
     "@types/bootstrap": "^5.2.10",
     "@vuestic/nuxt": "^1.0.19",
     "nuxt": "^3.8.2",
+    "nuxt-gtag": "^2.0.6",
     "nuxt-purgecss": "^2.0.0",
     "sass": "^1.71.1",
     "vue": "^3.3.12",
