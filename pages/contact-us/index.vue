@@ -194,12 +194,6 @@
 		twitterCard: 'summary_large_image',
 	})
 	
-	useHead({
-		meta: [
-			{ name: 'keywords', content: 'Elevate8 contact, get in touch, Beirut contact information, Elevate8 email, Elevate8 phone number, contact form, business inquiries, digital solutions contact, partner with Elevate8, Lebanon digital agency contact' }
-		]
-	})
-
 	const contactForm = ref({
 		contact_full_name: '',
 		contact_subject: '',

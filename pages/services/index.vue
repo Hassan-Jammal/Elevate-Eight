@@ -170,12 +170,6 @@
 		twitterCard: 'summary_large_image',
 	})
 
-	useHead({
-		meta: [
-			{ name: 'keywords', content: 'Elevate8 services, website development, mobile app development, e-commerce websites, search engine optimization, branding services, UX/UI design, hosting plans, logo design, social media management, digital maintenance, digital support, Beirut digital services' }
-		]
-	})
-
 	const services = [
 		{
 			id: 1,
