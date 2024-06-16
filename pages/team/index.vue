@@ -110,4 +110,10 @@
 		twitterDescription: 'Elevate8 is a team ...',
 		twitterCard: 'summary_large_image',
 	})
+
+	useHead({
+		meta: [
+			{ name: 'keywords', content: '' }
+		]
+	})
 </script>

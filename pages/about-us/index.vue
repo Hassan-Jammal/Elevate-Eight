@@ -166,6 +166,12 @@
 		twitterDescription: 'We at Elevate8 strive to fulfill your digital dreams and present your product in the most approachable way possible.',
 		twitterCard: 'summary_large_image',
 	})
+	
+	useHead({
+		meta: [
+			{ name: 'keywords', content: 'Elevate8 about us, digital agency Beirut, user-centric solutions, collaborative approach, custom web applications, mobile apps, responsive websites, UX/UI services, digital innovation, Beirut digital agency, Elevate8 mission, Elevate8 vision, Elevate8 values' }
+		]
+	})
 
 	const technologies = [
 		{

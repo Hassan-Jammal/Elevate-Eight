@@ -207,6 +207,12 @@
 		twitterDescription: 'Elevate8 is a team ...',
 		twitterCard: 'summary_large_image',
 	})
+	
+	useHead({
+		meta: [
+			{ name: 'keywords', content: 'Elevate8, professional websites, mobile apps, digital solutions, web development, mobile app development, SEO experts, user-friendly design, bespoke solutions, digital branding, UX/UI design, responsive websites, Beirut, Lebanon' }
+		]
+	})
 
 	const services = [
 		{

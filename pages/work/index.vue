@@ -127,6 +127,12 @@
 		twitterCard: 'summary_large_image',
 	})
 
+	useHead({
+		meta: [
+			{ name: 'keywords', content: 'Elevate8 portfolio, digital projects, web design portfolio, mobile app design, UX/UI projects, client projects, Beirut digital solutions, Elevate8 case studies, digital transformations, creative projects, web development work' }
+		]
+	})
+
 	const projects = ref([]);
 
 	const services = [
