@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     "@vuestic/nuxt",
     "@nuxtjs/sitemap",
     "nuxt-purgecss",
-    "nuxt-gtag"
+    "nuxt-gtag",
+    "@nuxtjs/robots"
   ],
   devServer: {
     host: '0.0.0.0',

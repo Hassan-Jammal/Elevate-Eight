@@ -2,8 +2,8 @@
     <Preloader />
     <!-- page-wrapper -->
     <div class="page-wrapper">
-        <div class="position-fixed top-0 start-0 d-flex justify-content-center align-items-center w-100 vh-100" style="z-index:-1">
-            <div class="circle" style="width: 500px; height: 500px; background-color: var(--e8-primary-purple); border-radius: 50%; filter: blur(300px); opacity: 0.2;"></div>
+        <div class="position-fixed top-0 start-0 d-flex justify-content-center align-items-center w-100 vh-100 -z-10">
+            <div class="circle"></div>
         </div>
         <Header />
         <NuxtPage />
@@ -22,6 +22,13 @@
     });
 </script>
 
-<style>
-    @import 'aos/dist/aos.css';
+<style scoped lang="css">
+    .circle {
+        width: 500px;
+        height: 500px;
+        background-color: var(--e8-primary-purple);
+        border-radius: 50%;
+        filter: blur(300px);
+        opacity: 0.2;
+    }
 </style>
