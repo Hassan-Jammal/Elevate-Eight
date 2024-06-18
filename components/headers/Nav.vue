@@ -1,21 +1,21 @@
 <template>
 	<ul class="navigation clearfix">
-		<li data-aos="fade-up" data-aos-delay="400">
+		<li>
 			<NuxtLink href="/about-us" @click="closeSidebar()">About Us</NuxtLink>
 		</li>
-		<li data-aos="fade-up" data-aos-delay="500">
+		<li>
 			<NuxtLink href="/services" @click="closeSidebar()">Services</NuxtLink>
 		</li>
-		<li data-aos="fade-up" data-aos-delay="600">
+		<li>
 			<NuxtLink href="/work" @click="closeSidebar()">Work</NuxtLink>
 		</li>
-		<!-- <li data-aos="fade-up" data-aos-delay="700">
+		<!-- <li>
 			<NuxtLink href="/team" @click="closeSidebar()">Team</NuxtLink>
 		</li> -->
-		<li data-aos="fade-up" data-aos-delay="700">
+		<li>
 			<NuxtLink href="/contact-us" @click="closeSidebar()">Contact Us</NuxtLink>
 		</li>
-		<li class="d-lg-none d-block" data-aos="fade-up" data-aos-delay="800">
+		<li class="d-lg-none d-block">
 			<a href="#" class="theme-btn" @click="toggleSidebar()">
 				Get a Quote
 			</a>

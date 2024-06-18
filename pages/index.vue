@@ -193,7 +193,7 @@
 </template>
 
 <script setup>
-	import { e8Utilits } from "~/utilits";
+	// import { e8Utilits } from "~/utilits";
 
 	useSeoMeta({
 		title: 'Design Agency Elevate8 - Digital Product Design & Development solution',
@@ -290,9 +290,9 @@
 		},
 	];
 
-	const mounted = () => {
-		e8Utilits.counterUp();
-	};
+	// const mounted = () => {
+	// 	e8Utilits.counterUp();
+	// };
 </script>
 
 <style lang="sass">

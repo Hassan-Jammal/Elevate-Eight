@@ -243,7 +243,6 @@
 		},
 	];
 
-
 	const faqs = [
 		{
 			category: "Design & Development",
