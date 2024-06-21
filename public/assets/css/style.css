@@ -7978,9 +7978,9 @@ background: #00000099;;
 	transform: translate(-20px);
 }
 
-.service-item.style-two:hover {
+/* .service-item.style-two:hover {
 	background-image: url(../images/services/service-bg.png);
-}
+} */
 
 .service-item.style-two:hover .read-more {
 	color: var(--e8-dark-color);
@@ -12315,7 +12315,7 @@ background: #00000099;;
 	bottom: 20%;
 	-webkit-animation: zoomInOut 5s 2s infinite;
 	animation: zoomInOut 5s 2s infinite;
-	background: url(../images/shapes/circle-lines.png) no-repeat 100% 100%;
+	/* background: url(../images/shapes/circle-lines.png) no-repeat 100% 100%; */
 }
 
 @media only screen and (max-width: 575px) {
@@ -12993,7 +12993,7 @@ background: #00000099;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/shapes/work-step-bg.png");
+	/* background-image: url("../images/shapes/work-step-bg.png"); */
 	background: radial-gradient(62.83% 48.66% at 10% 81.87%, rgba(102, 155, 255, 0.50) 0%, rgba(44, 65, 254, 0.00) 100%), linear-gradient(180deg, var(--e8-primary-blue-hover) 0%, rgba(44, 65, 254, 0.00) 100%);
 /* background-color: var(--e8-primary-purple); */
 	visibility: hidden;
@@ -13872,7 +13872,7 @@ background: #00000099;;
 	top: -50px;
 	width: 65%;
 	height: 85%;
-	background: url(../images/testimonials/testi-three-bg-shape.png) no-repeat center/cover;
+	/* background: url(../images/testimonials/testi-three-bg-shape.png) no-repeat center/cover; */
 }
 
 .image-border-shape {

@@ -12,7 +12,7 @@
         content: ''
         +poLT(0)
         +size(100%)
-        background-image: url("../images/shapes/work-step-bg.png")
+        // background-image: url("../images/shapes/work-step-bg.png")
         background-color: $color-primary
         visibility: hidden
         opacity: 0
@@ -71,7 +71,7 @@
         width: 118%
     +res-bl(xl)
         display: none
-            
+
 .work-step-item.style-two
     +size(270px)
     +gapLR(margin, auto)
@@ -100,7 +100,7 @@
             opacity: 1
             left: 10px
             top: 10px
-    
+
 .work-step-item.style-three
     +size(270px)
     +gapLR(margin, auto)
@@ -123,7 +123,7 @@
         transform: scale(0) rotate(15deg)
         visibility: hidden
         opacity: 0
-        transition: .5s;
+        transition: .5s
         img
             border-radius: 12px
     &:hover
@@ -136,13 +136,13 @@
             transform: scale(1) rotate(-15deg)
             +res-bl(xs)
                 right: 0
-        
+
 .work-process-three-area
     .work-step-item:after
         left: calc(100% + 32px)
         +res-bl(xxl)
             content: none
-            
+
 /* Work Process Five */
 .work-process-five-area
     position: relative
@@ -156,7 +156,7 @@
         +res-bl(lb)
             left: 0
             width: 100%
-    
+
 .work-process-five
     margin-bottom: 30px
     .icon-title

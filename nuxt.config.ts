@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: 'assets/images/favicon-32x32.png' },
         { rel: 'icon', type: 'image/x-icon', href: 'assets/images/favicon-16x16.png' },
         { rel: "icon", type: "image/x-icon", href: "assets/images/favicon.png"},
-        { rel: 'apple-touch-icon', type: 'image/png', href: 'assets/apple-touch-icon-180x180.png' },
+        { rel: 'apple-touch-icon', type: 'image/png', href: 'assets/images/apple-touch-icon-180x180.png' },
         { rel: "stylesheet", href: "/assets/css/flaticon.min.css" },
         { rel: "stylesheet", href: "/assets/css/fontawesome-5.14.0.min.css" },
         { rel: "stylesheet", href: "/assets/css/select-dpd.min.css" },
