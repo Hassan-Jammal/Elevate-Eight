@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         name: "Pocket",
-        category: ["UX/UI Design", "Web Design", "App Dsesign"],
+        category: ["UX/UI Design", "Web Design", "App Design", "Fintech"],
         description: "Experience cutting-edge fintech innovation. Explore innovative financial solutions for every stage.",
         date: "May 1, 2024",
         location: "Beirut, Lebanon",
@@ -23,7 +23,7 @@ export const projectsData = [
     },
     {
         name: "Hady Ghaddar",
-        category: ["Wordpress", "Web Development", "Landing Page"],
+        category: ["Wordpress", "Web Development", "Landing Page", "Photography"],
         description: "Capture life's moments with finesse through photo sessions and drone coverage by Photographer in Beirut.",
         date: "July 09, 2023",
         location: "Beirut, Lebanon",
@@ -45,7 +45,7 @@ export const projectsData = [
     },
     {
         name: "Roula & Joseph",
-        category: ["Web Design", "Web Development", "Landing Page"],
+        category: ["Web Design", "Web Development", "Landing Page", "Wedding"],
         description: "Dive into Roula and Joseph's wedding website for creative insights into their special day.",
         date: "May 13, 2024",
         location: "Beirut, Lebanon",
