@@ -215,20 +215,20 @@
 	const contactValidationRules = {
 		contact_full_name: {
 			required: 'Please enter your full name',
-			safe: 'Your input has invalid value'
+			safe: 'Your full name has invalid value'
 		},
 		contact_email: {
 			required: 'Please enter your email address',
 			email: 'Please enter a valid email address',
-			safe: 'Your input has invalid value'
+			safe: 'Your email has invalid value'
 		},
 		contact_subject: {
-			required: 'Please enter your full name',
-			safe: 'Your input has invalid value'
+			required: 'Please enter your subject',
+			safe: 'Your subject has invalid value'
 		},
 		contact_message: {
 			required: 'Please leave us a message',
-			safe: 'Your input has invalid value'
+			safe: 'Your message has invalid value'
 		},
 	};
 

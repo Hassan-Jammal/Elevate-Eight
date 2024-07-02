@@ -156,30 +156,30 @@
 	const validationRules = {
 		full_name: {
 			required: 'Please enter your full name',
-			safe: 'Your input has invalid value'
+			safe: 'Your full name has invalid value'
 		},
 		email: {
 			required: 'Please enter your email address',
 			email: 'Please enter a valid email address',
-			safe: 'Your input has invalid value'
+			safe: 'Your email has invalid value'
 		},
 		phone_number: {
 			required: 'Please enter your mobile number',
 			numeric: 'Please enter a valid numeric phone number',
 			length: 'Please enter a valid phone number',
-			safe: 'Your input has invalid value'
+			safe: 'Your mobile number has invalid value'
 		},
 		services: {
 			required: 'Please choose at least one service',
-			safe: 'Your input has invalid value'
+			safe: 'Your services has invalid value'
 		},
 		timeline: {
 			required: 'Please choose your timeline preference',
-			safe: 'Your input has invalid value'
+			safe: 'Your timeline preference has invalid value'
 		},
 		message: {
 			required: 'Please leave us a message',
-			safe: 'Your input has invalid value'
+			safe: 'Your message has invalid value'
 		},
 	};
 
