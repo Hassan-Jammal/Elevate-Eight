@@ -302,6 +302,7 @@
 			
 			submissionMessage.value = "Thank you for reaching out to us. We'll get back to you soon."
 			setTimeout(() => {
+				submissionMessage.value = "";
 				resetForm();
 				toggleSidebar();
 			}, 3000);
@@ -309,6 +310,7 @@
 			// console.error("Form submission error:", error);
 			submissionMessage.value = "Error in submitting your message. Please try again later"
 			setTimeout(() => {
+				submissionMessage.value = "";
 				resetForm();
 			}, 3000);
 		} finally {
