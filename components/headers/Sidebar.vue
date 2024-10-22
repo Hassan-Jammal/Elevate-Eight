@@ -199,8 +199,6 @@
 		code: '',
 		phone_number: '',
 		company_name: '',
-		services: '',
-        timeline: '',
 		message: ''
 	});
 	
@@ -327,10 +325,12 @@
 			code: selectedCountry.value ? selectedCountry.value.code : initialCode.value,
 			phone_number: '',
 			company_name: '',
-			services: '',
-			timeline: '',
 			message: ''
         };
+
+		value.value = []; 
+		value2.value = '';
+
         errors.value = {
             full_name: '',
 			email: '',
@@ -426,171 +426,134 @@
 </script>
 
 <style scoped>
-/* .custom-dropdown{
-	position: relative;
-    display: block;
-    width: 100%;
-    line-height: 23px;
-    padding: 10px 18px !important;
-    font-size: 16px;
-    background-color: transparent;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-    border: 1px solid var(--e8-border-color);;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    padding: 15px 30px;
-    border: 1px solid var(--e8-border-color);
-	cursor: pointer
-}
+	/* Flex container for country dropdown and phone number */
+	.country-phone-container {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
 
-.form-group {
-} */
+	/* Country dropdown container */
+	.country-dropdown-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		width: 160px;
+	}
 
-/* Flex container for country dropdown and phone number */
-.country-phone-container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
+	/* Custom dropdown trigger */
+	.custom-dropdown {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 10px 18px !important;
+		color: #fff;
+		font-size: 16px;
+		background: 0 0;
+		border: 1px solid #1a1a1d;
+		border-radius: 5px; 
+		line-height: 23px;
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		cursor: pointer;
+	}
 
-/* Country dropdown container */
-.country-dropdown-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 160px;
-}
+	/* Selected country display */
+	.selected-country {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 0.5rem;
+		line-height: 23px;
+	}
 
-/* Custom dropdown trigger */
-.custom-dropdown {
-	position: relative;
-    display: block;
-    width: 100%;
-	height: auto;
-    padding: 10px 18px !important;
-    color: #fff;
-    font-size: 16px;
-    background: 0 0;
-	border: 1px solid #1a1a1d;
-    border-radius: 5px; 
-    line-height: 23px;
-    transition: 0.3s;
-	-webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-	cursor: pointer;
-}
+	/* Country flag styling */
+	.country-flag {
+		width: auto;
+	}
 
-/* Selected country display */
-.selected-country {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-	line-height: 23px;
-}
+	/* Country code styling */
+	.country-code {
+		font-size: 16px;
+		color: #000;
+	}
 
-/* Country flag styling */
-.country-flag {
-    width: auto;
-}
+	/* Hidden input for storing the country code */
+	.country-code-input {
+		/* You can hide this element */
+		display: none;
+	}
 
-/* Country code styling */
-.country-code {
-    font-size: 16px;
-    color: #000;
-}
+	/* Country list dropdown container */
+	.country-list {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		max-height: 200px;
+		border-radius: 20px;
+		/* background-color: white; */
+		background: #000000;
+		overflow: auto;
+		z-index: 50;
+		margin-top: 0.5rem;
+	}
 
-/* Hidden input for storing the country code */
-.country-code-input {
-    /* You can hide this element */
-    display: none;
-}
+	/* Search input inside dropdown */
+	.country-search-input {
+		position: sticky;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid #1a1a1d !important;
+		border-radius: 0;
+		background-color: white;
+		color: #73788b;
+		padding: 10px;
+		z-index: 10;
+		outline: none;
+	}
 
-/* Country list dropdown container */
-.country-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    max-height: 200px;
-    border-radius: 20px;
-    /* background-color: white; */
-    background: #000000;
-    overflow: auto;
-    z-index: 50;
-    margin-top: 0.5rem;
-}
+	/* Each country list item */
+	.country-list-item {
+		display: flex;
+		gap: 0.5rem;
+		padding: 10px;
+		color: #000;
+		cursor: pointer;
+	}
 
-/* Search input inside dropdown */
-.country-search-input {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-	border: 0;
-    border-bottom: 1px solid #1a1a1d !important;
-	border-radius: 0;
-    background-color: white;
-    color: #73788b;
-    padding: 10px;
-    z-index: 10;
-    outline: none;
-}
+	/* Hover effect on country list items */
+	.country-list-item:hover {
+		background-color: #101010;
+	}
 
-/* Each country list item */
-.country-list-item {
-    display: flex;
-    gap: 0.5rem;
-    padding: 10px;
-    color: #000;
-    cursor: pointer;
-}
+	/* Country code in dropdown list */
+	.country-code {
+		font-size: 16px;
+		color: #FFFFFF;
+	}
 
-/* Hover effect on country list items */
-.country-list-item:hover {
-    background-color: #101010;
-}
+	/* Country name in dropdown list */
+	.country-name {
+		font-size: 12px;
+		color: #73788b;
+	}
 
-/* Country code in dropdown list */
-.country-code {
-    font-size: 16px;
-    color: #FFFFFF;
-}
+	/* Phone number input container */
+	.phone-number-container {
+		width: 100%;
+	}
 
-/* Country name in dropdown list */
-.country-name {
-    font-size: 12px;
-    color: #73788b;
-}
-
-/* Phone number input container */
-.phone-number-container {
-    width: 100%;
-}
-
-/* Phone number input styling */
-.phone-number-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #1a1a1d;
-    outline: none;
-}
-
-/* Error message styling */
-.error-message {
-    color: red;
-    font-size: 12px;
-    margin-top: 0.5rem;
-}
-
-/* Help block (optional styling) */
-.help-block {
-    font-size: 12px;
-    color: #73788b;
-}
-
+	/* Phone number input styling */
+	.phone-number-input {
+		width: 100%;
+		padding: 10px;
+		font-size: 16px;
+		border: 1px solid #1a1a1d;
+		outline: none;
+	}
 </style>
