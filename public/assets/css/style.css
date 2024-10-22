@@ -5416,7 +5416,7 @@ background: #00000099;
 
 .hidden-bar .inner-box {
 	position: relative;
-	padding: 100px 00px 50px;
+	padding: 80px 0 50px;
 }
 
 .hidden-bar-nav .main-menu {
@@ -5442,11 +5442,11 @@ background: #00000099;
 
 .hidden-bar .inner-box .cross-icon {
 	position: absolute;
-	right: 30px;
-	top: 30px;
+	right: 0;
+	top: 18px;
 	cursor: pointer;
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 30px;
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
