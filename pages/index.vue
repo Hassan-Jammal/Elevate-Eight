@@ -227,7 +227,7 @@
 		},
 		{
 			id: 3,
-			name: 'E-commerce Wesbites',
+			name: 'E-commerce Websites',
 			description: 'Transform your online business with Elevate8\'s e-commerce solutions.',
 			excerpt: '',
 			icon: 'e-commerce-websites',
