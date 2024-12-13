@@ -146,7 +146,7 @@
 		},
 		{
 			id: 3,
-			name: 'E-commerce Wesbites',
+			name: 'E-commerce Websites',
 			description: 'Transform your online business with Elevate8\'s e-commerce solutions. From intuitive storefronts to secure payment gateways, we optimize your digital shop for success.',
 			icon: 'e-commerce-websites',
 			featured: false
