@@ -2,7 +2,7 @@ export const projectsData = [
     {
         name: "Group Powerline",
         category: ["Web Design", "Web Development", "Infrastructure", "Electrical"],
-        description: "Powerline Group supplies high-quality cable management systems and electrical solutions, meeting American and European standards.",
+        description: "Powerline Group supplies premium cable management and electrical solutions, meeting American and European standards.",
         date: "Wed 26, 2026",
         location: "Ballouneh, Lebanon",
         image1: "/assets/images/work/group-powerline1.webp",
