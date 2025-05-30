@@ -40,7 +40,7 @@
 
 									<p class="loc"><i class="fas fa-map-marker-alt"></i>Beirut, Lebanon</p><br />
 									<a class="mailto mt-5" href="mailto:info@elevate8.co"><i class="fas fa-envelope"></i>info@elevate8.co</a><br />
-									<a class="callto mt-5" href="callto:++9613011568"><i class="fas fa-phone"></i>+961 3 011 568</a><br />
+									<a class="callto mt-5" href="https://wa.me/+96171345756" target="_blank"><i class="fas fa-phone"></i>+961 71 345 756</a><br />
 								</div>
 							</div>
 							<!-- <div class="col-sm-6">
