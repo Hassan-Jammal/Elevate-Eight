@@ -216,34 +216,41 @@
 	const validationRules = {
 		full_name: {
 			required: 'Please enter your full name',
+			human: 'Please enter real full name before submitting',
 			safe: 'Your full name has invalid value'
 		},
 		email: {
 			required: 'Please enter your email address',
 			email: 'Please enter a valid email address',
+			human: 'Please enter real email before submitting',
 			safe: 'Your email has invalid value'
 		},
 		code: {
             required: 'Please choose your country code',
             code: 'Please enter a valid country code',
+			human: 'Please enter existing country code before submitting',
             safe: 'Your input has invalid value'
         },
 		phone_number: {
 			required: 'Please enter your mobile number',
 			numeric: 'Please enter a valid numeric phone number',
 			length: 'Please enter a valid phone number',
+			human: 'Please enter real phone number before submitting',
 			safe: 'Your mobile number has invalid value'
 		},
 		services: {
 			required: 'Please choose at least one service',
+			human: 'Please enter existing service before submitting',
 			safe: 'Your services has invalid value'
 		},
 		timeline: {
 			required: 'Please choose your timeline preference',
+			human: 'Please enter existing timeline before submitting',
 			safe: 'Your timeline preference has invalid value'
 		},
 		message: {
 			required: 'Please leave us a message',
+			human: 'Please enter real message before submitting',
 			safe: 'Your message has invalid value'
 		},
 	};

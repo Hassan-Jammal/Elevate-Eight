@@ -36,6 +36,8 @@ export const executeRule = (form, field, rule, validationRules) => {
             return isValidUrl(form.value[field]) ? '' : validationRules[field][rule];
         case 'safe':
             return isSafe(form.value[field]) ? '' : validationRules[field][rule];
+        case 'human':
+            return isHumanText(form.value[field]) ? '' : validationRules[field][rule];
         default:
             return '';
     }
