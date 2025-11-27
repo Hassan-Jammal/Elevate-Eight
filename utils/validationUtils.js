@@ -41,7 +41,7 @@ export const isHumanText = (value) => {
     }
 
     // 4. Reject if message length is too short (bots often send 1–3 words)
-    if (value.split(" ").length < 3) {
+    if (field === "message" && value.split(" ").length < 3) {
         return false;
     }
 
