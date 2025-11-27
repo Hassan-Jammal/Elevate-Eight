@@ -22,7 +22,7 @@ export const isSafe = (url) => {
     return !/<(\/|\s)?(_ENV|_SERVER|_HOST|PATH|php|main|br|header|h[1-9]|body|style|script|html|head|p|b|strong|a|i|span|div)?(\/|\s)*>/.test(url);
 };
 
-export const isHumanText = (value) => {
+export const isHumanText = (value, field) => {
     if (!value) return false;
 
     // 1. Reject if text has too many consonants in a row (6+)
@@ -37,6 +37,11 @@ export const isHumanText = (value) => {
 
     // 3. Reject if text has no vowels (common in bot spam)
     if (!/[aeiou]/i.test(value)) {
+        return false;
+    }
+
+    // 4. Reject if message length is too short (bots often send 1–3 words)
+    if (field === "contact_message" && value.split(" ").length < 3) {
         return false;
     }
 
