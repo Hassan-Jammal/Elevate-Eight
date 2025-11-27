@@ -26,7 +26,7 @@ export const isHumanText = (value, field) => {
     if (!value) return false;
 
     // 1. Reject if text has too many consonants in a row (6+)
-    if (/[bcdfghjklmnpqrstvwxyz]{6,}/i.test(value)) {
+    if (/[bcdfghjklmnpqrstvwxyz]{5,}/i.test(value)) {
         return false;
     }
 
