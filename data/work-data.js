@@ -1,14 +1,25 @@
 export const projectsData = [
     {
+        name: "Grind XV",
+        category: ["Shopify", "E-commerce", "Custom Features"],
+        description: "A rugby-inspired brand website built to reflect grit, discipline, and identity.",
+        date: "Jan 1, 2026",
+        location: "Hamburg, Germany",
+        image1: "/assets/images/work/grind-xv1.webp",
+        image2: "/assets/images/work/grind-xv2.webp",
+        slug: "grind-xv",
+        link: "https://grindxv.com",
+    },
+    {
         name: "Group Powerline",
         category: ["Web Design", "Web Development", "Infrastructure", "Electrical"],
         description: "Powerline Group supplies premium cable management and electrical solutions, meeting American and European standards.",
-        date: "Wed 26, 2026",
+        date: "Jul 15, 2025",
         location: "Ballouneh, Lebanon",
         image1: "/assets/images/work/group-powerline1.webp",
         image2: "/assets/images/work/group-powerline2.webp",
         slug: "group-powerline",
-        link: "",
+        link: "https://grouppowerline.com",
     },
     {
         name: "Pocket",
