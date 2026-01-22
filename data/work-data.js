@@ -63,7 +63,7 @@ export const projectsData = [
         image1: "/assets/images/work/sneakerbeast1.webp",
         image2: "/assets/images/work/sneakerbeast2.webp",
         slug: "sneaker-best",
-        link: "https://sneakerbeast.net/",
+        link: "",
     },
     {
         name: "Roula & Joseph",
@@ -74,6 +74,6 @@ export const projectsData = [
         image1: "/assets/images/work/roula-joseph1.webp",
         image2: "/assets/images/work/roula-joseph2.webp",
         slug: "roula-and-joseph",
-        link: "https://irani.com",
+        link: "",
     },
 ];
