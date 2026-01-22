@@ -2,7 +2,7 @@ export const projectsData = [
     {
         name: "Grind XV",
         category: ["Shopify", "E-commerce", "Custom Features"],
-        description: "A rugby-inspired brand website built to reflect grit, discipline, and identity.",
+        description: "GRIND XV is a rugby-inspired sportswear brand built on discipline and grit, representing the grind behind the XV.",
         date: "Jan 1, 2026",
         location: "Hamburg, Germany",
         image1: "/assets/images/work/grind-xv1.webp",
