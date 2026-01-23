@@ -11,6 +11,17 @@ export const projectsData = [
         link: "https://grindxv.com",
     },
     {
+        name: "Grind XV",
+        category: ["Web Design", "Web Development", "Landing Page"],
+        description: "Eaula Water is a premium bottled water brand built on purity and sustainability, representing modern, conscious hydration.",
+        date: "Aug 10, 2025",
+        location: "Unites States",
+        image1: "/assets/images/work/eaula1.webp",
+        image2: "/assets/images/work/eaula2.webp",
+        slug: "eaula",
+        link: "https://eaulawater.com",
+    },
+    {
         name: "Group Powerline",
         category: ["Web Design", "Web Development", "Infrastructure", "Electrical"],
         description: "Powerline Group supplies premium cable management and electrical solutions, meeting American and European standards.",
