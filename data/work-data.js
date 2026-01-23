@@ -11,7 +11,7 @@ export const projectsData = [
         link: "https://grindxv.com",
     },
     {
-        name: "Grind XV",
+        name: "Eaula Water",
         category: ["Web Design", "Web Development", "Landing Page"],
         description: "Eaula Water is a premium bottled water brand built on purity and sustainability, representing modern, conscious hydration.",
         date: "Aug 10, 2025",
