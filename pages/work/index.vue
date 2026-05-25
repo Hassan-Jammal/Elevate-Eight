@@ -189,7 +189,7 @@
 		{
 			id: 9,
 			name: 'Social Media Marketing',
-			description: 'Amplify your online presence with Elevate8’s Social Media Marketing expertise. Drive growth, increase brand awareness, and turn social media into a performance channel as we craft data-driven strategies tailored to your brand.',
+			description: 'Amplify your online presence with Elevate8’s Social Media Marketing expertise. Drive growth, boost brand awareness, and turn social media into a performance channel with data-driven strategies.',
 			icon: 'social-media-marketing',
 			featured: true
 		},
