@@ -188,8 +188,8 @@
 		},
 		{
 			id: 9,
-			name: 'Social Media Management',
-			description: 'Amplify your online presence with Elevate8\'s Social Media Management expertise. Elevate engagement, drive brand awareness, and foster meaningful connections as we craft compelling strategies tailored to your unique brand identity.',
+			name: 'Social Media Marketing',
+			description: 'Amplify your online presence with Elevate8’s Social Media Marketing expertise. Drive growth, increase brand awareness, and turn social media into a performance channel as we craft data-driven strategies tailored to your brand.',
 			icon: 'social-media-marketing',
 			featured: true
 		},

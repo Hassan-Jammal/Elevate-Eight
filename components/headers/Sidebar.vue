@@ -170,7 +170,7 @@
 		"UX/UI Design",
 		"Hosting Plans",
 		"Logo Design",
-		"Social Media Management",
+		"Social Media Marketing",
 		"Maintenance & Support",
 	];
 

@@ -94,7 +94,7 @@
 						</div>
 						<p>At Elevate8, we empower businesses and individuals with innovative digital
 							solutions, fostering growth, connections, and transforming ideas into reality. Committed
-							to excellence in web development, mobile app design, branding, social media management.
+							to excellence in web development, mobile app design, branding, social media marketing.
 							Our goal is to provide tailored, results-driven strategies, enabling clients to thrive
 							in the dynamic digital landscape.</p>
 					</div>

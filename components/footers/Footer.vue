@@ -71,7 +71,7 @@
 									<NuxtLink to="/services">Logo Design</NuxtLink>
 								</li>
 								<li class="mt-20">
-									<NuxtLink to="/services">Social Media Management</NuxtLink>
+									<NuxtLink to="/services">Social Media Marketing</NuxtLink>
 								</li>
 								<li class="mt-20">
 									<NuxtLink to="/services">Maintenance & Support</NuxtLink>

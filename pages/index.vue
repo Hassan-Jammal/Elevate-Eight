@@ -274,8 +274,8 @@
 		},
 		{
 			id: 9,
-			name: 'Social Media Management',
-			description: 'Amplify your online presence with Elevate8\'s Social Media Management expertise.',
+			name: 'Social Media Marketing',
+			description: 'Amplify your online presence with Elevate8’s Social Media Marketing expertise.',
 			excerpt: '',
 			icon: 'social-media-marketing',
 			featured: true
